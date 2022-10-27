@@ -2,6 +2,6 @@
 
 > Agar sizga loyiha yoqsa :star: bosing. Texnik yangilanishlar uchun meni [@ssamir_20](https://twitter.com/ssamir_20) kuzatib boring.
 
-Go to [Coding Exercise](#coding-exercise)for coding specific questions
+Maxsus savollarni kodlash uchun [Kodlash mashqlariga](#coding-exercise) o'ting.
 
-## Download PDF/Epub formats
+## PDF/Epub formatlarini yuklab oling
