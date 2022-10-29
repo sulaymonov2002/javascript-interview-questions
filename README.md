@@ -26,3 +26,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 10   | [lambda yoki arrow function nima ?](#what-are-lambda-or-arrow-functions)                                                                                         |
 | 11   | [Birinchi class function nima ?](#what-is-a-first-class-function)                                                                                                 |
 | 12   | [Birinchi order function nima ?](#what-is-a-first-order-function)                                                                                                 |
+| 13   | [Yuqori tartibli funksiya nima ?](#what-is-a-higher-order-function)                                                                                               |
+| 14   | [unary function nima ?](#what-is-a-unary-function)                                                                                                             |
+| 15   | [currying function nima ?](#what-is-the-currying-function)                                                                                                   |
+| 16   | [pure function nima ?](#what-is-a-pure-function)                                                                                                               |
+| 17   | [let kalit so'zining maqsadi nima ?](#what-is-the-purpose-of-the-let-keyword)                                                                                 |
+| 18   | [let va var o'rtasidagi farq nima ?](#what-is-the-difference-between-let-and-var)                                                                         |
+| 19   | [kalit so'zi sifatida let nomini tanlashning sababi nimada ?](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                                 |
+| 20   | [swtich blockdagi o'zgarishlarni qanday qilib xatosiz qayta e'lon qilish mumkin ?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)                               |
