@@ -34,3 +34,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 18   | [let va var o'rtasidagi farq nima ?](#what-is-the-difference-between-let-and-var)                                                                         |
 | 19   | [kalit so'zi sifatida let nomini tanlashning sababi nimada ?](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                                 |
 | 20   | [swtich blockdagi o'zgarishlarni qanday qilib xatosiz qayta e'lon qilish mumkin ?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)                               |
+| 21   | [Temporal Dead Zone nima ?](#what-is-the-temporal-dead-zone)                                                                                                 |
+| 22   | [IIFE(darhol chaqiriladigan funksiya ifodasi)nima ?](#what-is-iifeimmediately-invoked-function-expression)                                                     |
+| 23   | [JavaScript-da URL-manzilini decode yoki code lash mumkin ?](#how-do-you-decode-or-encode-a-url-in-javascript)                                                              |
+| 24   | [Memoization nima ?](#what-is-memoization)                                                                                                                       |
+| 25   | [Hoisting nima ?](#what-is-hoisting)                                                                                                                             |
+| 26   | [ES6 da qanday sinflar mavjud ?](#what-are-classes-in-es6)                                                                                                               |
+| 27   | [Closures nima ?](#what-are-closures)                                                                                                                           |
+| 28   | [Modullar nima ?](#what-are-modules)                                                                                                                             |
+| 29   | [Nima uchun sizga modullar kerak ?](#why-do-you-need-modules)                                                                                                               |
+| 30   | [JavaScriptda scope nima ?](#what-is-scope-in-javascript)                                                                                                       |
