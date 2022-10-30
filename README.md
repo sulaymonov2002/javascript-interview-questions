@@ -178,3 +178,63 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    ![Screenshot](images/prototype_chain.png)
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+3. ### What is the difference between Call, Apply and Bind
+
+   Call qilish, Apply va Bind o'rtasidagi farqni quyidagi misollar bilan tushuntirish mumkin,
+
+   **Call:** Call() usuli berilgan qiymatga ega funktsiyani va birma-bir taqdim etilgan argumentlarni chaqiradi.
+
+   ```javascript
+   var employee1 = { firstName: "John", lastName: "Rodson" };
+   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+
+   function invite(greeting1, greeting2) {
+     console.log(
+       greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
+     );
+   }
+
+   invite.call(employee1, "Hello", "How are you?"); // Hello John Rodson, How are you?
+   invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   ```
+
+   **Apply:** Berilgan qiymat bilan funktsiyani chaqiradi va argumentlarni massiv sifatida o'tkazishga imkon beradi.
+
+   ```javascript
+   var employee1 = { firstName: "John", lastName: "Rodson" };
+   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+
+   function invite(greeting1, greeting2) {
+     console.log(
+       greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
+     );
+   }
+
+   invite.apply(employee1, ["Hello", "How are you?"]); // Hello John Rodson, How are you?
+   invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
+   ```
+
+   **bind:** har qanday miqdordagi argumentlarni o'tkazish imkonini beruvchi yangi funktsiyani qaytaradi
+
+   ```javascript
+   var employee1 = { firstName: "John", lastName: "Rodson" };
+   var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+
+   function invite(greeting1, greeting2) {
+     console.log(
+       greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
+     );
+   }
+
+   var inviteEmployee1 = invite.bind(employee1);
+   var inviteEmployee2 = invite.bind(employee2);
+   inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
+   inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+   ```
+
+   Call qilish va apply berish bir-birini almashtirib turadi. Ikkalasi ham joriy funksiyani darhol bajaradi. Argumentlarni massiv yoki vergul bilan ajratilgan roʻyxatida yuborish osonroqmi, qaror qabul qilishingiz kerak. Call **vergul** uchun (ajratilgan ro'yxat) va **Massiv** uchun Apply ni davolash orqali eslashingiz mumkin.
+
+   Holbuki, Bind yangi funksiyani yaratadi, unda bu birinchi parametr bind() ga o'tkaziladi.
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
