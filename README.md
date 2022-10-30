@@ -15,7 +15,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | No. | Savollar                                                                                                                                             |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari bor ?](#what-are-the-possible-ways-to-create-objects-in-javascript)                          |
-| 2   | [Prototip zanjiri nima ?](#what-is-a-prototype-chain)                                                                                                |
+| 2   | [Prototype chain nima ?](#what-is-a-prototype-chain)                                                                                                |
 | 3   | [Call, Apply va Bind orasidagi farq nima ?](#what-is-the-difference-between-call-apply-and-bind)                                                     |
 | 4   | [JSON nima va uning umumiy operatsiyalari](#what-is-json-and-its-common-operations)                                                                  |
 | 5   | [Massiv slice usulidan maqsad nima ?](#what-is-the-purpose-of-the-array-slice-method)                                                                |
@@ -169,7 +169,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
       **[⬆ Yuqoriga qaytish](#mundarija)**
 
-2. ### Prototype chain nima ?
+2. ### What is a prototype chain 
 
    **Prototype chaining** mavjudlari asosida yangi turdagi ob'ektlarni qurish uchun foydalaniladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
 
