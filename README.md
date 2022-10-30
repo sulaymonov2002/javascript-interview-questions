@@ -44,3 +44,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 28   | [Modullar nima ?](#what-are-modules)                                                                                                                             |
 | 29   | [Nima uchun sizga modullar kerak ?](#why-do-you-need-modules)                                                                                                               |
 | 30   | [JavaScriptda scope nima ?](#what-is-scope-in-javascript)                                                                                                       |
+| 31   | [Service worker nima ?](#what-is-a-service-worker)                                                                                                             |
+| 32   | [Service worker yordamida DOMni qanday boshqarish mumkin ?](#how-do-you-manipulate-dom-using-a-service-worker)                                                             |
+| 33   | [Service worker ni qayta ishga tushirishda ma'lumotdan qanday foydalanasiz ?](#how-do-you-reuse-information-across-service-worker-restarts)                                       |
+| 34   | [IndexedDB nima ?](#what-is-indexeddb)                                                                                                                           |
+| 35   | [Web storage nima ?](#what-is-web-storage)                                                                                                                       |
+| 36   | [Post xabari nima ?](#what-is-a-post-message)                                                                                                                 |
+| 37   | [cookie nima ?](#what-is-a-cookie)                                                                                                                             |
+| 38   | [Cookie nima uchun kerak ?](#why-do-you-need-a-cookie)                                                                                                             |
+| 39   | [Cookie-da qanday variantlar mavjud ?](#what-are-the-options-in-a-cookie)                                                                                             |
+| 40   | [Cookie faylini qanday o'chirish mumkin ?](#how-do-you-delete-a-cookie)                                                                                                         |
