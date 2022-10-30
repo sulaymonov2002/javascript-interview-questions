@@ -54,3 +54,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 38   | [Cookie nima uchun kerak ?](#why-do-you-need-a-cookie)                                                                                                             |
 | 39   | [Cookie-da qanday variantlar mavjud ?](#what-are-the-options-in-a-cookie)                                                                                             |
 | 40   | [Cookie faylini qanday o'chirish mumkin ?](#how-do-you-delete-a-cookie)                                                                                                         |
+| 41   | [Cookie, local storage va session storage o'rtasidagi farqlar qanday ?](#What-are-the-differences-between-cookie-local-storage-and-session-storage)          |
+| 42   | [localStorage va sessionStorage o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                       |
+| 43   | [Veb-xotiraga qanday kirish mumkin ?](#how-do-you-access-web-storage)                                                                                                   |
+| 44   | [session storage qanday usullar mavjud ?](#what-are-the-methods-available-on-session-storage)                                                           |
+| 45   | [storage event nima va uning event handler ?](#what-is-a-storage-event-and-its-event-handler)                                                                   |
+| 46   | [Nima uchun sizga web storage kerak ?](#why-do-you-need-web-storage)                                                                                                       |
+| 47   | [Web storage browser yordamini qanday tekshirish mumkin ?](#how-do-you-check-web-storage-browser-support)                                                                     |
+| 48   | [Web workers browser qo'llab-quvvatlashini qanday tekshirish mumkin ?](#how-do-you-check-web-workers-browser-support)                                                                     |
+| 49   | [Web worker ga misol keltiring ?](#give-an-example-of-a-web-worker)                                                                                                   |
+| 50   | [DOM-da web worker larning cheklovlari qanday ?](#what-are-the-restrictions-of-web-workers-on-dom)                                                               |
