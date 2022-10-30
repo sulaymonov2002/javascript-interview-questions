@@ -167,4 +167,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
       })();
       ```
 
-      **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Yuqoriga qaytish](#mundarija)**
+
+2. ### Prototype chain nima ?
+
+   **Prototype chaining** mavjudlari asosida yangi turdagi ob'ektlarni qurish uchun foydalaniladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
+
+   Ob'ekt namunasidagi prototip **Object.getPrototypeOf(object)** yoki \***\*proto\*\*** xususiyati orqali, konstruktorlar funksiyasidagi prototip esa **Object.prototype** orqali mavjud.
+
+   ![Screenshot](images/prototype_chain.png)
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
