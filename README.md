@@ -238,3 +238,21 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    Holbuki, Bind yangi funksiyani yaratadi, unda bu birinchi parametr bind() ga o'tkaziladi.
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+4. ### What is JSON and its common operations
+
+   **JSON** bu `Douglas Crockford` tomonidan ommalashtirilgan JavaScript ob'ekt sintaksisiga asoslangan matnga asoslangan ma'lumotlar formatidir.
+
+   **Parsing:** Satrni mahalliy ob'ektga aylantirish
+
+   ```javascript
+   JSON.parse(text);
+   ```
+
+   **Stringification:** mahalliy ob'ektni tarmoq bo'ylab uzatilishi uchun satrga aylantirish
+
+   ```javascript
+   JSON.stringify(object);
+   ```
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
