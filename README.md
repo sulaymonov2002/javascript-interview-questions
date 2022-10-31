@@ -273,3 +273,23 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    **Eslatma:** Slice usuli asl massivni o'zgartirmaydi, lekin u kichik to'plamni yangi massiv sifatida qaytaradi.
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+6. ### What is the purpose of the array splice method
+
+   **Splice()** usuli qatorga elementlarni qo'shish/o'chirish uchun ishlatiladi va keyin olib tashlangan elementni qaytaradi. Birinchi argument qo'shish yoki o'chirish uchun massiv o'rnini belgilaydi, ixtiyoriy ikkinchi argument esa o'chirilishi kerak bo'lgan elementlar sonini ko'rsatadi. Har bir qo'shimcha argument massivga qo'shiladi.
+
+   Ushbu usulning ba'zi misollari:
+
+   ```javascript
+   let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+   let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+   let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+
+   let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
+   let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
+   let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+   ```
+
+   **Eslatma:** Splice usuli asl massivni o'zgartiradi va o'chirilgan massivni qaytaradi.
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
