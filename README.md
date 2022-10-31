@@ -256,3 +256,20 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    ```
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+5. ### What is the purpose of the array slice method
+
+   **slice()** usuli massivdagi tanlangan elementlarni yangi massiv obyekti sifatida qaytaradi. U berilgan boshlang'ich argumentdan boshlanadigan elementlarni tanlaydi va oxirgi elementni qo'shmasdan berilgan ixtiyoriy yakuniy argumentda tugaydi. Agar siz ikkinchi argumentni o'tkazib yuborsangiz, u oxirigacha tanlaydi.
+
+   Ushbu usulning ba'zi misollari:
+
+   ```javascript
+   let arrayIntegers = [1, 2, 3, 4, 5];
+   let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
+   let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
+   let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
+   ```
+
+   **Eslatma:** Slice usuli asl massivni o'zgartirmaydi, lekin u kichik to'plamni yangi massiv sifatida qaytaradi.
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
