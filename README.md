@@ -293,3 +293,15 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    **Eslatma:** Splice usuli asl massivni o'zgartiradi va o'chirilgan massivni qaytaradi.
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+7. ### What is the difference between slice and splice
+
+   Jadval shaklidagi asosiy farqlardan ba'zilari
+
+   | Slice                                        | Splice                                          |
+   | -------------------------------------------- | ----------------------------------------------- |
+   | Asl massivni o'zgartirmaydi (o'zgarmas) | Asl massivni o'zgartiradi (o'zgaruvchan)            |
+   | Asl massivning pastki to'plamini qaytaradi         | O'chirilgan elementlarni massiv sifatida qaytaradi           |
+   | Massivdan elementlarni tanlash uchun foydalaniladi         | Massivga/massivdan elementlarni kiritish yoki oʻchirish uchun foydalaniladi |
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
