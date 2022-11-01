@@ -448,3 +448,20 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Esingizda bo'lsin, Pure funtion(lari) muhim ahamiyatga ega, chunki ular side effects(ni) hech qanday nojo'ya ta'sirlarsiz va dependency injection ehtiyoj sezmasdan soddalashtiradi. Ular, shuningdek, qattiq bog'lanishdan qochishadi va hech qanday nojo'ya ta'sirlarga ega bo'lmasdan, ilovangizni buzishni qiyinlashtiradi. Ushbu tamoyillar ES6 ning **Immutability** kontseptsiyasi bilan birlashtirilib, **let(dan)** ko'ra **const** ga ustunlik beradi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+17. ### What is the purpose of the let keyword
+
+    `let` statement **block scope local variable**(ni) e'lon qiladi. Shunday qilib, let keyword bilan aniqlangan o'zgaruvchilar u ishlatiladigan block scope yoki ifoda bilan cheklangan. Holbuki, `var` keyword bilan e'lon qilingan o'zgaruvchilar o'zgaruvchini global miqyosda yoki blok doirasidan qat'i nazar, butun funktsiyaga lokal ravishda aniqlash uchun ishlatiladi.
+
+    Foydalanishni ko'rsatish uchun misol keltiraylik,
+
+    ```javascript
+    let counter = 30;
+    if (counter === 30) {
+      let counter = 31;
+      console.log(counter); // 31
+    }
+    console.log(counter); // 30 (because the variable in if block won't exist here)
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
