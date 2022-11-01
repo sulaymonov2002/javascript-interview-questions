@@ -347,3 +347,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    ```
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+10. ### What are lambda or arrow functions
+
+    Arrow funtion funksiya ifodasi uchun qisqaroq sintaksis boʻlib, oʻziga xos **this, arguments, super yoki new.target** funksiyalariga ega emas.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
