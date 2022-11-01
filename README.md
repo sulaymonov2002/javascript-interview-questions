@@ -421,3 +421,30 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Currying funtion(lari) **kodning qayta ishlatilishi** va **funktsional tarkibini** yaxshilash uchun juda yaxshi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+16. ### What is a pure function
+
+    **Pure funtion** - bu qaytariladigan qiymat faqat uning argumentlari bilan hech qanday nojo'ya ta'sirlarsiz aniqlanadigan funksiyadir. Ya'ni, agar siz bir xil argumentlarga ega bo'lgan funksiyani "n" soni va ilovadagi joylar soni "n" bilan chaqirsangiz, u har doim bir xil qiymatni qaytaradi.
+
+    Keling, pure va impure function(lar) o'rtasidagi farqni ko'rish uchun misol keltiraylik,
+
+    ```javascript
+    //Impure
+    let numberArray = [];
+    const impureAddNumber = (number) => numberArray.push(number);
+    //Pure
+    const pureAddNumber = (number) => (argNumberArray) =>
+      argNumberArray.concat([number]);
+
+    //Display the results
+    console.log(impureAddNumber(6)); // returns 1
+    console.log(numberArray); // returns [6]
+    console.log(pureAddNumber(7)(numberArray)); // returns [6, 7]
+    console.log(numberArray); // returns [6]
+    ```
+
+    Yuqoridagi kod parchalariga ko'ra, **Push** funksiyasi massivni o'zgartirish va parametr qiymatidan mustaqil ravishda surish raqami indeksini qaytarish orqali o'zini impure. Boshqa tomondan, **Concat** massivni oladi va uni boshqa massiv bilan birlashtiradi va nojo'ya ta'sirlarsiz butunlay yangi massiv hosil qiladi. Bundan tashqari, qaytarish qiymati oldingi massivning birlashmasi hisoblanadi.
+
+    Esingizda bo'lsin, Pure funtion(lari) muhim ahamiyatga ega, chunki ular side effects(ni) hech qanday nojo'ya ta'sirlarsiz va dependency injection ehtiyoj sezmasdan soddalashtiradi. Ular, shuningdek, qattiq bog'lanishdan qochishadi va hech qanday nojo'ya ta'sirlarga ega bo'lmasdan, ilovangizni buzishni qiyinlashtiradi. Ushbu tamoyillar ES6 ning **Immutability** kontseptsiyasi bilan birlashtirilib, **let(dan)** ko'ra **const** ga ustunlik beradi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
