@@ -318,3 +318,32 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    6. Map key juftlarini tez-tez qo'shish va olib tashlashni o'z ichiga olgan scenarios yaxshiroq ishlashi mumkin.
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+9. ### What is the difference between == and === operators
+
+   JavaScript qat'iy (===, !==) va turga aylantiruvchi (==, !=) tenglikni taqqoslashni ta'minlaydi. Qattiq operatorlar o'zgaruvchining turini hisobga oladi, qat'iy bo'lmagan operatorlar esa o'zgaruvchilar qiymatlari asosida turni to'g'irlash/konvertatsiya qilishni amalga oshiradilar. Qattiq operatorlar har xil turlar uchun quyidagi shartlarga amal qiladilar,
+
+   1. Ikki satr bir xil belgilar ketma-ketligi, bir xil uzunlik va tegishli pozitsiyalarda bir xil belgilarga ega bo'lsa, qat'iy tengdir.
+   2. Ikki raqam son jihatdan teng bo'lsa, ular qat'iy tengdir. ya'ni bir xil raqam qiymatiga ega. Bunda ikkita alohida holat mavjud,
+      1. NaN hech narsaga teng emas, shu jumladan NaN.
+      2. Ijobiy va manfiy nollar bir-biriga teng.
+   3. Ikki mantiqiy operand, agar ikkalasi ham to'g'ri yoki ikkalasi ham yolg'on bo'lsa, mutlaqo tengdir.
+   4. Ikki ob'ekt bir xil ob'ektga tegishli bo'lsa, ular mutlaqo tengdir.
+   5. Null va Undefined turlari === bilan teng emas, lekin == bilan teng. ya'ni, null===aniqlanmagan --> noto'g'ri, lekin null==aniqlanmagan --> rost
+
+   Yuqoridagi holatlarni qamrab oluvchi ba'zi misollar,
+
+   ```javascript
+   0 == false   // true
+   0 === false  // false
+   1 == "1"     // true
+   1 === "1"    // false
+   null == undefined // true
+   null === undefined // false
+   '0' == false // true
+   '0' === false // false
+   []==[] or []===[] //false, refer different objects in memory
+   {}=={} or {}==={} //false, refer different objects in memory
+   ```
+
+   **[⬆ Yuqoriga qaytish](#mundarija)**
