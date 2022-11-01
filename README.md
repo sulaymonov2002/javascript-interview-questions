@@ -376,3 +376,16 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+13. ### What is a higher order function
+
+    Yuqori tartibli funksiya boshqa funksiyani argument sifatida qabul qiladigan yoki funksiyani qaytarish qiymati yoki ikkalasini qaytaradigan funksiyadir.
+
+    ```javascript
+    const firstOrderFunc = () =>
+      console.log("Hello, I am a First order function");
+    const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
+    higherOrder(firstOrderFunc);
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
