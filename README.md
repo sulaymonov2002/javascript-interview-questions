@@ -389,3 +389,15 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+14. ### What is a unary function
+
+    Unary function (ya'ni, monadic) - aynan bitta argumentni qabul qiladigan funksiya. Bu funksiya tomonidan qabul qilingan bitta argumentni anglatadi.
+
+    Unary function(ga) misol keltiraylik,
+
+    ```javascript
+    const unaryFunction = (a) => console.log(a + 10); // Add 10 to the given argument and display the value
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
