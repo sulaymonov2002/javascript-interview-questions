@@ -366,3 +366,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+12. ### What is a first order function
+
+    Birinchi darajali funksiya boshqa funksiyani argument sifatida qabul qilmaydigan va funksiyani qaytarish qiymati sifatida qaytarmaydigan funksiyadir.
+
+    ```javascript
+    const firstOrder = () => console.log("I am a first order function!");
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
