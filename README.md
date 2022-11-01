@@ -353,3 +353,16 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Arrow funtion funksiya ifodasi uchun qisqaroq sintaksis boʻlib, oʻziga xos **this, arguments, super yoki new.target** funksiyalariga ega emas.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+11. ### What is a first class function
+
+    Javascriptda funksiyalar birinchi darajali ob'ektlardir. Birinchi darajali funktsiyalar bu tildagi funktsiyalar boshqa har qanday o'zgaruvchilar kabi ko'rib chiqilishini anglatadi.
+
+    Masalan, bunday tilda funksiya boshqa funksiyalarga argument sifatida berilishi, boshqa funksiya tomonidan qaytarilishi va o‘zgaruvchiga qiymat sifatida berilishi mumkin. Misol uchun, quyidagi misolda tinglovchiga tayinlangan ishlov beruvchi funksiyalari
+
+    ```javascript
+    const handler = () => console.log("This is a click handler function");
+    document.addEventListener("click", handler);
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
