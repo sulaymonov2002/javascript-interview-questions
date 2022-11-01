@@ -401,3 +401,23 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+15. ### What is the currying function
+
+    Currying - bu bir nechta argumentli funksiyani olish va uni har birida faqat bitta argumentga ega bo'lgan funksiyalar ketma-ketligiga aylantirish jarayoni. Currying matematik **Xaskell Karri** sharafiga nomlangan. Karringni qo'llash orqali n-ary funksiya uni birlik funksiyaga aylantiradi.
+
+    Keling, n-ary funksiyasiga misol keltiraylik va u qanday qilib currying function(ga) aylanadi,
+
+    ```javascript
+    const multiArgFunction = (a, b, c) => a + b + c;
+    console.log(multiArgFunction(1, 2, 3)); // 6
+
+    const curryUnaryFunction = (a) => (b) => (c) => a + b + c;
+    curryUnaryFunction(1); // returns a function: b => c =>  1 + b + c
+    curryUnaryFunction(1)(2); // returns a function: c => 3 + c
+    curryUnaryFunction(1)(2)(3); // returns the number 6
+    ```
+
+    Currying funtion(lari) **kodning qayta ishlatilishi** va **funktsional tarkibini** yaxshilash uchun juda yaxshi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
