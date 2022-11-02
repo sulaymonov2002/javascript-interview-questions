@@ -465,3 +465,31 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+18. ### What is the difference between let and var
+
+    Siz farqlarni jadval shaklida ko'rishingiz mumkin
+
+    | var                                                   | let                         |
+    | ----------------------------------------------------- | --------------------------- |
+    | U JavaScript boshidan beri mavjud | ES6 ning bir qismi sifatida taqdim etilgan   |
+    | U function scope                                 | U block scope          |
+    | O'zgaruvchilar hoisting bo'ladi                             | Hoisted lekin ishga tushirilmagan |
+
+    Farqni ko'rish uchun misol keltiraylik,
+
+    ```javascript
+    function userDetails(username) {
+      if (username) {
+        console.log(salary); // undefined due to hoisting
+        console.log(age); // ReferenceError: Cannot access 'age' before initialization
+        let age = 30;
+        var salary = 10000;
+      }
+      console.log(salary); //10000 (accessible to due function scope)
+      console.log(age); //error: age is not defined(due to block scope)
+    }
+    userDetails("John");
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
