@@ -705,3 +705,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Yuqoridagi kodga ko'ra, ichki funksiya (ya'ni, greetingInfo) tashqi funksiya qaytganidan keyin ham tashqi funksiya doirasidagi (ya'ni Welcome) o'zgaruvchilarga kirish huquqiga ega.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+28. ### What are modules
+
+    Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn patterns asosi bo'lib xizmat qiladi. JavaScript modullarining aksariyati ob'ektni, funksiyani yoki konstruktorni eksport qiladi
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
