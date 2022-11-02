@@ -739,3 +739,82 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Xizmat xodimi DOMga bevosita kira olmaydi. Lekin u `postMessage` interfeysi orqali yuborilgan xabarlarga javob berish orqali o‘zi boshqaradigan sahifalar bilan bog‘lana oladi va bu sahifalar DOMni boshqarishi mumkin.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+33. ### How do you reuse information across service worker restarts
+
+    Service worker bilan bog'liq muammo shundaki, u foydalanilmaganda tugatiladi va keyingi kerak bo'lganda qayta ishga tushadi, shuning uchun siz xizmat ko'rsatuvchi xodimning `onfetch` va `onmessage` ishlov beruvchilarida global holatga tayanolmaysiz. Bunday holda, xizmat ko'rsatuvchi xodimlar qayta ishga tushirishda davom etish va qayta foydalanish uchun IndexedDB API ga kirish huquqiga ega bo'ladi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+34. ### What is IndexedDB
+
+    IndexedDB - bu mijoz tomonidan katta hajmdagi tuzilgan ma'lumotlarni, shu jumladan fayllar/bloblarni saqlash uchun past darajadagi API. Ushbu API ushbu ma'lumotlarning yuqori samarali qidiruvlarini yoqish uchun indekslardan foydalanadi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+35. ### What is web storage
+
+    Web storage - bu brauzerlar key/value juftlarini foydalanuvchi brauzerida locally sifatida cookie-fayllardan foydalanishdan ko'ra ancha intuitiv tarzda saqlashi mumkin bo'lgan mexanizmni ta'minlovchi API. Web storage mijozga ma'lumotlarni saqlash uchun ikkita mexanizmni taqdim etadi.
+
+    1. **Local storage:** U amaldagi ma'lumotlarni amal qilish muddatisiz saqlaydi.
+    2. **Session storage:** U bir seans uchun ma'lumotlarni saqlaydi va brauzer yorlig'i yopilganda ma'lumotlar yo'qoladi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+36. ### What is a post message
+
+    Post xabari Oyna ob'ektlari (ya'ni, sahifa va u ochilgan qalqib chiquvchi oyna o'rtasida yoki sahifa va uning ichiga o'rnatilgan iframe o'rtasida) o'zaro bog'lanish imkonini beruvchi usuldir. Odatda, turli sahifalardagi script(larga) bir-biriga kirishga ruxsat beriladi, agar sahifalar bir xil asl siyosatiga amal qilsa (ya'ni, sahifalar bir xil protokol, port raqami va xostga ega bo'lsa).
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+37. ### What is a Cookie
+
+    Cookie - bu brauzeringiz kirishi uchun kompyuteringizda saqlanadigan ma'lumotlarning bir qismi. Cookie-fayllar key/value juftlari sifatida saqlanadi. Masalan, foydalanuvchi nomi bilan quyidagi cookie faylini yaratishingiz mumkin:
+
+    ```javascript
+    document.cookie = "username=John";
+    ```
+
+    ![Screenshot](images/cookie.png)
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+38. ### Why do you need a Cookie
+
+    Cookie-fayllar foydalanuvchi profili (masalan, foydalanuvchi nomi) haqidagi ma'lumotlarni eslab qolish uchun ishlatiladi. Bu asosan ikki bosqichni o'z ichiga oladi,
+
+    1. Foydalanuvchi web page tashrif buyurganida, foydalanuvchi profili cookie faylida saqlanishi mumkin.
+    2. Keyingi safar foydalanuvchi sahifaga tashrif buyurganida, cookie foydalanuvchi profilini eslab qoladi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+39. ### What are the options in a cookie
+
+    Cookie uchun quyida bir nechta variant mavjud,
+
+    1. Odatiy bo'lib, brauzer yopilganda cookie o'chiriladi, ammo amal qilish muddatini belgilash orqali bu xatti-harakatni o'zgartirishingiz mumkin (UTC vaqti).
+
+    ```javascript
+    document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
+    ```
+
+    1. Odatiy bo'lib, cookie joriy sahifaga tegishli. Lekin siz brauzerga cookie fayli qaysi yoʻlga tegishli ekanligini yoʻl parametri yordamida ayta olasiz.
+
+    ```javascript
+    document.cookie = "username=John; path=/services";
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+40. ### How do you delete a cookie
+
+    Yaroqlilik muddatini o'tgan sana sifatida belgilash orqali cookie faylini o'chirishingiz mumkin. Bu holda cookie qiymatini belgilashingiz shart emas. Masalan, joriy sahifadagi foydalanuvchi nomi cookie faylini quyidagi tarzda oʻchirishingiz mumkin.
+
+    ```javascript
+    document.cookie =
+      "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
+    ```
+
+    **Eslatma:** To'g'ri cookie-faylni o'chirib tashlashingizga ishonch hosil qilish uchun cookie-fayl yo'li opsiyasini belgilashingiz kerak. Ba'zi brauzerlar, agar siz yo'l parametrini ko'rsatmasangiz, cookie-fayllarni o'chirishga ruxsat bermaydi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
