@@ -588,3 +588,30 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+24. ### What is memoization
+
+    Memoization - bu oldindan hisoblangan natijalarni keshlash orqali funksiyaning ishlashini oshirishga harakat qiladigan dasturlash usuli. Har safar xotirada saqlangan funksiya chaqirilganda, uning parametrlari keshni indekslash uchun ishlatiladi. Agar ma'lumotlar mavjud bo'lsa, uni butun funksiyani bajarmasdan qaytarish mumkin.Aks holda funksiya bajariladi va natija keshga qo'shiladi. Keling, xotira bilan funksiya qo'shishga misol keltiraylik,
+
+    ```javascript
+    const memoizAddition = () => {
+      let cache = {};
+      return (value) => {
+        if (value in cache) {
+          console.log("Fetching from cache");
+          return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
+        } else {
+          console.log("Calculating result");
+          let result = value + 20;
+          cache[value] = result;
+          return result;
+        }
+      };
+    };
+    // returned function from memoizAddition
+    const addition = memoizAddition();
+    console.log(addition(20)); //output: 40 calculated
+    console.log(addition(20)); //output: 40 cached
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
