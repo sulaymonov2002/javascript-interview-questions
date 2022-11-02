@@ -646,3 +646,36 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Ushbu hoisting funksiyalarni e'lon qilinishidan oldin code(da) xavfsiz ishlatishga imkon beradi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+26. ### What are classes in ES6
+
+    ES6-da Javascript clas(lar) asosan JavaScript-ning mavjud prototipiga asoslangan merosiga nisbatan syntactic sugar hisoblanadi.
+    Masalan, prototipga asoslangan meros quyidagi funksiya ifodasida yozilgan,
+
+    ```javascript
+    function Bike(model, color) {
+      this.model = model;
+      this.color = color;
+    }
+
+    Bike.prototype.getDetails = function () {
+      return this.model + " bike has" + this.color + " color";
+    };
+    ```
+
+    ES6 classes esa muqobil sifatida belgilanishi mumkin
+
+    ```javascript
+    class Bike {
+      constructor(color, model) {
+        this.color = color;
+        this.model = model;
+      }
+
+      getDetails() {
+        return this.model + " bike has" + this.color + " color";
+      }
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
