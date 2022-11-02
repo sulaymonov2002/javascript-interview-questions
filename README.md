@@ -499,3 +499,38 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     `let` - bu **Scheme** va **Basic** kabi dastlabki dasturlash tillari tomonidan qabul qilingan matematik bayonot. U imkon qadar `var` ga yaqin anʼanaviy keyword soʻz sifatida `let` soʻzini ishlatadigan oʻnlab boshqa tillardan olingan.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+20. ### How do you redeclare variables in switch block without an error
+
+    Agar siz `switch block` o'zgaruvchilarni qayta e'lon qilishga harakat qilsangiz, u xatolarga olib keladi, chunki faqat bitta block mavjud. Masalan, quyidagi code block quyidagi kabi sintaksis xatosini keltirib chiqaradi,
+
+    ```javascript
+    let counter = 1;
+    switch (x) {
+      case 0:
+        let name;
+        break;
+
+      case 1:
+        let name; // SyntaxError for redeclaration.
+        break;
+    }
+    ```
+
+    Ushbu xatolikka yo'l qo'ymaslik uchun siz case bandi ichida ichki blok yaratishingiz va yangi blokli leksik muhitni yaratishingiz mumkin.
+
+    ```javascript
+    let counter = 1;
+    switch (x) {
+      case 0: {
+        let name;
+        break;
+      }
+      case 1: {
+        let name; // No SyntaxError for redeclaration.
+        break;
+      }
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
