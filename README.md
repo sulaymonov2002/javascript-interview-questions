@@ -682,7 +682,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 27. ### What are closures
 
-   Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
+Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
 
     1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
     2. Tashqi funksiya o'zgaruvchilari
@@ -719,5 +719,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     1. Maintainability
     2. Reusability
     3. Namespacing
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+30. ### What is scope in javascript
+
+    Qo'llash doirasi - bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funksiyalar va ob'ektlarga kirish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
