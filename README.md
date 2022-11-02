@@ -679,3 +679,29 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+27. ### What are closures
+
+   Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
+
+    1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
+    2. Tashqi funksiya o'zgaruvchilari
+    3. Global o'zgaruvchilar
+
+    Keling, yopish kontseptsiyasiga misol keltiraylik,
+
+    ```javascript
+    function Welcome(name) {
+      var greetingInfo = function (message) {
+        console.log(message + " " + name);
+      };
+      return greetingInfo;
+    }
+    var myFunction = Welcome("John");
+    myFunction("Welcome "); //Output: Welcome John
+    myFunction("Hello Mr."); //output: Hello Mr.John
+    ```
+
+    Yuqoridagi kodga ko'ra, ichki funksiya (ya'ni, greetingInfo) tashqi funksiya qaytganidan keyin ham tashqi funksiya doirasidagi (ya'ni Welcome) o'zgaruvchilarga kirish huquqiga ega.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
