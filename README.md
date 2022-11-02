@@ -551,3 +551,25 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+22. ### What is IIFE(Immediately Invoked Function Expression)
+
+    IIFE (Immediately Invoked Function Expression) bu JavaScript funksiyasi boʻlib, u aniqlangan zahoti ishga tushadi. Uning imzosi quyidagicha bo'ladi,
+
+    ```javascript
+    (function () {
+      // logic here
+    })();
+    ```
+
+    IFE-dan foydalanishning asosiy sababi ma'lumotlarning maxfiyligini olishdir, chunki IIFE ichida e'lon qilingan har qanday o'zgaruvchilarga tashqi dunyo kirishi mumkin emas. ya'ni, agar siz IIFE bilan o'zgaruvchilarga kirishga harakat qilsangiz, u quyidagi kabi xatoga yo'l qo'yadi,
+
+    ```javascript
+    (function () {
+      var message = "IIFE";
+      console.log(message);
+    })();
+    console.log(message); //Error: message is not defined
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
