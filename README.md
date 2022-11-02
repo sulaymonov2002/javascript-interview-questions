@@ -711,3 +711,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn patterns asosi bo'lib xizmat qiladi. JavaScript modullarining aksariyati ob'ektni, funksiyani yoki konstruktorni eksport qiladi
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+29. ### Why do you need modules
+
+    Quyida JavaScript ekotizimidagi modullardan foydalanishning afzalliklari ro'yxati keltirilgan
+
+    1. Maintainability
+    2. Reusability
+    3. Namespacing
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
