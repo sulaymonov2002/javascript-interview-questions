@@ -15,7 +15,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | No. | Savollar                                                                                                                                             |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari bor ?](#what-are-the-possible-ways-to-create-objects-in-javascript)                          |
-| 2   | [Prototype chain nima ?](#what-is-a-prototype-chain)                                                                                                |
+| 2   | [Prototype chain nima ?](#what-is-a-prototype-chain)                                                                                                 |
 | 3   | [Call, Apply va Bind orasidagi farq nima ?](#what-is-the-difference-between-call-apply-and-bind)                                                     |
 | 4   | [JSON nima va uning umumiy operatsiyalari](#what-is-json-and-its-common-operations)                                                                  |
 | 5   | [Massiv slice usulidan maqsad nima ?](#what-is-the-purpose-of-the-array-slice-method)                                                                |
@@ -169,7 +169,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
       **[⬆ Yuqoriga qaytish](#mundarija)**
 
-2. ### What is a prototype chain 
+2. ### What is a prototype chain
 
    **Prototype chaining** mavjudlari asosida yangi turdagi ob'ektlarni qurish uchun foydalaniladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
 
@@ -298,11 +298,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    Jadval shaklidagi asosiy farqlardan ba'zilari
 
-   | Slice                                        | Splice                                          |
-   | -------------------------------------------- | ----------------------------------------------- |
-   | Asl massivni o'zgartirmaydi (o'zgarmas) | Asl massivni o'zgartiradi (o'zgaruvchan)            |
-   | Asl massivning pastki to'plamini qaytaradi         | O'chirilgan elementlarni massiv sifatida qaytaradi           |
-   | Massivdan elementlarni tanlash uchun foydalaniladi         | Massivga/massivdan elementlarni kiritish yoki oʻchirish uchun foydalaniladi |
+   | Slice                                              | Splice                                                                      |
+   | -------------------------------------------------- | --------------------------------------------------------------------------- |
+   | Asl massivni o'zgartirmaydi (o'zgarmas)            | Asl massivni o'zgartiradi (o'zgaruvchan)                                    |
+   | Asl massivning pastki to'plamini qaytaradi         | O'chirilgan elementlarni massiv sifatida qaytaradi                          |
+   | Massivdan elementlarni tanlash uchun foydalaniladi | Massivga/massivdan elementlarni kiritish yoki oʻchirish uchun foydalaniladi |
 
    **[⬆ Yuqoriga qaytish](#mundarija)**
 
@@ -470,11 +470,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
     Siz farqlarni jadval shaklida ko'rishingiz mumkin
 
-    | var                                                   | let                         |
-    | ----------------------------------------------------- | --------------------------- |
-    | U JavaScript boshidan beri mavjud | ES6 ning bir qismi sifatida taqdim etilgan   |
-    | U function scope                                 | U block scope          |
-    | O'zgaruvchilar hoisting bo'ladi                             | Hoisted lekin ishga tushirilmagan |
+    | var                               | let                                        |
+    | --------------------------------- | ------------------------------------------ |
+    | U JavaScript boshidan beri mavjud | ES6 ning bir qismi sifatida taqdim etilgan |
+    | U function scope                  | U block scope                              |
+    | O'zgaruvchilar hoisting bo'ladi   | Hoisted lekin ishga tushirilmagan          |
 
     Farqni ko'rish uchun misol keltiraylik,
 
@@ -570,6 +570,21 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
       console.log(message);
     })();
     console.log(message); //Error: message is not defined
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+23. ### How do you decode or encode a URL in JavaScript?
+
+    `encodeURI()` funksiyasi URL manzilini kodlash uchun ishlatiladi. Bu funksiya parametr sifatida URL satrini talab qiladi va kodlangan qatorni qaytaradi.
+    `decodeURI()` funksiyasi URL manzilini decode(lash) uchun ishlatiladi. Bu funksiya parametr sifatida kodlangan URL satrini talab qiladi va bu decode(langan) qatorni qaytaradi.
+
+    **Eslatma:** Agar siz / kabi belgilarni kodlashni xohlasangiz `/ ? : @ & = + $ #` keyin `encodeURIComponent()` dan foydalanishingiz kerak.
+
+    ```javascript
+    let uri = "employeeDetails?name=john&occupation=manager";
+    let encoded_uri = encodeURI(uri);
+    let decoded_uri = decodeURI(encoded_uri);
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
