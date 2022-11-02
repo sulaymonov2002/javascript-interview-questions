@@ -682,11 +682,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 27. ### What are closures
 
-Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
+ Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
 
-    1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
-    2. Tashqi funksiya o'zgaruvchilari
-    3. Global o'zgaruvchilar
+   1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
+   2. Tashqi funksiya o'zgaruvchilari
+   3. Global o'zgaruvchilar
 
     Keling, yopish kontseptsiyasiga misol keltiraylik,
 
@@ -727,3 +727,15 @@ Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinat
     Qo'llash doirasi - bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funksiyalar va ob'ektlarga kirish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+31. ### What is a service worker
+
+    Xizmat xodimi asosan fonda ishlaydigan script (JavaScript fayli), veb-sahifadan ajratilgan va veb-sahifa yoki foydalanuvchining oʻzaro taʼsirini talab qilmaydigan xususiyatlarni taqdim etadi. Xizmat xodimlarining asosiy xususiyatlaridan ba'zilari - bu boy offline tajribalar (offline birinchi veb-ilovalarni ishlab chiqish), davriy fon sinxronizatsiyasi, push-bildirishnomalar, tarmoq so'rovlarini ushlab turish va boshqarish va javoblar keshini dasturiy ravishda boshqarish.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+32. ### How do you manipulate DOM using a service worker
+
+    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
+
+    **[⬆ Back to Top](#table-of-contents)**
