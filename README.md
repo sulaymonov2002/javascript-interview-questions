@@ -682,11 +682,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 27. ### What are closures
 
- Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
+    Closure - bu funksiya va ushbu funksiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funksiya. Yopish uchta ko'lamli zanjirga ega
 
-   1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
-   2. Tashqi funksiya o'zgaruvchilari
-   3. Global o'zgaruvchilar
+    1. O'zgaruvchilar uning own scope orasida aniqlangan o'z doirasi
+    2. Tashqi funksiya o'zgaruvchilari
+    3. Global o'zgaruvchilar
 
     Keling, yopish kontseptsiyasiga misol keltiraylik,
 
@@ -736,6 +736,6 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 32. ### How do you manipulate DOM using a service worker
 
-    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
+    Xizmat xodimi DOMga bevosita kira olmaydi. Lekin u `postMessage` interfeysi orqali yuborilgan xabarlarga javob berish orqali o‘zi boshqaradigan sahifalar bilan bog‘lana oladi va bu sahifalar DOMni boshqarishi mumkin.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
