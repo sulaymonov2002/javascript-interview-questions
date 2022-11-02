@@ -615,3 +615,34 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+25. ### What is Hoisting
+
+    Hoisting JavaScript mexanizmi bo'lib, unda code bajarilishidan oldin o'zgaruvchilar, funksiya deklaratsiyasi va sinflar o'z doirasining yuqori qismiga ko'chiriladi. Esda tutingki, JavaScript faqat deklaratsiyalarni hoisting, ishga tushirishni emas. Keling, o'zgaruvchan yuk ko'tarishning oddiy misolini olaylik,
+
+    ```javascript
+    console.log(message); //output : undefined
+    var message = "The variable Has been hoisted";
+    ```
+
+    Yuqoridagi code tarjimon uchun quyidagi kabi ko'rinadi,
+
+    ```javascript
+    var message;
+    console.log(message);
+    message = "The variable Has been hoisted";
+    ```
+
+    Xuddi shu tarzda, funksiya deklaratsiyasi ham hoisting bo'ladi.
+
+    ```javascript
+    message("Good morning"); //Good morning
+
+    function message(name) {
+      console.log(name);
+    }
+    ```
+
+    Ushbu hoisting funksiyalarni e'lon qilinishidan oldin code(da) xavfsiz ishlatishga imkon beradi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
