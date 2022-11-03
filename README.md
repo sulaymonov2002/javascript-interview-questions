@@ -65,6 +65,10 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 49  | [Web worker ga misol keltiring ?](#give-an-example-of-a-web-worker)                                                                                  |
 | 50  | [DOM-da web worker larning cheklovlari qanday ?](#what-are-the-restrictions-of-web-workers-on-dom)                                                   |
 | 51  | [Promise nima ?](#what-is-a-promise)                                                                                                                           |
+| 52  | [Promise nimaga kerak ?](#why-do-you-need-a-promise)                                                                                                           |
+| 53  | [Promise(ning) uchta holati nima?](#what-are-the-three-states-of-promise)                                                                                     |
+| 54  | [Callback function nima ?](#what-is-a-callback-function)                                                                                                       |
+| 55  | [Callback(lar) nimaga kerak ?](#why-do-we-need-callbacks)                                                                                                             |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -989,5 +993,99 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     1. Window object
     2. Document object
     3. Parent object
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+51. ### What is a promise
+
+    Promise - bu hal qilingan qiymat yoki hal qilinmagan sabab (masalan, tarmoq xatosi) bilan kelajakda bir muncha vaqt bitta qiymat ishlab chiqarishi mumkin bo'lgan ob'ekt. U 3 ta mumkin bo'lgan holatdan birida bo'ladi: bajarilgan, rad etilgan yoki kutilayotgan.
+
+    Promise yaratish sintaksisi quyidagi kabi ko'rinadi:
+
+    ```javascript
+    const promise = new Promise(function (resolve, reject) {
+      // promise description
+    });
+    ```
+
+    Va'dadan foydalanish quyidagicha bo'ladi,
+
+    ```javascript
+    const promise = new Promise(
+      (resolve) => {
+        setTimeout(() => {
+          resolve("I'm a Promise!");
+        }, 5000);
+      },
+      (reject) => {}
+    );
+
+    promise.then((value) => console.log(value));
+    ```
+
+    Promise(ning) harakat oqimi quyidagicha bo'ladi,
+
+    ![Screenshot](images/promises.png)
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+52. ### Why do you need a promise
+
+    Promise(lar) asinxron operatsiyalarni bajarish uchun ishlatiladi. Ular callbacks uchun muqobil yondashuvni taqdim etadilar, bu esa qayta callback hell kamaytirish va toza kodni yozishdir.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+53. ### What are the three states of promise
+
+    Promise(lar) uchta holatga ega:
+
+    1. **Pending:** Bu operatsiya boshlanishidan oldingi promise(ning) dastlabki holati
+    2. **Fulfilled:** Bu holat belgilangan operatsiya tugaganligini bildiradi.
+    3. **Rejected:** Bu holat operatsiya tugallanmaganligini ko'rsatadi. Bunday holda xato qiymati chiqariladi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+54. ### What is a callback function
+
+    Callback function qilish funksiyasi boshqa funksiyaga argument sifatida o'tkaziladigan funksiyadir. Bu funksiya amalni bajarish uchun tashqi funksiya ichida chaqiriladi. Callback funtion qilish funksiyasidan qanday foydalanishni oddiy misol qilib olaylik
+
+    ```javascript
+    function callbackFunction(name) {
+      console.log("Hello " + name);
+    }
+
+    function outerFunction(callback) {
+      let name = prompt("Please enter your name.");
+      callback(name);
+    }
+
+    outerFunction(callbackFunction);
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+55. ### Why do we need callbacks
+
+    Callback function(lar) kerak, chunki JavaScript voqealarga asoslangan tildir. Bu degani, javobni kutish o'rniga JavaScript boshqa voqealarni tinglashda ishlashda davom etadi.API chaqiruvini chaqiruvchi birinchi funksiya (setTimeout tomonidan taqlid qilingan) va xabarni qayd qiluvchi keyingi funksiyaga misol keltiraylik.
+
+    ```javascript
+    function firstFunction() {
+      // Simulate a code delay
+      setTimeout(function () {
+        console.log("First function called");
+      }, 1000);
+    }
+    function secondFunction() {
+      console.log("Second function called");
+    }
+    firstFunction();
+    secondFunction();
+
+    Output;
+    // Second function called
+    // First function called
+    ```
+
+    Natijadan ko'rinib turibdiki, JavaScript birinchi funktsiyaning javobini kutmagan va qolgan code block bajarilgan. Shunday qilib, callback funtion(lar) ma'lum code boshqa code bajarilishini tugatmaguncha bajarilmasligiga ishonch hosil qilish uchun ishlatiladi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
