@@ -818,3 +818,175 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     **Eslatma:** To'g'ri cookie-faylni o'chirib tashlashingizga ishonch hosil qilish uchun cookie-fayl yo'li opsiyasini belgilashingiz kerak. Ba'zi brauzerlar, agar siz yo'l parametrini ko'rsatmasangiz, cookie-fayllarni o'chirishga ruxsat bermaydi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+41. ### What are the differences between cookie, local storage and session storage
+
+    Quyida cookie, local storage va session storage o'rtasidagi farqlar keltirilgan.
+
+    | Feature                                   | Cookie                                           | Local storage       | Session storage    |
+    | ----------------------------------------- | ------------------------------------------------ | ------------------- | ------------------ |
+    | Mijoz yoki server tomonidan kirish mumkin | Ham server tomoni, ham mijoz tomoni              | faqat mijoz tomoni  | faqat mijoz tomoni |
+    | Hayot paytida                             | Muddati tugaydi opsiyasi yordamida sozlanganidek | o'chirilgunga qadar | tab yopilguncha    |
+    | SSL qo'llab-quvvatlash                    | Qo'llab-quvvatlanadi                             | Not supported       | Not supported      |
+    | Maximum data size                         | 4KB                                              | 5 MB                | 5MB                |
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+42. ### What is the main difference between localStorage and sessionStorage
+
+    LocalStorage SessionStorage bilan bir xil, lekin u brauzer yopilgan va qayta ochilganda ham maʼlumotlarni saqlab qoladi (yaʼni uning amal qilish muddati yoʻq), seansStorageʼda esa sahifa seansi tugashi bilan maʼlumotlar tozalanadi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+43. ### How do you access web storage
+
+    Window obyekti mos ravishda `localStorage`(window.localStorage) va `sessionStorage`(window.sessionStorage) xossalariga ega `WindowLocalStorage` va `WindowSessionStorage` obyektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash ob'ektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (session yoki local) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin.
+    Masalan, local storage saqlash ob'ektlarida quyida keltirilgan tarzda o'qishingiz va yozishingiz mumkin
+
+    ```javascript
+    localStorage.setItem("logo", document.getElementById("logo").value);
+    localStorage.getItem("logo");
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+44. ### What are the methods available on session storage
+
+    session storage session ma'lumotlarini o'qish, yozish va tozalash usullarini taqdim etdi
+
+    ```javascript
+    // Save data to sessionStorage
+    sessionStorage.setItem("key", "value");
+
+    // Get saved data from sessionStorage
+    let data = sessionStorage.getItem("key");
+
+    // Remove saved data from sessionStorage
+    sessionStorage.removeItem("key");
+
+    // Remove all saved data from sessionStorage
+    sessionStorage.clear();
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+45. ### What is a storage event and its event handler
+
+    StorageEvent - bu boshqa hujjat kontekstida saqlash joyi o'zgartirilganda paydo bo'ladigan hodisa.
+    Holbuki, saqlash xususiyati - bu saqlash hodisalarini qayta ishlash uchun EventHandler. Sintaksis quyidagi kabi bo'ladi
+
+    ```javascript
+    window.onstorage = functionRef;
+    ```
+
+    Keling, saqlash kaliti va uning qiymatlarini qayd qiluvchi xotira hodisasi ishlovchisidan foydalanish misolini olaylik
+
+    ```javascript
+    window.onstorage = function (e) {
+      console.log(
+        "The " +
+          e.key +
+          " key has been changed from " +
+          e.oldValue +
+          " to " +
+          e.newValue +
+          "."
+      );
+    };
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+46. ### Why do you need web storage
+
+    Web storage yanada xavfsizroq va katta hajmdagi ma'lumotlar website ishlashiga ta'sir qilmasdan locally sifatida saqlanishi mumkin. Bundan tashqari, ma'lumotlar hech qachon serverga o'tkazilmaydi. Shuning uchun bu Cookie-fayllarga qaraganda ko'proq tavsiya etilgan yondashuv.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+47. ### How do you check web storage browser support
+
+    Web storage foydalanishdan oldin brauzerning localStorage va sessionStorage uchun yordamini tekshirishingiz kerak,
+
+    ```javascript
+    if (typeof Storage !== "undefined") {
+      // Code for localStorage/sessionStorage.
+    } else {
+      // Sorry! No Web Storage support..
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+48. ### How do you check web workers browser support
+
+    Uni ishlatishdan oldin web support uchun brauzer yordamini tekshirishingiz kerak
+
+    ```javascript
+    if (typeof Worker !== "undefined") {
+      // code for Web worker support.
+    } else {
+      // Sorry! No Web Worker support..
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+49. ### Give an example of a web worker
+
+    Hisoblash misolida web ishchilaridan foydalanishni boshlash uchun quyidagi bosqichlarni bajarishingiz kerak
+
+    1. Web worker faylini yarating: Hisoblash qiymatini oshirish uchun script yozishingiz kerak. Keling, uni counter.js deb nomlaymiz
+
+    ```javascript
+    let i = 0;
+
+    function timedCount() {
+      i = i + 1;
+      postMessage(i);
+      setTimeout("timedCount()", 500);
+    }
+
+    timedCount();
+    ```
+
+    Bu yerda postMessage() usuli xabarni HTML sahifasiga qaytarish uchun ishlatiladi
+
+    1. Web worker ob'ektini yaratish: Brauzer qo'llab-quvvatlashini tekshirish orqali web worker ob'ektini yaratishingiz mumkin. Keling, bu faylni web_worker_example.js deb nomlaymiz
+
+    ```javascript
+    if (typeof w == "undefined") {
+      w = new Worker("counter.js");
+    }
+    ```
+
+    va biz web worker xabarlar olishimiz mumkin
+
+    ```javascript
+    w.onmessage = function (event) {
+      document.getElementById("message").innerHTML = event.data;
+    };
+    ```
+
+    1. Web worker tugatish: Web worker(lari) xabarlarni tinglashda davom etadilar (hatto tashqi skript tugagandan keyin ham) u tugatilmaguncha. Siz xabarlarni tinglashni tugatish uchun terminate() usulidan foydalanishingiz mumkin.
+
+    ```javascript
+    w.terminate();
+    ```
+
+    1. Web worker(ni) qayta ishlatish: Agar worker o'zgaruvchini aniqlanmagan deb o'rnatsangiz, code(ni) qayta ishlatishingiz mumkin
+
+    ```javascript
+    w = undefined;
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+50. ### What are the restrictions of web workers on DOM
+
+    WebWorkers quyida joylashgan JavaScript obyektlariga kirish huquqiga ega emas, chunki ular tashqi fayllarda aniqlangan
+
+    1. Window object
+    2. Document object
+    3. Parent object
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
