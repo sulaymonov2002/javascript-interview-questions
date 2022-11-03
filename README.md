@@ -64,6 +64,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 48  | [Web workers browser qo'llab-quvvatlashini qanday tekshirish mumkin ?](#how-do-you-check-web-workers-browser-support)                                |
 | 49  | [Web worker ga misol keltiring ?](#give-an-example-of-a-web-worker)                                                                                  |
 | 50  | [DOM-da web worker larning cheklovlari qanday ?](#what-are-the-restrictions-of-web-workers-on-dom)                                                   |
+| 51  | [Promise nima ?](#what-is-a-promise)                                                                                                                           |
 
 1. ### What are the possible ways to create objects in JavaScript
 
