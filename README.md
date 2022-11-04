@@ -69,6 +69,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 53  | [Promise(ning) uchta holati nima?](#what-are-the-three-states-of-promise)                                                                                     |
 | 54  | [Callback function nima ?](#what-is-a-callback-function)                                                                                                       |
 | 55  | [Callback(lar) nimaga kerak ?](#why-do-we-need-callbacks)                                                                                                             |
+| 56  | [Callback hell nima ?](#what-is-a-callback-hell)                                                                                                               |
+| 57  | [Server tomonidan yuborilgan event(lar) nima ?](#what-are-server-sent-events)                                                                                                         |
+| 58  | [Server tomonidan yuborilgan event bildirishnomalarini qanday qabul qilasiz ?](#how-do-you-receive-server-sent-event-notifications)                                                         |
+| 59  | [Server tomonidan yuborilgan event(lar) uchun brauzer yordamini qanday tekshirish mumkin ?](#how-do-you-check-browser-support-for-server-sent-events)                                               |
+| 60  | [Server yuborilgan event(lar) uchun qanday hodisalar mavjud](#what-are-the-events-available-for-server-sent-events)                                                     |
 
 1. ### What are the possible ways to create objects in JavaScript
 
