@@ -1089,3 +1089,67 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Natijadan ko'rinib turibdiki, JavaScript birinchi funktsiyaning javobini kutmagan va qolgan code block bajarilgan. Shunday qilib, callback funtion(lar) ma'lum code boshqa code bajarilishini tugatmaguncha bajarilmasligiga ishonch hosil qilish uchun ishlatiladi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+  
+56. ### What is a callback hell
+
+    Callback Hell bir nechta ichki callback(larga) ega bo'lgan anti-pattern bo'lib, asynchronous mantiq bilan ishlashda code(ni) o'qish va debug dealing qilishni qiyinlashtiradi. callback hell quyida ko'rinadi,
+
+    ```javascript
+    async1(function(){
+        async2(function(){
+            async3(function(){
+                async4(function(){
+                    ....
+                });
+            });
+        });
+    });
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+57. ### What are server-sent events
+
+    Server tomonidan yuborilgan event(lar) (SSE) - bu serverni push texnologiyasi bo'lib, brauzer so'rovga murojaat qilmasdan HTTP ulanishi orqali serverdan avtomatik yangilanishlarni olish imkonini beradi. Bular bir tomonlama aloqa channel(i) - event(lar) faqat serverdan mijozga o'tadi. Bu Facebook/Twitter yangilanishlarida, aksiyalar narxlari yangilanishlarida, yangiliklar tasmalarida va hokazolarda ishlatilgan.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+58. ### How do you receive server-sent event notifications
+
+    EventSource obyekti server tomonidan yuborilgan event bildirishnomalarini olish uchun ishlatiladi. Masalan, siz serverdan quyidagi tarzda xabarlar olishingiz mumkin,
+
+    ```javascript
+    if (typeof EventSource !== "undefined") {
+      var source = new EventSource("sse_generator.js");
+      source.onmessage = function (event) {
+        document.getElementById("output").innerHTML += event.data + "<br>";
+      };
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+59. ### How do you check browser support for server-sent events
+
+    Quyidagi kabi ishlatishdan oldin server tomonidan yuborilgan voqealar uchun brauzerni qo'llab-quvvatlashingiz mumkin,
+
+    ```javascript
+    if (typeof EventSource !== "undefined") {
+      // Server-sent events supported. Let's have some code here!
+    } else {
+      // No server-sent events supported
+    }
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+60. ### What are the events available for server sent events
+
+    Quyida server tomonidan yuborilgan voqealar uchun mavjud voqealar ro'yxati keltirilgan
+    | Event | Description |
+    |---- | ---------
+    | onopen | U serverga ulanish ochilganda ishlatiladi |
+    | onmessage | Ushbu hodisa xabar qabul qilinganda ishlatiladi |
+    | onerror | Xatolik yuzaga kelganda sodir bo'ladi|
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
