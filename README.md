@@ -74,6 +74,16 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 58  | [Server tomonidan yuborilgan event bildirishnomalarini qanday qabul qilasiz ?](#how-do-you-receive-server-sent-event-notifications)                                                         |
 | 59  | [Server tomonidan yuborilgan event(lar) uchun brauzer yordamini qanday tekshirish mumkin ?](#how-do-you-check-browser-support-for-server-sent-events)                                               |
 | 60  | [Server yuborilgan event(lar) uchun qanday hodisalar mavjud](#what-are-the-events-available-for-server-sent-events)                                                     |
+| 61  | [Promise berishning asosiy qoidalari qanday](#what-are-the-main-rules-of-promise)                                                                                         |
+| 62  | [Callback(da) qayta callback nima ?](#what-is-callback-in-callback)                                                                                                     |
+| 63  | [Promise chaining nima ?](#what-is-promise-chaining)                                                                                                             |
+| 64  | [Promise.all nima ?](#what-is-promiseall)                                                                                                                       |
+| 65  | [Promise(da) poyga usulining maqsadi nima ?](#what-is-the-purpose-of-the-race-method-in-promise)                                                                   |
+| 66  | [JavaScript(da) qat'iy rejim nima ?](#what-is-a-strict-mode-in-javascript)                                                                                       |
+| 67  | [Strict mode nimaga kerak ?](#why-do-you-need-strict-mode)                                                                                                       |
+| 68  | [Nima uchun sizga strict mode kerak ?](#how-do-you-declare-strict-mode)                                                                                                 |
+| 69  | [Qo‘sh undovdan maqsad nima ?](#what-is-the-purpose-of-double-exclamation)                                                                           |
+| 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                                 |
 
 1. ### What are the possible ways to create objects in JavaScript
 
