@@ -1302,7 +1302,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    Qo'sh undov yoki inkor (!!) natijada turning mantiqiy ekanligini ta'minlaydi. Agar u noto'g'ri bo'lsa (masalan, 0, null, undefined va hokazo), u noto'g'ri, aks holda rost bo'ladi. Misol uchun, siz quyidagi ibora yordamida IE versiyasini sinab ko'rishingiz mumkin,
 
-    ```javascript
+   ```javascript
     let isIE8 = false;
     isIE8 = !!navigator.userAgent.match(/MSIE 8.0/);
     console.log(isIE8); // returns true or false
@@ -1312,12 +1312,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
     ```javascript
     console.log(navigator.userAgent.match(/MSIE 8.0/)); // returns either an Array or null
+    
     ```
 
     **Eslatma:** Ifodasi !! operator emas, lekin u faqat ikki martta ! operator.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
-
+    
 70. ### What is the purpose of the delete operator
 
     Delete keyword so'zi property va uning qiymatini o'chirish uchun ishlatiladi.
