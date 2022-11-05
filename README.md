@@ -1168,3 +1168,165 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     | onerror | Xatolik yuzaga kelganda sodir bo'ladi|
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+61. ### What are the main rules of promise
+
+    Promise muayyan qoidalar to'plamiga amal qilishi kerak,
+
+    1. Promise - bu standartga mos keladigan `.then()` usulini ta'minlovchi ob'ekt
+    2. Kutilayotgan promise bajarilgan yoki rad etilgan holatga o'tishi mumkin
+    3. Bajarilgan yoki rad etilgan promise hal qilinadi va u boshqa hech qanday holatga o'tmasligi kerak.
+    4. Promise bajarilgandan so'ng, qiymat o'zgarmasligi kerak.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+62. ### What is callback in callback
+
+    Harakatlarni birma-bir bajarish uchun bitta qayta callback(ni) boshqa qayta callback(ga) joylashtirishingiz mumkin. Bu qayta callback(larda) qayta callback(lar) sifatida tanilgan.
+
+    ```javascript
+    loadScript("/script1.js", function (script) {
+      console.log("first script is loaded");
+
+      loadScript("/script2.js", function (script) {
+        console.log("second script is loaded");
+
+        loadScript("/script3.js", function (script) {
+          console.log("third script is loaded");
+          // after all scripts are loaded
+        });
+      });
+    });
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+63. ### What is promise chaining
+
+    Promise(lar) yordamida birin-ketin asinxron vazifalarni bajarish jarayoni promise zanjiri deb nomlanadi. Yakuniy natijani hisoblash uchun promise zanjiriga misol keltiraylik,
+
+    ```javascript
+    new Promise(function (resolve, reject) {
+      setTimeout(() => resolve(1), 1000);
+    })
+      .then(function (result) {
+        console.log(result); // 1
+        return result * 2;
+      })
+      .then(function (result) {
+        console.log(result); // 2
+        return result * 3;
+      })
+      .then(function (result) {
+        console.log(result); // 6
+        return result * 4;
+      });
+    ```
+
+    Yuqoridagi ishlov beruvchilarda natija quyidagi ish oqimi bilan .then() ishlov beruvchilari zanjiriga uzatiladi,
+
+    1. Dastlabki promise 1 soniyada hal qilinadi,
+    2. Shundan so'ng `.then` ishlovchi natijani (1) jurnalga kiritish orqali chaqiriladi va natijada \* 2 qiymati bilan promise qaytariladi.
+    3. Shundan so'ng, qiymat keyingi `.then` ishlov beruvchiga natijani (2) yozib, natijani \* 3 bilan qaytaring.
+    4. Nihoyat, qiymat oxirgi `.then` ishlov beruvchiga natijani (6) yozib, natijani \* 4 bilan qaytaring.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+64. ### What is promise.all
+
+    Promise.all - bu bir qator promise(larni) kiritish (takrorlash) sifatida qabul qiladigan promise va u barcha promise(lar) hal qilinganda yoki ulardan biri rad etilganda hal qilinadi. Masalan, prod.all usulining sintaksisi quyida keltirilgan,
+
+    ```javascript
+    Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
+    ```
+
+    **Eslatma:** Esda tutingki, promise(lar) tartibi (natijani chiqarish) kiritish tartibiga muvofiq saqlanadi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+65. ### What is the purpose of the race method in promise
+
+    Promise.race() usuli birinchi navbatda hal qilingan yoki rad etilgan promise namunasini qaytaradi. Keling, race() usulini misol qilib olaylik, bunda birinchi navbatda promise2 hal qilinadi
+
+    ```javascript
+    var promise1 = new Promise(function (resolve, reject) {
+      setTimeout(resolve, 500, "one");
+    });
+    var promise2 = new Promise(function (resolve, reject) {
+      setTimeout(resolve, 100, "two");
+    });
+
+    Promise.race([promise1, promise2]).then(function (value) {
+      console.log(value); // "two" // Both promises will resolve, but promise2 is faster
+    });
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+66. ### What is a strict mode in javascript
+
+    Strict Mode - bu ECMAScript 5-dagi yangi xususiyat bo'lib, u sizga dastur yoki funksiyani "strict" operatsion kontekstda joylashtirish imkonini beradi. Shunday qilib, u muayyan harakatlarning bajarilishini oldini oladi va ko'proq istisnolarni keltirib chiqaradi. `"use strict"; ` so'zma-so'z ifodasi; brauzerga javascript code(ni) qattiq rejimda ishlatishni buyuradi.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+67. ### Why do you need strict mode
+
+    Strict Mode haqiqiy xatolarga "yomon sintaksis" haqida xabar berib, "xavfsiz" JavaScript yozish uchun foydalidir. Misol uchun, u xatoga yo'l qo'yish orqali tasodifiy global o'zgaruvchini yaratishni yo'q qiladi va shuningdek, yozilmaydigan xususiyatga tayinlash uchun xato qiladi, faqat qabul qiluvchi xususiyat, mavjud bo'lmagan xususiyat, mavjud bo'lmagan o'zgaruvchi yoki mavjud bo'lmagan ob'ekt.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+68. ### How do you declare strict mode
+
+    Strict Mode "use strict" qo'shilishi bilan e'lon qilinadi; script yoki funksiyaning boshiga. Agar script boshida e'lon qilingan bo'lsa, u global scope ega.
+
+    ```javascript
+    "use strict";
+    x = 3.14; // This will cause an error because x is not declared
+    ```
+
+    va agar siz funksiya ichida e'lon qilsangiz, u mahalliy doiraga ega
+
+    ```javascript
+    x = 3.14; // This will not cause an error.
+    myFunction();
+
+    function myFunction() {
+      "use strict";
+      y = 3.14; // This will cause an error
+    }
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+69. ### What is the purpose of double exclamation
+
+   Qo'sh undov yoki inkor (!!) natijada turning mantiqiy ekanligini ta'minlaydi. Agar u noto'g'ri bo'lsa (masalan, 0, null, undefined va hokazo), u noto'g'ri, aks holda rost bo'ladi. Misol uchun, siz quyidagi ibora yordamida IE versiyasini sinab ko'rishingiz mumkin,
+
+    ```javascript
+    let isIE8 = false;
+    isIE8 = !!navigator.userAgent.match(/MSIE 8.0/);
+    console.log(isIE8); // returns true or false
+    ```
+
+    Agar siz ushbu ifodani ishlatmasangiz, u asl qiymatni qaytaradi.
+
+    ```javascript
+    console.log(navigator.userAgent.match(/MSIE 8.0/)); // returns either an Array or null
+    ```
+
+    **Eslatma:** Ifodasi !! operator emas, lekin u faqat ikki martta ! operator.
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
+
+70. ### What is the purpose of the delete operator
+
+    Delete keyword so'zi property va uning qiymatini o'chirish uchun ishlatiladi.
+
+    ```javascript
+    var user = { name: "John", age: 20 };
+    delete user.age;
+
+    console.log(user); // {name: "John"}
+    ```
+
+    **[⬆ Yuqoriga qaytish](#mundarija)**
