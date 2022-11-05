@@ -84,6 +84,37 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 68  | [Nima uchun sizga strict mode kerak ?](#how-do-you-declare-strict-mode)                                                                                                 |
 | 69  | [Qo‘sh undovdan maqsad nima ?](#what-is-the-purpose-of-double-exclamation)                                                                           |
 | 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                                 |
+| 70  | [What is the purpose of the delete operator](#what-is-the-purpose-of-the-delete-operator)                                                                                 |
+| 71  | [What is typeof operator](#what-is-typeof-operator)                                                                                                               |
+| 72  | [What is undefined property](#what-is-undefined-property)                                                                                                         |
+| 73  | [What is null value](#what-is-null-value)                                                                                                                         |
+| 74  | [What is the difference between null and undefined](#what-is-the-difference-between-null-and-undefined)                                                           |
+| 75  | [What is eval](#What-is-eval)                                                                                                                                     |
+| 76  | [What is the difference between window and document](#what-is-the-difference-between-window-and-document)                                                         |
+| 77  | [How do you access history in javascript](#how-do-you-access-history-in-javascript)                                                                               |
+| 78  | [How do you detect caps lock key turned on or not](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                             |
+| 79  | [What is isNaN](#what-is-isnan)                                                                                                                                   |
+| 80  | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables)                       |
+| 81  | [What are global variables](#what-are-global-variables)                                                                                                           |
+| 82  | [What are the problems with global variables](#what-are-the-problems-with-global-variables)                                                                       |
+| 83  | [What is NaN property](#what-is-nan-property)                                                                                                                     |
+| 84  | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function)                                                                             |
+| 85  | [What is an event flow](#what-is-an-event-flow)                                                                                                                   |
+| 86  | [What is event bubbling](#what-is-event-bubbling)                                                                                                                 |
+| 87  | [What is event capturing](#what-is-event-capturing)                                                                                                               |
+| 88  | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)                                                                           |
+| 89  | [How do you find operating system details](#how-do-you-find-operating-system-details)                                                                             |
+| 90  | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |
+| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects)                                     |
+| 92  | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |
+| 93  | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |
+| 94  | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)                                         |
+| 95  | [What is same-origin policy](#what-is-same-origin-policy)                                                                                                         |
+| 96  | [What is the purpose of void 0](#what-is-the-purpose-of-void-0)                                                                                                   |
+| 97  | [Is JavaScript a compiled or interpreted language](#is-javascript-a-compiled-or-interpreted-language)                                                             |
+| 98  | [Is JavaScript a case-sensitive language](#is-javascript-a-case-sensitive-language)                                                                               |
+| 99  | [Is there any relation between Java and JavaScript](#is-there-any-relation-between-java-and-javascript)                                                           |
+| 100 | [What are events](#what-are-events)                                                                                                                               |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -1331,3 +1362,361 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     ```
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+71. ### What is typeof operator
+
+    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+
+    ```javascript
+    typeof "John Abraham"; // Returns "string"
+    typeof (1 + 2); // Returns "number"
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+72. ### What is undefined property
+
+    The undefined property indicates that a variable has not been assigned a value, or declared but not initialized at all. The type of undefined value is undefined too.
+
+    ```javascript
+    var user; // Value is undefined, type is undefined
+    console.log(typeof user); //undefined
+    ```
+
+    Any variable can be emptied by setting the value to undefined.
+
+    ```javascript
+    user = undefined;
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+73. ### What is null value
+
+    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
+    You can empty the variable by setting the value to null.
+
+    ```javascript
+    var user = null;
+    console.log(typeof user); //object
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+74. ### What is the difference between null and undefined
+
+    Below are the main differences between null and undefined,
+
+    | Null                                                                                            | Undefined                                                                                               |
+    | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+    | It is an assignment value which indicates that variable points to no object.                    | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
+    | Type of null is object                                                                          | Type of undefined is undefined                                                                          |
+    | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.            |
+    | Indicates the absence of a value for a variable                                                 | Indicates absence of variable itself                                                                    |
+    | Converted to zero (0) while performing primitive operations                                     | Converted to NaN while performing primitive operations                                                  |
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+75. ### What is eval
+
+    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+
+    ```javascript
+    console.log(eval("1 + 2")); //  3
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+76. ### What is the difference between window and document
+
+    Below are the main differences between window and document,
+
+    | Window                                                                        | Document                                                                                      |
+    | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+    | It is the root level element in any web page                                  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
+    | By default window object is available implicitly in the page                  | You can access it via window.document or document.                                            |
+    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementsByTagName, createElement etc              |
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+77. ### How do you access history in javascript
+
+    The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+
+    ```javascript
+    function goBack() {
+      window.history.back();
+    }
+    function goForward() {
+      window.history.forward();
+    }
+    ```
+
+    **Note:** You can also access history without window prefix.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+78. ### How do you detect caps lock key turned on or not
+
+    The `mouseEvent getModifierState()` is used to return a boolean value that indicates whether the specified modifier key is activated or not. The modifiers such as CapsLock, ScrollLock and NumLock are activated when they are clicked, and deactivated when they are clicked again.
+
+    Let's take an input element to detect the CapsLock on/off behavior with an example,
+
+    ```html
+    <input type="password" onmousedown="enterInput(event)" />
+
+    <p id="feedback"></p>
+
+    <script>
+      function enterInput(e) {
+        var flag = e.getModifierState("CapsLock");
+        if (flag) {
+          document.getElementById("feedback").innerHTML = "CapsLock activated";
+        } else {
+          document.getElementById("feedback").innerHTML =
+            "CapsLock not activated";
+        }
+      }
+    </script>
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+79. ### What is isNaN
+
+    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+
+    ```javascript
+    isNaN("Hello"); //true
+    isNaN("100"); //false
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+80. ### What are the differences between undeclared and undefined variables
+
+    Below are the major differences between undeclared(not defined) and undefined variables,
+
+    | undeclared                                                                                  | undefined                                                                              |
+    | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+    | These variables do not exist in a program and are not declared                              | These variables declared in the program but have not assigned any value                |
+    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned. |
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+81. ### What are global variables
+
+    Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+
+    ```javascript
+    msg = "Hello"; // var is missing, it becomes global variable
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+82. ### What are the problems with global variables
+
+    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+83. ### What is NaN property
+
+    The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+
+    ```javascript
+    Math.sqrt(-1);
+    parseInt("Hello");
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+84. ### What is the purpose of isFinite function
+
+    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+
+    ```javascript
+    isFinite(Infinity); // false
+    isFinite(NaN); // false
+    isFinite(-Infinity); // false
+
+    isFinite(100); // true
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+85. ### What is an event flow
+
+    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
+    There are two ways of event flow
+
+    1. Top to Bottom(Event Capturing)
+    2. Bottom to Top (Event Bubbling)
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+86. ### What is event bubbling
+
+    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+87. ### What is event capturing
+
+    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+88. ### How do you submit a form using JavaScript
+
+    You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
+
+    ```javascript
+    function submit() {
+      document.forms[0].submit();
+    }
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+89. ### How do you find operating system details
+
+    The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+
+    ```javascript
+    console.log(navigator.platform);
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+90. ### What is the difference between document load and DOMContentLoaded events
+
+    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+91. ### What is the difference between native, host and user objects
+
+    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
+    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
+    `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+92. ### What are the tools or techniques used for debugging JavaScript code
+
+    You can use below tools or techniques for debugging javascript
+
+    1. Chrome Devtools
+    2. debugger statement
+    3. Good old console.log statement
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+93. ### What are the pros and cons of promises over callbacks
+
+    Below are the list of pros and cons of promises over callbacks,
+
+    **Pros:**
+
+    1. It avoids callback hell which is unreadable
+    2. Easy to write sequential asynchronous code with .then()
+    3. Easy to write parallel asynchronous code with Promise.all()
+    4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+
+    **Cons:**
+
+    1. It makes little complex code
+    2. You need to load a polyfill if ES6 is not supported
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+94. ### What is the difference between an attribute and a property
+
+    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+
+    ```javascript
+    <input type="text" value="Name:">
+    ```
+
+    You can retrieve the attribute value as below,
+
+    ```javascript
+    const input = document.querySelector("input");
+    console.log(input.getAttribute("value")); // Good morning
+    console.log(input.value); // Good morning
+    ```
+
+    And after you change the value of the text field to "Good evening", it becomes like
+
+    ```javascript
+    console.log(input.getAttribute("value")); // Good evening
+    console.log(input.value); // Good evening
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+95. ### What is same-origin policy
+
+    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+96. ### What is the purpose of void 0
+
+    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
+    For example, the below link notify the message without reloading the page
+
+    ```javascript
+    <a href="JavaScript:void(0);" onclick="alert('Well done!')">
+      Click Me!
+    </a>
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+97. ### Is JavaScript a compiled or interpreted language
+
+    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+98. ### Is JavaScript a case-sensitive language
+
+    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+99. ### Is there any relation between Java and JavaScript
+
+    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+100. ### What are events
+
+     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+
+     1. Web page has finished loading
+     2. Input field was changed
+     3. Button was clicked
+
+     Let's describe the behavior of click event for button element,
+
+     ```javascript
+     <!doctype html>
+     <html>
+      <head>
+        <script>
+          function greeting() {
+            alert('Hello! Good morning');
+          }
+        </script>
+      </head>
+      <body>
+        <button type="button" onclick="greeting()">Click me</button>
+      </body>
+     </html>
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
