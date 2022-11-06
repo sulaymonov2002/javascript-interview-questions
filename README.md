@@ -1365,14 +1365,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 71. ### What is typeof operator
 
-    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+    JavaScript o'zgaruvchisi turini topish uchun JavaScript typeof operatoridan foydalanishingiz mumkin. U o'zgaruvchi yoki ifoda turini qaytaradi.
 
     ```javascript
     typeof "John Abraham"; // Returns "string"
     typeof (1 + 2); // Returns "number"
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 72. ### What is undefined property
 
