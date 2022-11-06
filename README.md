@@ -1404,17 +1404,17 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 74. ### What is the difference between null and undefined
 
-    Below are the main differences between null and undefined,
+    Quyida null va undefined o'rtasidagi asosiy farqlar keltirilgan,
 
     | Null                                                                                            | Undefined                                                                                               |
     | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-    | It is an assignment value which indicates that variable points to no object.                    | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
+    | Bu o'zgaruvchining hech qanday ob'ektga ishora qilmasligini ko'rsatadigan tayinlash qiymati.                    | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas. |
     | Type of null is object                                                                          | Type of undefined is undefined                                                                          |
-    | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.            |
-    | Indicates the absence of a value for a variable                                                 | Indicates absence of variable itself                                                                    |
-    | Converted to zero (0) while performing primitive operations                                     | Converted to NaN while performing primitive operations                                                  |
+    | Null qiymat nol, bo'sh yoki mavjud bo'lmagan havolani ifodalovchi ibtidoiy qiymatdir. | Undefined qiymat o'zgaruvchiga qiymat berilmaganda ishlatiladigan ibtidoiy qiymatdir.            |
+    | O'zgaruvchi uchun qiymat yo'qligini ko'rsatadi                                                 | O'zgaruvchining o'zi yo'qligini ko'rsatadi                                                                    |
+    | Primitiv amallarni bajarishda nolga (0) aylantiriladi                                     | Primitiv operatsiyalarni bajarishda NaN ga aylantiriladi                                                  |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 75. ### What is eval
 
