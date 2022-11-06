@@ -1418,13 +1418,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 75. ### What is eval
 
-    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+    eval() funksiyasi satr sifatida taqdim etilgan JavaScript code(ni) baholaydi. Satr JavaScript ifodasi, o'zgaruvchi, bayonot yoki bayonotlar ketma-ketligi bo'lishi mumkin.
 
     ```javascript
     console.log(eval("1 + 2")); //  3
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 76. ### What is the difference between window and document
 
