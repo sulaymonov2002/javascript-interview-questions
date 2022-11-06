@@ -1440,7 +1440,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 77. ### How do you access history in javascript
 
-    The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+    window.history obyekti brauzer tarixini o'z ichiga oladi. Tarixdagi oldingi va keyingi URL-larni back() va next() usullaridan foydalanib yuklashingiz mumkin.
 
     ```javascript
     function goBack() {
@@ -1451,9 +1451,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     }
     ```
 
-    **Note:** You can also access history without window prefix.
+    **Eslatma:** Siz history(ga) window prefix ham kirishingiz mumkin.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 78. ### How do you detect caps lock key turned on or not
 
