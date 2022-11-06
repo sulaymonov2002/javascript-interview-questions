@@ -1376,20 +1376,20 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 72. ### What is undefined property
 
-    The undefined property indicates that a variable has not been assigned a value, or declared but not initialized at all. The type of undefined value is undefined too.
+    Undefined property o'zgaruvchiga qiymat berilmaganligini yoki e'lon qilinmagan, lekin umuman ishga tushirilmaganligini ko'rsatadi. Undefined property turi ham aniqlanmagan.
 
     ```javascript
     var user; // Value is undefined, type is undefined
     console.log(typeof user); //undefined
     ```
 
-    Any variable can be emptied by setting the value to undefined.
+    Qiymatni aniqlanmagan qilib belgilash orqali har qanday o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     user = undefined;
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 73. ### What is null value
 
