@@ -1393,15 +1393,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 73. ### What is null value
 
-    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
-    You can empty the variable by setting the value to null.
+    Null qiymati har qanday ob'ekt qiymatining ataylab yo'qligini anglatadi. Bu JavaScript-ning primitive value(laridan) biridir. Null qiymat turi ob'ekt hisoblanadi. Qiymatni null ga o'rnatish orqali o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     var user = null;
     console.log(typeof user); //object
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#tmundarija)**
 
 74. ### What is the difference between null and undefined
 
