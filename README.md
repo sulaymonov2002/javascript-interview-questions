@@ -1428,15 +1428,15 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 76. ### What is the difference between window and document
 
-    Below are the main differences between window and document,
+    Quyida window va document o'rtasidagi asosiy farqlar keltirilgan,
 
     | Window                                                                        | Document                                                                                      |
     | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-    | It is the root level element in any web page                                  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
-    | By default window object is available implicitly in the page                  | You can access it via window.document or document.                                            |
-    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementsByTagName, createElement etc              |
+    | Bu har qanday web page ildiz darajasining elementidir                                  | Bu window ob'ektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan. |
+    | Odatiy bo'lib window ob'ekti sahifada bevosita mavjud                  | Unga window.document yoki document orqali kirishingiz mumkin.                                            |
+    | Unda alert(), confirm() kabi usullar va hujjat, joylashuv kabi xususiyatlar mavjud | U getElementById, getElementsByTagName, createElement va boshqalar kabi usullarni taqdim etadi              |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 77. ### How do you access history in javascript
 
