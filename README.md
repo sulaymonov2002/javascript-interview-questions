@@ -1505,7 +1505,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 81. ### What are global variables
 
-    Global o'zgaruvchilar bilan bog'liq muammo mahalliy va global miqyosdagi o'zgaruvchilar nomlarining ziddiyatidir. Global o'zgaruvchilarga tayanadigan kodni disk raskadrovka qilish va sinab ko'rish ham qiyin.
+    Global o'zgaruvchilar code(ning) butun uzunligi davomida hech qanday qamrovsiz mavjud bo'lganlardir. var keyword so'zi local o'zgaruvchini e'lon qilish uchun ishlatiladi, lekin agar uni o'tkazib yuborsangiz, u global o'zgaruvchiga aylanadi.
 
     ```javascript
     msg = "Hello"; // var is missing, it becomes global variable
