@@ -1515,9 +1515,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 82. ### What are the problems with global variables
 
-    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+    Global o'zgaruvchilar bilan bog'liq muammo local va global miqyosdagi o'zgaruvchilar nomlarining ziddiyatidir. Global o'zgaruvchilarga tayanadigan code(ni) disk raskadrovka qilish va sinab ko'rish ham qiyin.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 83. ### What is NaN property
 
