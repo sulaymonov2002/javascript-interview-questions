@@ -1457,9 +1457,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 78. ### How do you detect caps lock key turned on or not
 
-    The `mouseEvent getModifierState()` is used to return a boolean value that indicates whether the specified modifier key is activated or not. The modifiers such as CapsLock, ScrollLock and NumLock are activated when they are clicked, and deactivated when they are clicked again.
+    `MouseEvent getModifierState()` ko'rsatilgan modifier key faollashtirilgan yoki yoqilmaganligini ko'rsatadigan mantiqiy qiymatni qaytarish uchun ishlatiladi. CapsLock, ScrollLock va NumLock kabi modifiers(lar) bosilganda faollashadi va yana bosilganda o'chiriladi.
 
-    Let's take an input element to detect the CapsLock on/off behavior with an example,
+    Keling, misol bilan CapsLock-ni on/off harakatini aniqlash uchun kirish elementini olaylik,
 
     ```html
     <input type="password" onmousedown="enterInput(event)" />
@@ -1479,7 +1479,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     </script>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 79. ### What is isNaN
 
