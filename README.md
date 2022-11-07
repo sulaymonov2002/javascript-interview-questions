@@ -1483,14 +1483,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 79. ### What is isNaN
 
-    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+    isNaN() funksiyasi qiymat noqonuniy son (Not-a-Number) yoki yoʻqligini aniqlash uchun ishlatiladi. ya'ni, agar qiymat NaN ga teng bo'lsa, bu funksiya true ni qaytaradi. Aks holda u false qaytaradi.
 
     ```javascript
     isNaN("Hello"); //true
     isNaN("100"); //false
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 80. ### What are the differences between undeclared and undefined variables
 
