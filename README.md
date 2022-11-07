@@ -1494,14 +1494,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 80. ### What are the differences between undeclared and undefined variables
 
-    Below are the major differences between undeclared(not defined) and undefined variables,
+    Quyida e'lon qilinmagan (aniqlanmagan) va aniqlanmagan o'zgaruvchilar o'rtasidagi asosiy farqlar,
 
     | undeclared                                                                                  | undefined                                                                              |
     | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-    | These variables do not exist in a program and are not declared                              | These variables declared in the program but have not assigned any value                |
-    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned. |
+    | Bu o'zgaruvchilar program mavjud emas va e'lon qilinmaydi                              | Ushbu o'zgaruvchilar program e'lon qilingan, ammo hech qanday qiymat tayinlanmagan                |
+    | Agar siz e'lon qilinmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, ish vaqti xatosi paydo bo'ladi. | Agar siz aniqlanmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, aniqlanmagan qiymat qaytariladi. |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 81. ### What are global variables
 
