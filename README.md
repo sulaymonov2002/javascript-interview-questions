@@ -1531,7 +1531,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 84. ### What is the purpose of isFinite function
 
-    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+    isFinite() funksiyasi sonning cheklangan, qonuniy son ekanligini aniqlash uchun ishlatiladi. Qiymat +infinity, -infinity yoki NaN (Not-a-Number) bo'lsa, u noto'g'ri, aks holda u haqiqatni qaytaradi.
 
     ```javascript
     isFinite(Infinity); // false
@@ -1541,23 +1541,23 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     isFinite(100); // true
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 85. ### What is an event flow
 
-    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
-    There are two ways of event flow
+    Event flow - web page voqea qabul qilish tartibi. Turli boshqa elementlarga joylashtirilgan elementni bosganingizda, sizning click o'z manziliga yoki maqsad elementiga yetib borgunga qadar, u global window obyekti bilan yuqoridan boshlab, birinchi navbatda, har bir asosiy element uchun bosish hodisasini ishga tushirishi kerak.
+    Event flow ikki yo'li mavjud
 
-    1. Top to Bottom(Event Capturing)
-    2. Bottom to Top (Event Bubbling)
+    1. Yuqoridan pastgacha (Event Capturing)
+    2. Pastdan tepaga (Event Bubbling)
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 86. ### What is event bubbling
 
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 87. ### What is event capturing
 
