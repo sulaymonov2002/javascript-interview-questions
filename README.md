@@ -1579,13 +1579,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 89. ### How do you find operating system details
 
-    The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+    window.navigator ob'ekti tashrif buyuruvchi brauzerining OS tafsilotlari haqidagi ma'lumotlarni o'z ichiga oladi. Ba'zi OS properties platforma property ostida mavjud.
 
     ```javascript
     console.log(navigator.platform);
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 90. ### What is the difference between document load and DOMContentLoaded events
 
