@@ -1561,9 +1561,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 87. ### What is event capturing
 
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+    Event capturing - bu hodisani tarqatishning bir turi bo'lib, unda hodisa birinchi navbatda eng tashqi element tomonidan capture qilinadi, va keyin bir xil joylashtirish hierarchy maqsadli elementning avlodlarida (bolalarida) eng ichki DOM elementiga yetguncha ketma-ket ishga tushadi.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 88. ### How do you submit a form using JavaScript
 
