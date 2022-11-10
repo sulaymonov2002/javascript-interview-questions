@@ -1326,7 +1326,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 69. ### What is the purpose of double exclamation
 
@@ -1589,17 +1589,17 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 90. ### What is the difference between document load and DOMContentLoaded events
 
-    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+    `DOMContentLoaded` hodisasi boshlang'ich HTML hujjati to'liq yuklangan va tahlil qilinganda, aktivlar (uslublar jadvallari, tasvirlar va pastki ramkalar) yuklashni tugatilishini kutmasdan ishga tushiriladi. Holbuki, load hodisasi butun sahifa yuklanganda, shu jumladan barcha bog'liq resurslar (uslublar jadvallari, rasmlar) ishga tushiriladi.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 91. ### What is the difference between native, host and user objects
 
-    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
-    `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+    `Native objects` ECMAScript specification bilan belgilangan JavaScript tilining bir qismi bo'lgan ob'ektlardir. Masalan, ECMAScript spetsifikatsiyasida belgilangan String, Math, RegExp, Object, Function va hokazo asosiy ob'ektlar.
+    `Host objects` brauzer yoki ish vaqti muhiti (Node) tomonidan taqdim etilgan ob'ektlardir. Masalan, window, XmlHttpRequest, DOM tugunlari va boshqalar xost ob'ektlari sifatida qabul qilinadi.
+    `User objects` JavaScript code(dida) belgilangan ob'ektlardir. Masalan, profil ma'lumotlari uchun yaratilgan Foydalanuvchi ob'ektlari.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 92. ### What are the tools or techniques used for debugging JavaScript code
 
@@ -1609,7 +1609,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     2. debugger statement
     3. Good old console.log statement
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 93. ### What are the pros and cons of promises over callbacks
 
@@ -1627,7 +1627,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     1. It makes little complex code
     2. You need to load a polyfill if ES6 is not supported
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 94. ### What is the difference between an attribute and a property
 
@@ -1652,13 +1652,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     console.log(input.value); // Good evening
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 95. ### What is same-origin policy
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 96. ### What is the purpose of void 0
 
@@ -1671,25 +1671,25 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     </a>
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 97. ### Is JavaScript a compiled or interpreted language
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 98. ### Is JavaScript a case-sensitive language
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 99. ### Is there any relation between Java and JavaScript
 
     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 100. ### What are events
 
@@ -1717,4 +1717,4 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      </html>
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
