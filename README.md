@@ -1555,7 +1555,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 86. ### What is event bubbling
 
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+    Event bubbling - bu hodisa tarqalishning bir turi bo'lib event birinchi navbatda eng ichki maqsad elementida boshlanadi, va keyin eng tashqi DOM elementiga yetguncha bir xil joylashtirish hierarchy maqsadli elementning ajdodlarida (ota-onalarida) ketma-ket ishga tushadi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
 
