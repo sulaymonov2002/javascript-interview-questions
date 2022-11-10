@@ -83,38 +83,37 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 67  | [Strict mode nimaga kerak ?](#why-do-you-need-strict-mode)                                                                                                       |
 | 68  | [Nima uchun sizga strict mode kerak ?](#how-do-you-declare-strict-mode)                                                                                                 |
 | 69  | [Qo‘sh undovdan maqsad nima ?](#what-is-the-purpose-of-double-exclamation)                                                                           |
-| 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                                 |
-| 70  | [What is the purpose of the delete operator](#what-is-the-purpose-of-the-delete-operator)                                                                                 |
-| 71  | [What is typeof operator](#what-is-typeof-operator)                                                                                                               |
-| 72  | [What is undefined property](#what-is-undefined-property)                                                                                                         |
-| 73  | [What is null value](#what-is-null-value)                                                                                                                         |
-| 74  | [What is the difference between null and undefined](#what-is-the-difference-between-null-and-undefined)                                                           |
-| 75  | [What is eval](#What-is-eval)                                                                                                                                     |
-| 76  | [What is the difference between window and document](#what-is-the-difference-between-window-and-document)                                                         |
-| 77  | [How do you access history in javascript](#how-do-you-access-history-in-javascript)                                                                               |
-| 78  | [How do you detect caps lock key turned on or not](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                             |
-| 79  | [What is isNaN](#what-is-isnan)                                                                                                                                   |
-| 80  | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables)                       |
-| 81  | [What are global variables](#what-are-global-variables)                                                                                                           |
-| 82  | [What are the problems with global variables](#what-are-the-problems-with-global-variables)                                                                       |
-| 83  | [What is NaN property](#what-is-nan-property)                                                                                                                     |
-| 84  | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function)                                                                             |
-| 85  | [What is an event flow](#what-is-an-event-flow)                                                                                                                   |
-| 86  | [What is event bubbling](#what-is-event-bubbling)                                                                                                                 |
-| 87  | [What is event capturing](#what-is-event-capturing)                                                                                                               |
-| 88  | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)                                                                           |
-| 89  | [How do you find operating system details](#how-do-you-find-operating-system-details)                                                                             |
-| 90  | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |
-| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects)                                     |
-| 92  | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |
-| 93  | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |
-| 94  | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)                                         |
-| 95  | [What is same-origin policy](#what-is-same-origin-policy)                                                                                                         |
-| 96  | [What is the purpose of void 0](#what-is-the-purpose-of-void-0)                                                                                                   |
-| 97  | [Is JavaScript a compiled or interpreted language](#is-javascript-a-compiled-or-interpreted-language)                                                             |
-| 98  | [Is JavaScript a case-sensitive language](#is-javascript-a-case-sensitive-language)                                                                               |
-| 99  | [Is there any relation between Java and JavaScript](#is-there-any-relation-between-java-and-javascript)                                                           |
-| 100 | [What are events](#what-are-events)                                                                                                                               |
+| 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                                  |
+| 71  | [typeof operator nima ?](#what-is-typeof-operator)                                                                                                               |
+| 72  | [undefined property nima ?](#what-is-undefined-property)                                                                                                         |
+| 73  | [null value nima ?](#what-is-null-value)                                                                                                                         |
+| 74  | [Null va undefined o'rtasidagi farq nima ?](#what-is-the-difference-between-null-and-undefined)                                                           |
+| 75  | [eval nima ?](#What-is-eval)                                                                                                                                     |
+| 76  | [Window va document o'rtasidagi farq nima ?](#what-is-the-difference-between-window-and-document)                                                         |
+| 77  | [JavaScript(da) history(ga) qanday kirish mumkin ?](#how-do-you-access-history-in-javascript)                                                                               |
+| 78  | [Caps lock tugmachasi yoqilgan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                             |
+| 79  | [isNaN nima ?](#what-is-isnan)                                                                                                                                   |
+| 80  | [undeclared va undefined o'zgaruvchilari o'rtasidagi farqlar qanday ?](#what-are-the-differences-between-undeclared-and-undefined-variables)                       |
+| 81  | [Global variables nima ?](#what-are-global-variables)                                                                                                           |
+| 82  | [Global variabl(lar) bilan qanday muammolar bor ?](#what-are-the-problems-with-global-variables)                                                                       |
+| 83  | [NaN property nima ?](#what-is-nan-property)                                                                                                                     |
+| 84  | [isFinite funksiyasining maqsadi nima ?](#what-is-the-purpose-of-isfinite-function)                                                                             |
+| 85  | [Event flow nima ?](#what-is-an-event-flow)                                                                                                                   |
+| 86  | [Event bubbling nima ?](#what-is-event-bubbling)                                                                                                                 |
+| 87  | [Event capturing nima ?](#what-is-event-capturing)                                                                                                               |
+| 88  | [Qanday qilib JavaScript-dan foydalanib shaklni yuborasiz ?](#how-do-you-submit-a-form-using-javascript)                                                                           |
+| 89  | [Operating system tafsilotlarini qanday topish mumkin ?](#how-do-you-find-operating-system-details)                                                                             |
+| 90  | [Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima ?](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |                                      
+| 91  | [Native, host va user objects o'rtasidagi farq nima ?](#what-is-the-difference-between-native-host-and-user-objects)                                     |                           
+| 92  | [JavaScript code(ni) tuzatish uchun qanday vositalar yoki usullar qo'llaniladi ?](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |                                 
+| 93  | [Callbacks orqali promise(ning) qanday ijobiy va salbiy tomonlari bor ?](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |                   
+| 94  | [Attribute va property o'rtasidagi farq nima ?](#what-is-the-difference-between-an-attribute-and-a-property)                                         |                        
+| 95  | [Same-origin policy nima ?](#what-is-same-origin-policy)                                                                                                         |
+| 96  | [Void 0 ning maqsadi nima ?](#what-is-the-purpose-of-void-0)                                                                                                   |
+| 97  | [JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi ?](#is-javascript-a-compiled-or-interpreted-language)                                                             |
+| 98  | [JavaScript case-sensitive harflarga sezgir tilmi ?](#is-javascript-a-case-sensitive-language)                                                                               |
+| 99  | [Java va JavaScript o'rtasida bog'liqlik bormi?](#is-there-any-relation-between-java-and-javascript)                                                           |
+| 100 | [event(lar) nima ?](#what-are-events)                                                                                                                               |
 
 1. ### What are the possible ways to create objects in JavaScript
 
