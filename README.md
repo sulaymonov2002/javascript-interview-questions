@@ -1567,7 +1567,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 88. ### How do you submit a form using JavaScript
 
-    You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
+    Form `document.forms[0].submit()` yordamida yuborishingiz mumkin. Form(GA) kiritilgan barcha ma'lumotlar onsubmit event ishlov beruchisi yordamida yuboriladi.
 
     ```javascript
     function submit() {
@@ -1575,7 +1575,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 89. ### How do you find operating system details
 
