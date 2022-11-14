@@ -1889,3 +1889,148 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ECMAScript JavaScript asosini tashkil etuvchi script tilidir. ECMAScript ECMA xalqaro standartlar tashkiloti tomonidan ECMA-262 va ECMA-402 spetsifikatsiyalarida standartlashtirilgan. ECMAScript ning birinchi nashri 1997 yilda chiqarilgan.
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
+
+111. ### What is JSON
+
+     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+112. ### What are the syntax rules of JSON
+
+     Quyida JSON sintaksisi qoidalari ro'yxati keltirilgan
+
+     1. Ma'lumotlar name/value juftliklarida
+     2. Ma'lumotlar vergul bilan ajratiladi
+     3. Curly qavslar object(larni) ushlab turadi
+     4. Kvadrat qavslar array(larni) ushlab turadi
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+113. ### What is the purpose JSON stringify
+
+     Veb-serverga ma'lumotlarni yuborishda ma'lumotlar string formatida bo'lishi kerak. Bunga JSON obyektini stringify() usuli yordamida satrga aylantirish orqali erishishingiz mumkin.
+
+     ```javascript
+     var userJSON = { name: "John", age: 31 };
+     var userString = JSON.stringify(userJSON);
+     console.log(userString); //"{"name":"John","age":31}"
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+114. ### How do you parse JSON string
+
+     Veb-serverdan ma'lumotlarni qabul qilishda ma'lumotlar har doim string formatida bo'ladi. Lekin bu satr qiymatini parse() usuli yordamida JavaScript object(ga) aylantirishingiz mumkin.
+
+     ```javascript
+     var userString = '{"name":"John","age":31}';
+     var userJSON = JSON.parse(userString);
+     console.log(userJSON); // {name: "John", age: 31}
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+115. ### Why do you need JSON
+
+     Brauzer va server o'rtasida ma'lumot almashishda ma'lumotlar faqat matn bo'lishi mumkin. JSON faqat matn bo'lgani uchun uni serverga va serverdan osongina yuborish va istalgan dasturlash tili tomonidan ma'lumotlar formati sifatida foydalanish mumkin.
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+116. ### What are PWAs
+
+     Progressiv veb-ilovalar (PWA) - bu HTML, CSS va JavaScript kabi umumiy veb-texnologiyalar yordamida yaratilgan, internet orqali yetkazib beriladigan mobil ilovaning bir turi. Ushbu PWA'lar serverlarga joylashtiriladi, URL manzillari orqali kirish mumkin va qidiruv tizimlari tomonidan indekslanadi.
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+117. ### What is the purpose of clearTimeout method
+
+     ClearTimeout() funksiyasi javascriptda setTimeout() funktsiyasi tomonidan o'rnatilgan vaqt tugashini tozalash uchun ishlatiladi.ya'ni setTimeout() funksiyasining qaytish qiymati o'zgaruvchida saqlanadi va taymerni tozalash uchun clearTimeout() funksiyasiga o'tkaziladi.
+
+     Masalan, quyidagi setTimeout usuli xabarni 3 soniyadan keyin ko'rsatish uchun ishlatiladi. Bu vaqt tugashi clearTimeout() usuli bilan tozalanishi mumkin.
+
+     ```javascript
+     <script>
+     var msg;
+     function greeting() {
+        alert('Good morning');
+     }
+     function start() {
+       msg =setTimeout(greeting, 3000);
+
+     }
+
+     function stop() {
+         clearTimeout(msg);
+     }
+     </script>
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+118. ### What is the purpose of clearInterval method
+
+     ClearInterval() funksiyasi javascriptda setInterval() funksiyasi tomonidan belgilangan intervalni tozalash uchun ishlatiladi. ya'ni, setInterval() funktsiyasi tomonidan qaytarilgan qiymat o'zgaruvchida saqlanadi va intervalni tozalash uchun clearInterval() funksiyasiga o'tkaziladi.
+
+     Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'llaniladi. Ushbu intervalni clearInterval() usuli bilan tozalash mumkin.
+
+     ```javascript
+     <script>
+     var msg;
+     function greeting() {
+        alert('Good morning');
+     }
+     function start() {
+       msg = setInterval(greeting, 3000);
+
+     }
+
+     function stop() {
+         clearInterval(msg);
+     }
+     </script>
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+119. ### How do you redirect new page in javascript
+
+     Vanilla JavaScript-da siz window object(ning) `location` xususiyatidan foydalanib, yangi sahifaga yo'naltirishingiz mumkin. Sintaksis quyidagicha bo'ladi:
+
+     ```javascript
+     function redirect() {
+       window.location.href = "newPage.html";
+     }
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
+
+120. ### How do you check whether a string contains a substring
+
+     String(da) substring mavjud yoki yo'qligini tekshirishning 3 ta mumkin bo'lgan usuli mavjud,
+
+     1. **Foydalanuvchi quyidagilarni o'z ichiga oladi:** ES6 bilan ta'minlangan `String.prototype.includes` satrni sinash usuli pastki qatorni o'z ichiga oladi
+
+     ```javascript
+     var mainString = "hello",
+       subString = "hell";
+     mainString.includes(subString);
+     ```
+
+     1. **Using indexOf:** ES5 yoki undan kattaroq muhitda siz pastki qator indeksini qaytaradigan `String.prototype.indexOf` dan foydalanishingiz mumkin. Agar indeks qiymati -1 ga teng bo'lmasa, bu pastki satr asosiy satrda mavjudligini anglatadi.
+
+     ```javascript
+     var mainString = "hello",
+       subString = "hell";
+     mainString.indexOf(subString) !== -1;
+     ```
+
+     1. **Using RegEx:** Kengaytirilgan yechim muntazam ifodalarni sinovdan o'tkazish usulidan (`RegExp.test`) foydalanmoqda, bu oddiy iboralarga qarshi test qilish imkonini beradi.
+
+     ```javascript
+     var mainString = "hello",
+       regex = /hell/;
+     regex.test(mainString);
+     ```
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
