@@ -2034,3 +2034,503 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ```
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
+
+121. ### How do you validate an email in javascript
+
+     You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
+
+     ```javascript
+     function validateEmail(email) {
+       var re =
+         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       return re.test(String(email).toLowerCase());
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+     The above regular expression accepts unicode characters.
+
+122. ### How do you get the current url with javascript
+
+     You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
+
+     ```javascript
+     console.log("location.href", window.location.href); // Returns full URL
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+123. ### What are the various url properties of location object
+
+     The below `Location` object properties can be used to access URL components of the page,
+
+     1. href - The entire URL
+     2. protocol - The protocol of the URL
+     3. host - The hostname and port of the URL
+     4. hostname - The hostname of the URL
+     5. port - The port number in the URL
+     6. pathname - The path name of the URL
+     7. search - The query portion of the URL
+     8. hash - The anchor portion of the URL
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+124. ### How do get query string values in javascript
+
+     You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
+
+     ```javascript
+     const urlParams = new URLSearchParams(window.location.search);
+     const clientCode = urlParams.get("clientCode");
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+125. ### How do you check if a key exists in an object
+
+     You can check whether a key exists in an object or not using three approaches,
+
+     1. **Using in operator:** You can use the in operator whether a key exists in an object or not
+
+     ```javascript
+     "key" in obj;
+     ```
+
+     and If you want to check if a key doesn't exist, remember to use parenthesis,
+
+     ```javascript
+     !("key" in obj);
+     ```
+
+     1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+
+     ```javascript
+     obj.hasOwnProperty("key"); // true
+     ```
+
+     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+
+     ```javascript
+     const user = {
+       name: "John",
+     };
+
+     console.log(user.name !== undefined); // true
+     console.log(user.nickName !== undefined); // false
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+126. ### How do you loop through or enumerate javascript object
+
+     You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
+
+     ```javascript
+     var object = {
+       k1: "value1",
+       k2: "value2",
+       k3: "value3",
+     };
+
+     for (var key in object) {
+       if (object.hasOwnProperty(key)) {
+         console.log(key + " -> " + object[key]); // k1 -> value1 ...
+       }
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+127. ### How do you test for an empty object
+
+     There are different solutions based on ECMAScript versions
+
+     1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
+
+     ```javascript
+     Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
+     ```
+
+     1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
+
+     ```javascript
+     Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
+     ```
+
+     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
+
+     ```javascript
+     function isEmpty(obj) {
+       for (var prop in obj) {
+         if (obj.hasOwnProperty(prop)) {
+           return false;
+         }
+       }
+
+       return JSON.stringify(obj) === JSON.stringify({});
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+128. ### What is an arguments object
+
+     The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
+
+     ```javascript
+     function sum() {
+       var total = 0;
+       for (var i = 0, len = arguments.length; i < len; ++i) {
+         total += arguments[i];
+       }
+       return total;
+     }
+
+     sum(1, 2, 3); // returns 6
+     ```
+
+     **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
+
+     ```javascript
+     var argsArray = Array.prototype.slice.call(arguments);
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+129. ### How do you make first letter of the string in an uppercase
+
+     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
+
+     ```javascript
+     function capitalizeFirstLetter(string) {
+       return string.charAt(0).toUpperCase() + string.slice(1);
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+130. ### What are the pros and cons of for loop
+
+     The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
+
+     #### Pros
+
+     1. Works on every environment
+     2. You can use break and continue flow control statements
+
+     #### Cons
+
+     1. Too verbose
+     2. Imperative
+     3. You might face one-by-off errors
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+131. ### How do you display the current date in javascript
+
+     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
+
+     ```javascript
+     var today = new Date();
+     var dd = String(today.getDate()).padStart(2, "0");
+     var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+     var yyyy = today.getFullYear();
+
+     today = mm + "/" + dd + "/" + yyyy;
+     document.write(today);
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+132. ### How do you compare two date objects
+
+     You need to use date.getTime() method to compare date values instead of comparison operators (==, !=, ===, and !== operators)
+
+     ```javascript
+     var d1 = new Date();
+     var d2 = new Date(d1);
+     console.log(d1.getTime() === d2.getTime()); //True
+     console.log(d1 === d2); // False
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+133. ### How do you check if a string starts with another string
+
+     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
+
+     ```javascript
+     "Good morning".startsWith("Good"); // true
+     "Good morning".startsWith("morning"); // false
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+134. ### How do you trim a string in javascript
+
+     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
+
+     ```javascript
+     "  Hello World   ".trim(); //Hello World
+     ```
+
+     If your browser(<IE9) doesn't support this method then you can use below polyfill.
+
+     ```javascript
+     if (!String.prototype.trim) {
+       (function () {
+         // Make sure we trim BOM and NBSP
+         var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+         String.prototype.trim = function () {
+           return this.replace(rtrim, "");
+         };
+       })();
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+135. ### How do you add a key value pair in javascript
+
+     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
+
+     ```javascript
+     var object = {
+       key1: value1,
+       key2: value2,
+     };
+     ```
+
+     1. **Using dot notation:** This solution is useful when you know the name of the property
+
+     ```javascript
+     object.key3 = "value3";
+     ```
+
+     1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+
+     ```javascript
+     obj["key3"] = "value3";
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+136. ### Is the !-- notation represents a special operator
+
+     No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
+
+     1. A logical not (!)
+     2. A prefix decrement (--)
+
+     At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+137. ### How do you assign default values to variables
+
+     You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
+
+     ```javascript
+     var a = b || c;
+     ```
+
+     As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+138. ### How do you define multiline strings
+
+     You can define multiline string literals using the '\\' character followed by line terminator.
+
+     ```javascript
+     var str =
+       "This is a \
+     very lengthy \
+     sentence!";
+     ```
+
+     But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+139. ### What is an app shell model
+
+     An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+140. ### Can we define properties for functions
+
+     Yes, We can define properties for functions because functions are also objects.
+
+     ```javascript
+     fn = function (x) {
+       //Function code goes here
+     };
+
+     fn.name = "John";
+
+     fn.profile = function (y) {
+       //Profile code goes here
+     };
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+141. ### What is the way to find the number of parameters expected by a function
+
+     You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
+
+     ```javascript
+     function sum(num1, num2, num3, num4) {
+       return num1 + num2 + num3 + num4;
+     }
+     sum.length; // 4 is the number of parameters expected.
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+142. ### What is a polyfill
+
+     A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+143. ### What are break and continue statements
+
+     The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
+
+     ```javascript
+     for (i = 0; i < 10; i++) {
+       if (i === 5) {
+         break;
+       }
+       text += "Number: " + i + "<br>";
+     }
+     ```
+
+     The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+     ```javascript
+     for (i = 0; i < 10; i++) {
+       if (i === 5) {
+         continue;
+       }
+       text += "Number: " + i + "<br>";
+     }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+144. ### What are js labels
+
+     The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
+
+     ```javascript
+     var i, j;
+
+     loop1: for (i = 0; i < 3; i++) {
+       loop2: for (j = 0; j < 3; j++) {
+         if (i === j) {
+           continue loop1;
+         }
+         console.log("i = " + i + ", j = " + j);
+       }
+     }
+
+     // Output is:
+     //   "i = 1, j = 0"
+     //   "i = 2, j = 0"
+     //   "i = 2, j = 1"
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+145. ### What are the benefits of keeping declarations at the top
+
+     It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
+
+     1. Gives cleaner code
+     2. It provides a single place to look for local variables
+     3. Easy to avoid unwanted global variables
+     4. It reduces the possibility of unwanted re-declarations
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+146. ### What are the benefits of initializing variables
+
+     It is recommended to initialize variables because of the below benefits,
+
+     1. It gives cleaner code
+     2. It provides a single place to initialize variables
+     3. Avoid undefined values in the code
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+147. ### What are the recommendations to create new object
+
+     It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
+
+     1. Assign {} instead of new Object()
+     2. Assign "" instead of new String()
+     3. Assign 0 instead of new Number()
+     4. Assign false instead of new Boolean()
+     5. Assign [] instead of new Array()
+     6. Assign /()/ instead of new RegExp()
+     7. Assign function (){} instead of new Function()
+
+     You can define them as an example,
+
+     ```javascript
+     var v1 = {};
+     var v2 = "";
+     var v3 = 0;
+     var v4 = false;
+     var v5 = [];
+     var v6 = /()/;
+     var v7 = function () {};
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+148. ### How do you define JSON arrays
+
+     JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+     ```javascript
+     "users":[
+       {"firstName":"John", "lastName":"Abrahm"},
+       {"firstName":"Anna", "lastName":"Smith"},
+       {"firstName":"Shane", "lastName":"Warn"}
+     ]
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+149. ### How do you generate random integers
+
+     You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
+
+     ```javascript
+     Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
+     Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
+     ```
+
+     **Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+150. ### Can you write a random integers function to print integers with in a range
+
+     Yes, you can create a proper random function to return a random number between min and max (both included)
+
+     ```javascript
+     function randomInteger(min, max) {
+       return Math.floor(Math.random() * (max - min + 1)) + min;
+     }
+     randomInteger(1, 100); // returns a random integer from 1 to 100
+     randomInteger(1, 1000); // returns a random integer from 1 to 1000
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
