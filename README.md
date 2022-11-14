@@ -1603,7 +1603,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 92. ### What are the tools or techniques used for debugging JavaScript code
 
-    You can use below tools or techniques for debugging javascript
+    Javascriptni nosozliklarni tuzatish uchun quyidagi vositalar yoki usullardan foydalanishingiz mumkin
 
     1. Chrome Devtools
     2. debugger statement
@@ -1613,31 +1613,31 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 93. ### What are the pros and cons of promises over callbacks
 
-    Below are the list of pros and cons of promises over callbacks,
+    Quyida callbacks bo'yicha promise(larnig) ijobiy va salbiy tomonlari ro'yxati keltirilgan,
 
     **Pros:**
 
-    1. It avoids callback hell which is unreadable
-    2. Easy to write sequential asynchronous code with .then()
-    3. Easy to write parallel asynchronous code with Promise.all()
-    4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+    1. Bu o'qib bo'lmaydigan callback qilishning oldini oladi
+    2. .then() bilan ketma-ket asynchronous code(ni) yozish oson.
+    3. Promise.all() bilan parallel asynchronous code yozish oson.
+    4. callback(larning) ba'zi umumiy muammolarini hal qiladi (callback juda kech, juda erta, ko'p marta callback va xatolar/istisnolarni yutib yuboring)
 
-    **Cons:**
+    **Kamchiliklari:**
 
-    1. It makes little complex code
-    2. You need to load a polyfill if ES6 is not supported
+    1. U ozgina murakkab code yaratadi
+    2. ES6 qo'llab-quvvatlanmasa, polifillni yuklashingiz kerak
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 94. ### What is the difference between an attribute and a property
 
-    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+    Atributlar HTML belgilashda, xususiyatlar esa DOMda aniqlanadi. Masalan, quyidagi HTML elementi 2 ta atribut turi va qiymatiga ega,
 
     ```javascript
     <input type="text" value="Name:">
     ```
 
-    You can retrieve the attribute value as below,
+    Atribut qiymatini quyidagi tarzda olishingiz mumkin,
 
     ```javascript
     const input = document.querySelector("input");
@@ -1645,25 +1645,24 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     console.log(input.value); // Good morning
     ```
 
-    And after you change the value of the text field to "Good evening", it becomes like
+    Va matn maydonining qiymatini "Good evening" ga o'zgartirganingizdan so'ng, u shunday bo'ladi
 
     ```javascript
     console.log(input.getAttribute("value")); // Good evening
     console.log(input.value); // Good evening
     ```
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 95. ### What is same-origin policy
 
-    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+    Bir xil kelib chiqish siyosati JavaScript-ni domen chegaralari bo'ylab so'rovlar qilishiga to'sqinlik qiluvchi siyosatdir. Kelib chiqishi URL sxemasi, xost nomi va port raqamining kombinatsiyasi sifatida aniqlanadi. Agar siz ushbu siyosatni yoqsangiz, u Document Object Model (DOM) yordamida bir sahifadagi zararli skript boshqa veb-sahifadagi maxfiy maʼlumotlarga kirishini oldini oladi.
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 96. ### What is the purpose of void 0
 
-    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
-    For example, the below link notify the message without reloading the page
+    Void(0) sahifaning yangilanishini oldini olish uchun ishlatiladi. Bu kiruvchi yon ta'sirni bartaraf etishda foydali bo'ladi, chunki u aniqlanmagan ibtidoiy qiymatni qaytaradi. U odatda href="JavaScript:Void(0);" ishlatadigan HTML hujjatlari uchun ishlatiladi. `<a>` elementi ichida. ya'ni havolani bosganingizda, brauzer yangi sahifani yuklaydi yoki bir xil sahifani yangilaydi. Ammo bu ibora yordamida bu xatti-harakatning oldini oladi. Masalan, quyidagi havola sahifani qayta yuklamasdan xabarni bildiradi
 
     ```javascript
     <a href="JavaScript:void(0);" onclick="alert('Well done!')">
@@ -1671,35 +1670,35 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     </a>
     ```
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 97. ### Is JavaScript a compiled or interpreted language
 
-    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+    JavaScript kompilyatsiya qilingan til emas, balki talqin qilinadigan tildir. Brauzerdagi tarjimon JavaScript code(ni) o'qiydi, har bir satrni sharhlaydi va uni ishga tushiradi. Hozirgi vaqtda zamonaviy brauzerlar JavaScript-ni ishga tushirish arafasida bajariladigan bytecode(ga) kompilyatsiya qiladigan Just-In-Time (JIT) kompilyatsiyasi deb nomlanuvchi texnologiyadan foydalanadilar.
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 98. ### Is JavaScript a case-sensitive language
 
-    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+    Ha, JavaScript katta-kichik harflarga sezgir tildir. Til kalit so'zlari, o'zgaruvchilar, funksiya va ob'ekt nomlari va boshqa identifikatorlar har doim harflarning izchil bosh harflari bilan kiritilishi kerak.
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 99. ### Is there any relation between Java and JavaScript
 
-    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+    Yo'q, ular butunlay ikki xil dasturlash tillari va bir-biriga hech qanday aloqasi yo'q. Ammo ularning ikkalasi ham ob'ektga yo'naltirilgan dasturlash tillari va boshqa ko'plab tillar singari, ular asosiy funktsiyalar uchun o'xshash sintaksisga amal qiladilar (agar, boshqacha, uchun, o'tish, buzish, davom ettirish va hokazo).
 
-    **[⬆ Yuqoriga qaytish](#mundarija)**
+    **[⬆ Yuqoriga qaytish](#mundarija )**
 
 100. ### What are events
 
-     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+     Hodisalar HTML elementlari bilan sodir bo'ladigan `react`. HTML sahifalarida JavaScript ishlatilsa, JavaScript bu hodisalarga munosabat bildira oladi. HTML hodisalariga ba'zi misollar:
 
      1. Web page has finished loading
      2. Input field was changed
      3. Button was clicked
 
-     Let's describe the behavior of click event for button element,
+     Keling, tugma elementi uchun bosish hodisasining harakatini tasvirlaylik,
 
      ```javascript
      <!doctype html>
