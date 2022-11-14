@@ -12,108 +12,158 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 ### Mundarija
 
-| No. | Savollar                                                                                                                                             |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari bor ?](#what-are-the-possible-ways-to-create-objects-in-javascript)                          |
-| 2   | [Prototype chain nima ?](#what-is-a-prototype-chain)                                                                                                 |
-| 3   | [Call, Apply va Bind orasidagi farq nima ?](#what-is-the-difference-between-call-apply-and-bind)                                                     |
-| 4   | [JSON nima va uning umumiy operatsiyalari](#what-is-json-and-its-common-operations)                                                                  |
-| 5   | [Massiv slice usulidan maqsad nima ?](#what-is-the-purpose-of-the-array-slice-method)                                                                |
-| 6   | [Massivni splice usulining maqsadi nima ?](#what-is-the-purpose-of-the-array-splice-method)                                                          |
-| 7   | [Slice va splice o'rtasidagi farq nima ?](#what-is-the-difference-between-slice-and-splice)                                                          |
-| 8   | [Ob'ekt va Map qanday taqqoslaysiz](#how-do-you-compare-object-and-map)                                                                              |
-| 9   | [== va === operatorlarning farqi nimada ?](#what-is-the-difference-between--and--operators)                                                          |
-| 10  | [lambda yoki arrow function nima ?](#what-are-lambda-or-arrow-functions)                                                                             |
-| 11  | [Birinchi class function nima ?](#what-is-a-first-class-function)                                                                                    |
-| 12  | [Birinchi order function nima ?](#what-is-a-first-order-function)                                                                                    |
-| 13  | [Yuqori tartibli funksiya nima ?](#what-is-a-higher-order-function)                                                                                  |
-| 14  | [unary function nima ?](#what-is-a-unary-function)                                                                                                   |
-| 15  | [currying function nima ?](#what-is-the-currying-function)                                                                                           |
-| 16  | [pure function nima ?](#what-is-a-pure-function)                                                                                                     |
-| 17  | [let kalit so'zining maqsadi nima ?](#what-is-the-purpose-of-the-let-keyword)                                                                        |
-| 18  | [let va var o'rtasidagi farq nima ?](#what-is-the-difference-between-let-and-var)                                                                    |
-| 19  | [kalit so'zi sifatida let nomini tanlashning sababi nimada ?](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                               |
-| 20  | [swtich blockdagi o'zgarishlarni qanday qilib xatosiz qayta e'lon qilish mumkin ?](#how-do-you-redeclare-variables-in-switch-block-without-an-error) |
-| 21  | [Temporal Dead Zone nima ?](#what-is-the-temporal-dead-zone)                                                                                         |
-| 22  | [IIFE(darhol chaqiriladigan funksiya ifodasi)nima ?](#what-is-iifeimmediately-invoked-function-expression)                                           |
-| 23  | [JavaScript-da URL-manzilini decode yoki code lash mumkin ?](#how-do-you-decode-or-encode-a-url-in-javascript)                                       |
-| 24  | [Memoization nima ?](#what-is-memoization)                                                                                                           |
-| 25  | [Hoisting nima ?](#what-is-hoisting)                                                                                                                 |
-| 26  | [ES6 da qanday sinflar mavjud ?](#what-are-classes-in-es6)                                                                                           |
-| 27  | [Closures nima ?](#what-are-closures)                                                                                                                |
-| 28  | [Modullar nima ?](#what-are-modules)                                                                                                                 |
-| 29  | [Nima uchun sizga modullar kerak ?](#why-do-you-need-modules)                                                                                        |
-| 30  | [JavaScriptda scope nima ?](#what-is-scope-in-javascript)                                                                                            |
-| 31  | [Service worker nima ?](#what-is-a-service-worker)                                                                                                   |
-| 32  | [Service worker yordamida DOMni qanday boshqarish mumkin ?](#how-do-you-manipulate-dom-using-a-service-worker)                                       |
-| 33  | [Service worker ni qayta ishga tushirishda ma'lumotdan qanday foydalanasiz ?](#how-do-you-reuse-information-across-service-worker-restarts)          |
-| 34  | [IndexedDB nima ?](#what-is-indexeddb)                                                                                                               |
-| 35  | [Web storage nima ?](#what-is-web-storage)                                                                                                           |
-| 36  | [Post xabari nima ?](#what-is-a-post-message)                                                                                                        |
-| 37  | [cookie nima ?](#what-is-a-cookie)                                                                                                                   |
-| 38  | [Cookie nima uchun kerak ?](#why-do-you-need-a-cookie)                                                                                               |
-| 39  | [Cookie-da qanday variantlar mavjud ?](#what-are-the-options-in-a-cookie)                                                                            |
-| 40  | [Cookie faylini qanday o'chirish mumkin ?](#how-do-you-delete-a-cookie)                                                                              |
-| 41  | [Cookie, local storage va session storage o'rtasidagi farqlar qanday ?](#What-are-the-differences-between-cookie-local-storage-and-session-storage)  |
-| 42  | [localStorage va sessionStorage o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                |
-| 43  | [Veb-xotiraga qanday kirish mumkin ?](#how-do-you-access-web-storage)                                                                                |
-| 44  | [session storage qanday usullar mavjud ?](#what-are-the-methods-available-on-session-storage)                                                        |
-| 45  | [storage event nima va uning event handler ?](#what-is-a-storage-event-and-its-event-handler)                                                        |
-| 46  | [Nima uchun sizga web storage kerak ?](#why-do-you-need-web-storage)                                                                                 |
-| 47  | [Web storage browser yordamini qanday tekshirish mumkin ?](#how-do-you-check-web-storage-browser-support)                                            |
-| 48  | [Web workers browser qo'llab-quvvatlashini qanday tekshirish mumkin ?](#how-do-you-check-web-workers-browser-support)                                |
-| 49  | [Web worker ga misol keltiring ?](#give-an-example-of-a-web-worker)                                                                                  |
-| 50  | [DOM-da web worker larning cheklovlari qanday ?](#what-are-the-restrictions-of-web-workers-on-dom)                                                   |
-| 51  | [Promise nima ?](#what-is-a-promise)                                                                                                                           |
-| 52  | [Promise nimaga kerak ?](#why-do-you-need-a-promise)                                                                                                           |
-| 53  | [Promise(ning) uchta holati nima?](#what-are-the-three-states-of-promise)                                                                                     |
-| 54  | [Callback function nima ?](#what-is-a-callback-function)                                                                                                       |
-| 55  | [Callback(lar) nimaga kerak ?](#why-do-we-need-callbacks)                                                                                                             |
-| 56  | [Callback hell nima ?](#what-is-a-callback-hell)                                                                                                               |
-| 57  | [Server tomonidan yuborilgan event(lar) nima ?](#what-are-server-sent-events)                                                                                                         |
-| 58  | [Server tomonidan yuborilgan event bildirishnomalarini qanday qabul qilasiz ?](#how-do-you-receive-server-sent-event-notifications)                                                         |
-| 59  | [Server tomonidan yuborilgan event(lar) uchun brauzer yordamini qanday tekshirish mumkin ?](#how-do-you-check-browser-support-for-server-sent-events)                                               |
-| 60  | [Server yuborilgan event(lar) uchun qanday hodisalar mavjud](#what-are-the-events-available-for-server-sent-events)                                                     |
-| 61  | [Promise berishning asosiy qoidalari qanday](#what-are-the-main-rules-of-promise)                                                                                         |
-| 62  | [Callback(da) qayta callback nima ?](#what-is-callback-in-callback)                                                                                                     |
-| 63  | [Promise chaining nima ?](#what-is-promise-chaining)                                                                                                             |
+| No. | Savollar                                                                                                                                                        |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari bor ?](#what-are-the-possible-ways-to-create-objects-in-javascript)                                     |
+| 2   | [Prototype chain nima ?](#what-is-a-prototype-chain)                                                                                                            |
+| 3   | [Call, Apply va Bind orasidagi farq nima ?](#what-is-the-difference-between-call-apply-and-bind)                                                                |
+| 4   | [JSON nima va uning umumiy operatsiyalari](#what-is-json-and-its-common-operations)                                                                             |
+| 5   | [Massiv slice usulidan maqsad nima ?](#what-is-the-purpose-of-the-array-slice-method)                                                                           |
+| 6   | [Massivni splice usulining maqsadi nima ?](#what-is-the-purpose-of-the-array-splice-method)                                                                     |
+| 7   | [Slice va splice o'rtasidagi farq nima ?](#what-is-the-difference-between-slice-and-splice)                                                                     |
+| 8   | [Ob'ekt va Map qanday taqqoslaysiz](#how-do-you-compare-object-and-map)                                                                                         |
+| 9   | [== va === operatorlarning farqi nimada ?](#what-is-the-difference-between--and--operators)                                                                     |
+| 10  | [lambda yoki arrow function nima ?](#what-are-lambda-or-arrow-functions)                                                                                        |
+| 11  | [Birinchi class function nima ?](#what-is-a-first-class-function)                                                                                               |
+| 12  | [Birinchi order function nima ?](#what-is-a-first-order-function)                                                                                               |
+| 13  | [Yuqori tartibli funksiya nima ?](#what-is-a-higher-order-function)                                                                                             |
+| 14  | [unary function nima ?](#what-is-a-unary-function)                                                                                                              |
+| 15  | [currying function nima ?](#what-is-the-currying-function)                                                                                                      |
+| 16  | [pure function nima ?](#what-is-a-pure-function)                                                                                                                |
+| 17  | [let kalit so'zining maqsadi nima ?](#what-is-the-purpose-of-the-let-keyword)                                                                                   |
+| 18  | [let va var o'rtasidagi farq nima ?](#what-is-the-difference-between-let-and-var)                                                                               |
+| 19  | [kalit so'zi sifatida let nomini tanlashning sababi nimada ?](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                          |
+| 20  | [swtich blockdagi o'zgarishlarni qanday qilib xatosiz qayta e'lon qilish mumkin ?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)            |
+| 21  | [Temporal Dead Zone nima ?](#what-is-the-temporal-dead-zone)                                                                                                    |
+| 22  | [IIFE(darhol chaqiriladigan funksiya ifodasi)nima ?](#what-is-iifeimmediately-invoked-function-expression)                                                      |
+| 23  | [JavaScript-da URL-manzilini decode yoki code lash mumkin ?](#how-do-you-decode-or-encode-a-url-in-javascript)                                                  |
+| 24  | [Memoization nima ?](#what-is-memoization)                                                                                                                      |
+| 25  | [Hoisting nima ?](#what-is-hoisting)                                                                                                                            |
+| 26  | [ES6 da qanday sinflar mavjud ?](#what-are-classes-in-es6)                                                                                                      |
+| 27  | [Closures nima ?](#what-are-closures)                                                                                                                           |
+| 28  | [Modullar nima ?](#what-are-modules)                                                                                                                            |
+| 29  | [Nima uchun sizga modullar kerak ?](#why-do-you-need-modules)                                                                                                   |
+| 30  | [JavaScriptda scope nima ?](#what-is-scope-in-javascript)                                                                                                       |
+| 31  | [Service worker nima ?](#what-is-a-service-worker)                                                                                                              |
+| 32  | [Service worker yordamida DOMni qanday boshqarish mumkin ?](#how-do-you-manipulate-dom-using-a-service-worker)                                                  |
+| 33  | [Service worker ni qayta ishga tushirishda ma'lumotdan qanday foydalanasiz ?](#how-do-you-reuse-information-across-service-worker-restarts)                     |
+| 34  | [IndexedDB nima ?](#what-is-indexeddb)                                                                                                                          |
+| 35  | [Web storage nima ?](#what-is-web-storage)                                                                                                                      |
+| 36  | [Post xabari nima ?](#what-is-a-post-message)                                                                                                                   |
+| 37  | [cookie nima ?](#what-is-a-cookie)                                                                                                                              |
+| 38  | [Cookie nima uchun kerak ?](#why-do-you-need-a-cookie)                                                                                                          |
+| 39  | [Cookie-da qanday variantlar mavjud ?](#what-are-the-options-in-a-cookie)                                                                                       |
+| 40  | [Cookie faylini qanday o'chirish mumkin ?](#how-do-you-delete-a-cookie)                                                                                         |
+| 41  | [Cookie, local storage va session storage o'rtasidagi farqlar qanday ?](#What-are-the-differences-between-cookie-local-storage-and-session-storage)             |
+| 42  | [localStorage va sessionStorage o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                           |
+| 43  | [Veb-xotiraga qanday kirish mumkin ?](#how-do-you-access-web-storage)                                                                                           |
+| 44  | [session storage qanday usullar mavjud ?](#what-are-the-methods-available-on-session-storage)                                                                   |
+| 45  | [storage event nima va uning event handler ?](#what-is-a-storage-event-and-its-event-handler)                                                                   |
+| 46  | [Nima uchun sizga web storage kerak ?](#why-do-you-need-web-storage)                                                                                            |
+| 47  | [Web storage browser yordamini qanday tekshirish mumkin ?](#how-do-you-check-web-storage-browser-support)                                                       |
+| 48  | [Web workers browser qo'llab-quvvatlashini qanday tekshirish mumkin ?](#how-do-you-check-web-workers-browser-support)                                           |
+| 49  | [Web worker ga misol keltiring ?](#give-an-example-of-a-web-worker)                                                                                             |
+| 50  | [DOM-da web worker larning cheklovlari qanday ?](#what-are-the-restrictions-of-web-workers-on-dom)                                                              |
+| 51  | [Promise nima ?](#what-is-a-promise)                                                                                                                            |
+| 52  | [Promise nimaga kerak ?](#why-do-you-need-a-promise)                                                                                                            |
+| 53  | [Promise(ning) uchta holati nima?](#what-are-the-three-states-of-promise)                                                                                       |
+| 54  | [Callback function nima ?](#what-is-a-callback-function)                                                                                                        |
+| 55  | [Callback(lar) nimaga kerak ?](#why-do-we-need-callbacks)                                                                                                       |
+| 56  | [Callback hell nima ?](#what-is-a-callback-hell)                                                                                                                |
+| 57  | [Server tomonidan yuborilgan event(lar) nima ?](#what-are-server-sent-events)                                                                                   |
+| 58  | [Server tomonidan yuborilgan event bildirishnomalarini qanday qabul qilasiz ?](#how-do-you-receive-server-sent-event-notifications)                             |
+| 59  | [Server tomonidan yuborilgan event(lar) uchun brauzer yordamini qanday tekshirish mumkin ?](#how-do-you-check-browser-support-for-server-sent-events)           |
+| 60  | [Server yuborilgan event(lar) uchun qanday hodisalar mavjud](#what-are-the-events-available-for-server-sent-events)                                             |
+| 61  | [Promise berishning asosiy qoidalari qanday](#what-are-the-main-rules-of-promise)                                                                               |
+| 62  | [Callback(da) qayta callback nima ?](#what-is-callback-in-callback)                                                                                             |
+| 63  | [Promise chaining nima ?](#what-is-promise-chaining)                                                                                                            |
 | 64  | [Promise.all nima ?](#what-is-promiseall)                                                                                                                       |
-| 65  | [Promise(da) poyga usulining maqsadi nima ?](#what-is-the-purpose-of-the-race-method-in-promise)                                                                   |
-| 66  | [JavaScript(da) qat'iy rejim nima ?](#what-is-a-strict-mode-in-javascript)                                                                                       |
-| 67  | [Strict mode nimaga kerak ?](#why-do-you-need-strict-mode)                                                                                                       |
-| 68  | [Nima uchun sizga strict mode kerak ?](#how-do-you-declare-strict-mode)                                                                                                 |
-| 69  | [Qo‘sh undovdan maqsad nima ?](#what-is-the-purpose-of-double-exclamation)                                                                           |
-| 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                                  |
-| 71  | [typeof operator nima ?](#what-is-typeof-operator)                                                                                                               |
-| 72  | [undefined property nima ?](#what-is-undefined-property)                                                                                                         |
-| 73  | [null value nima ?](#what-is-null-value)                                                                                                                         |
-| 74  | [Null va undefined o'rtasidagi farq nima ?](#what-is-the-difference-between-null-and-undefined)                                                           |
-| 75  | [eval nima ?](#What-is-eval)                                                                                                                                     |
-| 76  | [Window va document o'rtasidagi farq nima ?](#what-is-the-difference-between-window-and-document)                                                         |
-| 77  | [JavaScript(da) history(ga) qanday kirish mumkin ?](#how-do-you-access-history-in-javascript)                                                                               |
-| 78  | [Caps lock tugmachasi yoqilgan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                             |
-| 79  | [isNaN nima ?](#what-is-isnan)                                                                                                                                   |
-| 80  | [undeclared va undefined o'zgaruvchilari o'rtasidagi farqlar qanday ?](#what-are-the-differences-between-undeclared-and-undefined-variables)                       |
+| 65  | [Promise(da) poyga usulining maqsadi nima ?](#what-is-the-purpose-of-the-race-method-in-promise)                                                                |
+| 66  | [JavaScript(da) qat'iy rejim nima ?](#what-is-a-strict-mode-in-javascript)                                                                                      |
+| 67  | [Strict mode nimaga kerak ?](#why-do-you-need-strict-mode)                                                                                                      |
+| 68  | [Nima uchun sizga strict mode kerak ?](#how-do-you-declare-strict-mode)                                                                                         |
+| 69  | [Qo‘sh undovdan maqsad nima ?](#what-is-the-purpose-of-double-exclamation)                                                                                      |
+| 70  | [O'chirish operatorining maqsadi nima ?](#what-is-the-purpose-of-the-delete-operator)                                                                           |
+| 71  | [typeof operator nima ?](#what-is-typeof-operator)                                                                                                              |
+| 72  | [undefined property nima ?](#what-is-undefined-property)                                                                                                        |
+| 73  | [null value nima ?](#what-is-null-value)                                                                                                                        |
+| 74  | [Null va undefined o'rtasidagi farq nima ?](#what-is-the-difference-between-null-and-undefined)                                                                 |
+| 75  | [eval nima ?](#What-is-eval)                                                                                                                                    |
+| 76  | [Window va document o'rtasidagi farq nima ?](#what-is-the-difference-between-window-and-document)                                                               |
+| 77  | [JavaScript(da) history(ga) qanday kirish mumkin ?](#how-do-you-access-history-in-javascript)                                                                   |
+| 78  | [Caps lock tugmachasi yoqilgan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                     |
+| 79  | [isNaN nima ?](#what-is-isnan)                                                                                                                                  |
+| 80  | [undeclared va undefined o'zgaruvchilari o'rtasidagi farqlar qanday ?](#what-are-the-differences-between-undeclared-and-undefined-variables)                    |
 | 81  | [Global variables nima ?](#what-are-global-variables)                                                                                                           |
-| 82  | [Global variabl(lar) bilan qanday muammolar bor ?](#what-are-the-problems-with-global-variables)                                                                       |
-| 83  | [NaN property nima ?](#what-is-nan-property)                                                                                                                     |
+| 82  | [Global variabl(lar) bilan qanday muammolar bor ?](#what-are-the-problems-with-global-variables)                                                                |
+| 83  | [NaN property nima ?](#what-is-nan-property)                                                                                                                    |
 | 84  | [isFinite funksiyasining maqsadi nima ?](#what-is-the-purpose-of-isfinite-function)                                                                             |
-| 85  | [Event flow nima ?](#what-is-an-event-flow)                                                                                                                   |
-| 86  | [Event bubbling nima ?](#what-is-event-bubbling)                                                                                                                 |
-| 87  | [Event capturing nima ?](#what-is-event-capturing)                                                                                                               |
-| 88  | [Qanday qilib JavaScript-dan foydalanib shaklni yuborasiz ?](#how-do-you-submit-a-form-using-javascript)                                                                           |
-| 89  | [Operating system tafsilotlarini qanday topish mumkin ?](#how-do-you-find-operating-system-details)                                                                             |
-| 90  | [Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima ?](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |                                      
-| 91  | [Native, host va user objects o'rtasidagi farq nima ?](#what-is-the-difference-between-native-host-and-user-objects)                                     |                           
-| 92  | [JavaScript code(ni) tuzatish uchun qanday vositalar yoki usullar qo'llaniladi ?](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |                                 
-| 93  | [Callbacks orqali promise(ning) qanday ijobiy va salbiy tomonlari bor ?](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |                   
-| 94  | [Attribute va property o'rtasidagi farq nima ?](#what-is-the-difference-between-an-attribute-and-a-property)                                         |                        
-| 95  | [Same-origin policy nima ?](#what-is-same-origin-policy)                                                                                                         |
-| 96  | [Void 0 ning maqsadi nima ?](#what-is-the-purpose-of-void-0)                                                                                                   |
-| 97  | [JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi ?](#is-javascript-a-compiled-or-interpreted-language)                                                             |
-| 98  | [JavaScript case-sensitive harflarga sezgir tilmi ?](#is-javascript-a-case-sensitive-language)                                                                               |
-| 99  | [Java va JavaScript o'rtasida bog'liqlik bormi?](#is-there-any-relation-between-java-and-javascript)                                                           |
-| 100 | [event(lar) nima ?](#what-are-events)                                                                                                                               |
+| 85  | [Event flow nima ?](#what-is-an-event-flow)                                                                                                                     |
+| 86  | [Event bubbling nima ?](#what-is-event-bubbling)                                                                                                                |
+| 87  | [Event capturing nima ?](#what-is-event-capturing)                                                                                                              |
+| 88  | [Qanday qilib JavaScript-dan foydalanib shaklni yuborasiz ?](#how-do-you-submit-a-form-using-javascript)                                                        |
+| 89  | [Operating system tafsilotlarini qanday topish mumkin ?](#how-do-you-find-operating-system-details)                                                             |
+| 90  | [Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima ?](#what-is-the-difference-between-document-load-and-domcontentloaded-events)               |
+| 91  | [Native, host va user objects o'rtasidagi farq nima ?](#what-is-the-difference-between-native-host-and-user-objects)                                            |
+| 92  | [JavaScript code(ni) tuzatish uchun qanday vositalar yoki usullar qo'llaniladi ?](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)         |
+| 93  | [Callbacks orqali promise(ning) qanday ijobiy va salbiy tomonlari bor ?](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                |
+| 94  | [Attribute va property o'rtasidagi farq nima ?](#what-is-the-difference-between-an-attribute-and-a-property)                                                    |
+| 95  | [Same-origin policy nima ?](#what-is-same-origin-policy)                                                                                                        |
+| 96  | [Void 0 ning maqsadi nima ?](#what-is-the-purpose-of-void-0)                                                                                                    |
+| 97  | [JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi ?](#is-javascript-a-compiled-or-interpreted-language)                                            |
+| 98  | [JavaScript case-sensitive harflarga sezgir tilmi ?](#is-javascript-a-case-sensitive-language)                                                                  |
+| 99  | [Java va JavaScript o'rtasida bog'liqlik bormi?](#is-there-any-relation-between-java-and-javascript)                                                            |
+| 100 | [event(lar) nima ?](#what-are-events)                                                                                                                           |
+| 101 | [JavaScriptni kim yaratgan ?](#who-created-javascript)                                                                                                          |
+| 102 | [preventDefault usulidan fodalanish nima ?](#what-is-the-use-of-preventdefault-method)                                                                          |
+| 103 | [stopPropagation usulidan foydalanish nima ?](#what-is-the-use-of-stoppropagation-method)                                                                       |
+| 104 | [Noto'g'ri foydalanishni qaytarish uchun qanday usullar mavjud ?](#what-are-the-steps-involved-in-return-false-usage)                                           |
+| 105 | [BOM nima ?](#what-is-bom)                                                                                                                                      |
+| 106 | [setTimeout(dan) qanday foydalanish kerak ?](#what-is-the-use-of-settimeout)                                                                                    |
+| 107 | [setInterval(dan) qanday foydalanish kerak ?](#what-is-the-use-of-setinterval)                                                                                  |
+| 108 | [Nima uchun JavaScript Single threaded deb hisoblanadi ?](#why-is-javascript-treated-as-single-threaded)                                                        |
+| 109 | [Event delegation nima ?](#what-is-an-event-delegation)                                                                                                         |
+| 110 | [ECMAScript nima ?](#what-is-ecmascript)                                                                                                                        |
+| 111 | [JSON nima ?](#what-is-json)                                                                                                                                    |
+| 112 | [JSON sintaksisi qoidalari qanday ?](#what-are-the-syntax-rules-of-json)                                                                                        |
+| 113 | [JSON stringify nima maqsadda ishlatiladi ?](#what-is-the-purpose-json-stringify)                                                                               |
+| 114 | [JSON string(ni) qanday parse qilasiz ?](#how-do-you-parse-json-string)                                                                                         |
+| 115 | [JSON nimaga kerak ?](#why-do-you-need-json)                                                                                                                    |
+| 116 | [PWAs nima ?](#what-are-pwas)                                                                                                                                   |
+| 117 | [clearTimeout usulining maqsadi nima ?](#what-is-the-purpose-of-cleartimeout-method)                                                                            |
+| 118 | [clearInterval usulining maqsadi nima ?](#what-is-the-purpose-of-clearinterval-method)                                                                          |
+| 119 | [Javascriptda yangi sahifani qanday yo'naltirish mumkin ?](#how-do-you-redirect-new-page-in-javascript)                                                         |
+| 120 | [Sring(da) substring mavjudligini qanday tekshirish mumkin ?](#how-do-you-check-whether-a-string-contains-a-substring)                                          |
+| 121 | [Javascriptda elektron pochtani qanday tekshirish mumkin ?](#how-do-you-validate-an-email-in-javascript)                                                        |
+| 122 | [Current url(ni) javascript bilan qanday olish mumkin ?](#how-do-you-get-the-current-url-with-javascript)                                                       |
+| 123 | [Location object(ning) turli url xususiyatlari qanday ?](#what-are-the-various-url-properties-of-location-object)                                               |
+| 124 | [JavaScript(da) query string value(sini) qanday olish mumkin ?](#how-do-get-query-string-values-in-javascript)                                                  |
+| 125 | [Object(da) key mavjudligini qanday tekshirish mumkin ?](#how-do-you-check-if-a-key-exists-in-an-object)                                                        |
+| 126 | [JavaScript(da) object(ni) qanday loop yoki enumerat qilasiz ?](#how-do-you-loop-through-or-enumerate-javascript-object)                                        |
+| 127 | [Empty object(ni) qanday sinab ko'rasiz ?](#how-do-you-test-for-an-empty-object)                                                                                |
+| 128 | [Arguments object nima ?](#what-is-an-arguments-object)                                                                                                         |
+| 129 | [Qanday qilib string(ning) birinchi harfini katta harf bilan yozish mumkin ?](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                      |
+| 130 | [Loop(ning) qanday ijobiy va salbiy tomonlari bor ?](#what-are-the-pros-and-cons-of-for-loop)                                                                   |
+| 131 | [Current date(ni) JavaScript(da) qanday ko'rsatasiz ?](#how-do-you-display-the-current-date-in-javascript)                                                      |
+| 132 | [Ikki sana object(ni) qanday solishtirasiz ?](#how-do-you-compare-two-date-objects)                                                                             |
+| 133 | [String(ning) boshqa string bilan boshlanishini qanday tekshirish mumkin ?](#how-do-you-check-if-a-string-starts-with-another-string)                           |
+| 134 | [JavaScript(da) string(ni) qanday kesish mumkin ?](#how-do-you-trim-a-string-in-javascript)                                                                     |
+| 135 | [JavaScript(da) key value qiymat juftligini qanday qo'shasiz ?](#how-do-you-add-a-key-value-pair-in-javascript)                                                 |
+| 136 | ['!--' belgisi maxsus operatorni ifodalaydi](#is-the----notation-represents-a-special-operator)                                                                 |
+| 137 | [O'zgaruvchilarga standart qiymatlarni qanday belgilash mumkin ?](#how-do-you-assign-default-values-to-variables)                                               |
+| 138 | [Ko'p qatorli string(larni) qanday aniqlash mumkin ?](#how-do-you-define-multiline-strings)                                                                     |
+| 139 | [App shell model nima ?](#what-is-an-app-shell-model)                                                                                                           |
+| 140 | [Funktsiyalar uchun xususiyatlarni aniqlay olamizmi ?](#can-we-define-properties-for-functions)                                                                 |
+| 141 | [Funksiya kutayotgan parametrlar sonini qanday topish mumkin ?](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)                       |
+| 142 | [Polyfill nima ?](#what-is-a-polyfill)                                                                                                                          |
+| 143 | [Break and continue statements nima ?](#what-are-break-and-continue-statements)                                                                                 |
+| 144 | [Js labels nima ?](#what-are-js-labels)                                                                                                                         |
+| 145 | [Declaration(larni) yuqorida saqlashning qanday afzalliklari bor ?](#what-are-the-benefits-of-keeping-declarations-at-the-top)                                  |
+| 146 | [variable(larni) ishga tushirishning qanday afzalliklari bor ?](#what-are-the-benefits-of-initializing-variables)                                               |
+| 147 | [New object yaratish uchun qanday tavfsiyalar mavud ?](#what-are-the-recommendations-to-create-new-object)                                                      |
+| 148 | [JSON array(larini) qanday aniqlaysiz ?](#how-do-you-define-json-arrays)                                                                                        |
+| 149 | [Tasodifiy butun sonlar qanday yaratiladi ?](#how-do-you-generate-random-integers)                                                                              |
+| 150 | [Butun sonlarni diapazonda chop etish uchun tasodifiy funksiyasini yoza olasizmi ?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -1134,7 +1184,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     Natijadan ko'rinib turibdiki, JavaScript birinchi funktsiyaning javobini kutmagan va qolgan code block bajarilgan. Shunday qilib, callback funtion(lar) ma'lum code boshqa code bajarilishini tugatmaguncha bajarilmasligiga ishonch hosil qilish uchun ishlatiladi.
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
-  
+
 56. ### What is a callback hell
 
     Callback Hell bir nechta ichki callback(larga) ega bo'lgan anti-pattern bo'lib, asynchronous mantiq bilan ishlashda code(ni) o'qish va debug dealing qilishni qiyinlashtiradi. callback hell quyida ko'rinadi,
@@ -1405,13 +1455,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
     Quyida null va undefined o'rtasidagi asosiy farqlar keltirilgan,
 
-    | Null                                                                                            | Undefined                                                                                               |
-    | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-    | Bu o'zgaruvchining hech qanday ob'ektga ishora qilmasligini ko'rsatadigan tayinlash qiymati.                    | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas. |
-    | Type of null is object                                                                          | Type of undefined is undefined                                                                          |
-    | Null qiymat nol, bo'sh yoki mavjud bo'lmagan havolani ifodalovchi ibtidoiy qiymatdir. | Undefined qiymat o'zgaruvchiga qiymat berilmaganda ishlatiladigan ibtidoiy qiymatdir.            |
-    | O'zgaruvchi uchun qiymat yo'qligini ko'rsatadi                                                 | O'zgaruvchining o'zi yo'qligini ko'rsatadi                                                                    |
-    | Primitiv amallarni bajarishda nolga (0) aylantiriladi                                     | Primitiv operatsiyalarni bajarishda NaN ga aylantiriladi                                                  |
+    | Null                                                                                         | Undefined                                                                              |
+    | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+    | Bu o'zgaruvchining hech qanday ob'ektga ishora qilmasligini ko'rsatadigan tayinlash qiymati. | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas. |
+    | Type of null is object                                                                       | Type of undefined is undefined                                                         |
+    | Null qiymat nol, bo'sh yoki mavjud bo'lmagan havolani ifodalovchi ibtidoiy qiymatdir.        | Undefined qiymat o'zgaruvchiga qiymat berilmaganda ishlatiladigan ibtidoiy qiymatdir.  |
+    | O'zgaruvchi uchun qiymat yo'qligini ko'rsatadi                                               | O'zgaruvchining o'zi yo'qligini ko'rsatadi                                             |
+    | Primitiv amallarni bajarishda nolga (0) aylantiriladi                                        | Primitiv operatsiyalarni bajarishda NaN ga aylantiriladi                               |
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
 
@@ -1429,11 +1479,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
     Quyida window va document o'rtasidagi asosiy farqlar keltirilgan,
 
-    | Window                                                                        | Document                                                                                      |
-    | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-    | Bu har qanday web page ildiz darajasining elementidir                                  | Bu window ob'ektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan. |
-    | Odatiy bo'lib window ob'ekti sahifada bevosita mavjud                  | Unga window.document yoki document orqali kirishingiz mumkin.                                            |
-    | Unda alert(), confirm() kabi usullar va hujjat, joylashuv kabi xususiyatlar mavjud | U getElementById, getElementsByTagName, createElement va boshqalar kabi usullarni taqdim etadi              |
+    | Window                                                                             | Document                                                                                       |
+    | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+    | Bu har qanday web page ildiz darajasining elementidir                              | Bu window ob'ektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan.   |
+    | Odatiy bo'lib window ob'ekti sahifada bevosita mavjud                              | Unga window.document yoki document orqali kirishingiz mumkin.                                  |
+    | Unda alert(), confirm() kabi usullar va hujjat, joylashuv kabi xususiyatlar mavjud | U getElementById, getElementsByTagName, createElement va boshqalar kabi usullarni taqdim etadi |
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
 
@@ -1495,9 +1545,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
     Quyida e'lon qilinmagan (aniqlanmagan) va aniqlanmagan o'zgaruvchilar o'rtasidagi asosiy farqlar,
 
-    | undeclared                                                                                  | undefined                                                                              |
-    | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-    | Bu o'zgaruvchilar program mavjud emas va e'lon qilinmaydi                              | Ushbu o'zgaruvchilar program e'lon qilingan, ammo hech qanday qiymat tayinlanmagan                |
+    | undeclared                                                                                                      | undefined                                                                                                    |
+    | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+    | Bu o'zgaruvchilar program mavjud emas va e'lon qilinmaydi                                                       | Ushbu o'zgaruvchilar program e'lon qilingan, ammo hech qanday qiymat tayinlanmagan                           |
     | Agar siz e'lon qilinmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, ish vaqti xatosi paydo bo'ladi. | Agar siz aniqlanmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, aniqlanmagan qiymat qaytariladi. |
 
     **[⬆ Yuqoriga qaytish](#mundarija)**
@@ -1652,13 +1702,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     console.log(input.value); // Good evening
     ```
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 95. ### What is same-origin policy
 
     Bir xil kelib chiqish siyosati JavaScript-ni domen chegaralari bo'ylab so'rovlar qilishiga to'sqinlik qiluvchi siyosatdir. Kelib chiqishi URL sxemasi, xost nomi va port raqamining kombinatsiyasi sifatida aniqlanadi. Agar siz ushbu siyosatni yoqsangiz, u Document Object Model (DOM) yordamida bir sahifadagi zararli skript boshqa veb-sahifadagi maxfiy maʼlumotlarga kirishini oldini oladi.
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 96. ### What is the purpose of void 0
 
@@ -1670,25 +1720,25 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
     </a>
     ```
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 97. ### Is JavaScript a compiled or interpreted language
 
     JavaScript kompilyatsiya qilingan til emas, balki talqin qilinadigan tildir. Brauzerdagi tarjimon JavaScript code(ni) o'qiydi, har bir satrni sharhlaydi va uni ishga tushiradi. Hozirgi vaqtda zamonaviy brauzerlar JavaScript-ni ishga tushirish arafasida bajariladigan bytecode(ga) kompilyatsiya qiladigan Just-In-Time (JIT) kompilyatsiyasi deb nomlanuvchi texnologiyadan foydalanadilar.
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 98. ### Is JavaScript a case-sensitive language
 
     Ha, JavaScript katta-kichik harflarga sezgir tildir. Til kalit so'zlari, o'zgaruvchilar, funksiya va ob'ekt nomlari va boshqa identifikatorlar har doim harflarning izchil bosh harflari bilan kiritilishi kerak.
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 99. ### Is there any relation between Java and JavaScript
 
     Yo'q, ular butunlay ikki xil dasturlash tillari va bir-biriga hech qanday aloqasi yo'q. Ammo ularning ikkalasi ham ob'ektga yo'naltirilgan dasturlash tillari va boshqa ko'plab tillar singari, ular asosiy funktsiyalar uchun o'xshash sintaksisga amal qiladilar (agar, boshqacha, uchun, o'tish, buzish, davom ettirish va hokazo).
 
-    **[⬆ Yuqoriga qaytish](#mundarija )**
+    **[⬆ Yuqoriga qaytish](#mundarija)**
 
 100. ### What are events
 
