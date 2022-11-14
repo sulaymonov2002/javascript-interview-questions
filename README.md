@@ -1767,3 +1767,9 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ```
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
+
+101. ### Who created javascript
+
+     JavaScript Brendan Eich tomonidan 1995 yilda Netscape Communications kompaniyasida ishlagan vaqtida yaratilgan. Dastlab u `Mocha` nomi bilan ishlab chiqilgan, ammo keyinchalik Netscape-ning beta-versiyalarida birinchi marta yuborilganida bu til rasmiy ravishda `LiveScript` deb nomlangan.
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
