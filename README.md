@@ -2047,7 +2047,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
      The above regular expression accepts unicode characters.
 
@@ -2059,7 +2059,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log("location.href", window.location.href); // Returns full URL
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 123. ### What are the various url properties of location object
 
@@ -2074,7 +2074,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      7. search - The query portion of the URL
      8. hash - The anchor portion of the URL
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 124. ### How do get query string values in javascript
 
@@ -2085,7 +2085,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      const clientCode = urlParams.get("clientCode");
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 125. ### How do you check if a key exists in an object
 
@@ -2120,7 +2120,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(user.nickName !== undefined); // false
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 126. ### How do you loop through or enumerate javascript object
 
@@ -2140,7 +2140,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 127. ### How do you test for an empty object
 
@@ -2172,7 +2172,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 128. ### What is an arguments object
 
@@ -2196,7 +2196,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      var argsArray = Array.prototype.slice.call(arguments);
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 129. ### How do you make first letter of the string in an uppercase
 
@@ -2208,7 +2208,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 130. ### What are the pros and cons of for loop
 
@@ -2225,7 +2225,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      2. Imperative
      3. You might face one-by-off errors
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 131. ### How do you display the current date in javascript
 
@@ -2241,7 +2241,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      document.write(today);
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 132. ### How do you compare two date objects
 
@@ -2254,7 +2254,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(d1 === d2); // False
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 133. ### How do you check if a string starts with another string
 
@@ -2265,7 +2265,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      "Good morning".startsWith("morning"); // false
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 134. ### How do you trim a string in javascript
 
@@ -2289,7 +2289,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 135. ### How do you add a key value pair in javascript
 
@@ -2314,7 +2314,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      obj["key3"] = "value3";
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 136. ### Is the !-- notation represents a special operator
 
@@ -2325,7 +2325,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 137. ### How do you assign default values to variables
 
@@ -2337,7 +2337,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 138. ### How do you define multiline strings
 
@@ -2352,13 +2352,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 139. ### What is an app shell model
 
      An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 140. ### Can we define properties for functions
 
@@ -2376,7 +2376,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      };
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 141. ### What is the way to find the number of parameters expected by a function
 
@@ -2389,13 +2389,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      sum.length; // 4 is the number of parameters expected.
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 142. ### What is a polyfill
 
      A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 143. ### What are break and continue statements
 
@@ -2421,7 +2421,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 144. ### What are js labels
 
@@ -2445,7 +2445,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      //   "i = 2, j = 1"
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 145. ### What are the benefits of keeping declarations at the top
 
@@ -2456,7 +2456,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      3. Easy to avoid unwanted global variables
      4. It reduces the possibility of unwanted re-declarations
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 146. ### What are the benefits of initializing variables
 
@@ -2466,7 +2466,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      2. It provides a single place to initialize variables
      3. Avoid undefined values in the code
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 147. ### What are the recommendations to create new object
 
@@ -2492,7 +2492,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      var v7 = function () {};
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 148. ### How do you define JSON arrays
 
@@ -2506,7 +2506,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ]
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 149. ### How do you generate random integers
 
@@ -2519,7 +2519,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      **Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 150. ### Can you write a random integers function to print integers with in a range
 
@@ -2533,4 +2533,4 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      randomInteger(1, 1000); // returns a random integer from 1 to 1000
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
