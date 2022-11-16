@@ -2037,7 +2037,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 121. ### How do you validate an email in javascript
 
-     You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
+     Oddiy iboralar yordamida JavaScript-da elektron pochta xabarini tasdiqlashingiz mumkin. Tasdiqlashlarni mijoz tomoni o'rniga server tomonida qilish tavsiya etiladi. Chunki javascript mijoz tomonida o'chirib qo'yilishi mumkin.
 
      ```javascript
      function validateEmail(email) {
@@ -2049,11 +2049,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
 
-     The above regular expression accepts unicode characters.
+     Yuqoridagi muntazam ifoda unicode belgilarni qabul qiladi.
 
 122. ### How do you get the current url with javascript
 
-     You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
+     Joriy url yo'lini olish uchun `window.location.href` ifodasidan foydalanishingiz mumkin va URLni yangilash uchun ham xuddi shu ifodadan foydalanishingiz mumkin. `Document.URL` dan faqat o'qish uchun ham foydalanishingiz mumkin, ammo bu yechim FFda muammolarga ega.
 
      ```javascript
      console.log("location.href", window.location.href); // Returns full URL
