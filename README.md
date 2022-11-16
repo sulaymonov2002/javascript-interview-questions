@@ -2063,22 +2063,22 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 123. ### What are the various url properties of location object
 
-     The below `Location` object properties can be used to access URL components of the page,
+     Quyidagi `Location` obyekti xususiyatlaridan sahifaning URL komponentlariga kirish uchun foydalanish mumkin,
 
-     1. href - The entire URL
-     2. protocol - The protocol of the URL
-     3. host - The hostname and port of the URL
-     4. hostname - The hostname of the URL
-     5. port - The port number in the URL
-     6. pathname - The path name of the URL
-     7. search - The query portion of the URL
-     8. hash - The anchor portion of the URL
+     1. href - Butun URL
+     2. protocol - URL manzilining xost nomi va porti
+     3. host - URL manzilining xost nomi va porti
+     4. hostname - URL xost nomi
+     5. port - URL manzilidagi port raqami
+     6. pathname - URL manzilining yo'l nomi
+     7. search - URLning so'rov qismi
+     8. hash - The URLning langar qismi
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
 
 124. ### How do get query string values in javascript
 
-     You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
+     Javascriptda so'rovlar qatori qiymatlarini olish uchun URLSearchParams dan foydalanishingiz mumkin. Keling, URL so'rovlar qatoridan mijoz code qiymatini olish uchun misolni ko'rib chiqaylik,
 
      ```javascript
      const urlParams = new URLSearchParams(window.location.search);
@@ -2089,27 +2089,27 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 125. ### How do you check if a key exists in an object
 
-     You can check whether a key exists in an object or not using three approaches,
+     Ob'ektda key mavjudligi yoki yo'qligini uchta yondashuv yordamida tekshirishingiz mumkin,
 
-     1. **Using in operator:** You can use the in operator whether a key exists in an object or not
+     1. **Operatordan foydalanish:** Ob'ektda key mavjudmi yoki yo'qmi, in operatoridan foydalanishingiz mumkin
 
      ```javascript
      "key" in obj;
      ```
 
-     and If you want to check if a key doesn't exist, remember to use parenthesis,
+     Agar key mavjud emasligini tekshirmoqchi bo'lsangiz, qavsdan foydalanishni unutmang,
 
      ```javascript
      !("key" in obj);
      ```
 
-     1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+     1. **hasOwnProperty usulidan foydalanish:** `HasOwnProperty` dan ob'ekt namunasining xususiyatlarini (va meros qilib olingan xususiyatlarni emas) sinab ko'rish uchun foydalanishingiz mumkin.
 
      ```javascript
      obj.hasOwnProperty("key"); // true
      ```
 
-     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+     1. **Undefined comparison foydalanish:** Agar ob'ektdan mavjud bo'lmagan xususiyatga kirsangiz, natija aniqlanmagan. Mulkning mavjudligini aniqlash uchun xususiyatlarni aniqlanmagan bilan taqqoslaylik.
 
      ```javascript
      const user = {
@@ -2124,7 +2124,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 126. ### How do you loop through or enumerate javascript object
 
-     You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
+     Javascript ob'ekti bo'ylab aylanish uchun `for-in` loop(dan) foydalanishingiz mumkin. Shuningdek, siz olgan key ob'ektning haqiqiy mulki ekanligiga va `hasOwnProperty` usuli yordamida prototipdan kelmasligiga ishonch hosil qilishingiz mumkin.
 
      ```javascript
      var object = {
@@ -2144,12 +2144,12 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 127. ### How do you test for an empty object
 
-     There are different solutions based on ECMAScript versions
+     ECMAScript versiyalariga asoslangan turli xil yechimlar mavjud
 
-     1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
+     1. **Using Object entries(ECMA 7+):** Siz konstruktor turi bilan birga ob'ekt yozuvlari uzunligidan foydalanishingiz mumkin.
 
      ```javascript
-     Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
+     Object.entries(obj).length === 0 && obj.constructor === Object; // Sana ob'ektining uzunligi 0 bo'lgani uchun siz konstruktor tekshiruvini ham tekshirishingiz kerak
      ```
 
      1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
@@ -2158,7 +2158,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
      ```
 
-     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
+     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** Konstruktor turi bilan birga ob'ekt tugmachalari uzunligidan ham foydalanishingiz mumkin.
 
      ```javascript
      function isEmpty(obj) {
@@ -2176,7 +2176,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 128. ### What is an arguments object
 
-     The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
+     Argumentlar obyekti funksiyalar ichida mavjud boʻlgan massivga oʻxshash obyekt boʻlib, u funksiyaga uzatilgan argumentlar qiymatlarini oʻz ichiga oladi. Masalan, sum funksiyasi ichida argumentlar obyektidan qanday foydalanishni ko‘rib chiqamiz,
 
      ```javascript
      function sum() {
@@ -2190,7 +2190,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      sum(1, 2, 3); // returns 6
      ```
 
-     **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
+     **Eslatma:** Argumentlar obyektida massiv usullarini qo‘llay olmaysiz. Lekin siz quyidagi kabi oddiy massivga aylantira olasiz.
 
      ```javascript
      var argsArray = Array.prototype.slice.call(arguments);
@@ -2200,7 +2200,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 129. ### How do you make first letter of the string in an uppercase
 
-     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
+     Siz bosh harf bilan satr yaratish uchun charAt, toUpperCase va slice usullari kabi qator usullardan foydalanadigan funksiya yaratishingiz mumkin.
 
      ```javascript
      function capitalizeFirstLetter(string) {
@@ -2212,24 +2212,24 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 130. ### What are the pros and cons of for loop
 
-     The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
+     For-loop javascriptda tez-tez ishlatiladigan iteratsiya sintaksisidir. Buning ham ijobiy, ham salbiy tomonlari bor
 
      #### Pros
 
-     1. Works on every environment
-     2. You can use break and continue flow control statements
+     1. Har qanday muhitda ishlaydi
+     2. Siz break va continue oqimini boshqarish bayonotlaridan foydalanishingiz mumkin
 
      #### Cons
 
-     1. Too verbose
+     1. Juda batafsil
      2. Imperative
-     3. You might face one-by-off errors
+     3. Siz bir martalik xatolarga duch kelishingiz mumkin
 
      **[⬆ Yuqoriga qaytish](#mundarija)**
 
 131. ### How do you display the current date in javascript
 
-     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
+     Joriy sana va vaqtni o'z ichiga olgan yangi Sana ob'ektini yaratish uchun `new Date()` dan foydalanishingiz mumkin. Masalan, joriy sanani mm/dd/yyyy da ko'rsatamiz
 
      ```javascript
      var today = new Date();
@@ -2245,7 +2245,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 132. ### How do you compare two date objects
 
-     You need to use date.getTime() method to compare date values instead of comparison operators (==, !=, ===, and !== operators)
+     Taqqoslash operatorlari (==, !=, === va !== operatorlari) o‘rniga sana qiymatlarini solishtirish uchun date.getTime() usulidan foydalanishingiz kerak.
 
      ```javascript
      var d1 = new Date();
@@ -2258,7 +2258,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 133. ### How do you check if a string starts with another string
 
-     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
+     ECMAScript 6 ning `String.prototype.startsWith()` usulidan string boshqa string bilan boshlanishi yoki boshlanmasligini tekshirishingiz mumkin. Ammo u hali barcha brauzerlarda qo'llab-quvvatlanmaydi. Keling, ushbu foydalanishni ko'rish uchun misolni ko'rib chiqaylik,
 
      ```javascript
      "Good morning".startsWith("Good"); // true
@@ -2269,13 +2269,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 134. ### How do you trim a string in javascript
 
-     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
+     JavaScript string(nig) boshida yoki oxirida mavjud bo'lgan bo'shliqlarni kesish uchun string turlari bo'yicha kesish usulini taqdim etdi.
 
      ```javascript
      "  Hello World   ".trim(); //Hello World
      ```
 
-     If your browser(<IE9) doesn't support this method then you can use below polyfill.
+     Agar brauzeringiz (<IE9) bu usulni qo'llab-quvvatlamasa, quyida polyfill(dan) foydalanishingiz mumkin.
 
      ```javascript
      if (!String.prototype.trim) {
