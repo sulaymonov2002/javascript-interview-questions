@@ -2352,7 +2352,6 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      Ammo "\\" belgisidan keyin bo'sh joy bo'lsa, code aynan bir xil ko'rinadi, lekin u SyntaxError ko'taradi.
 
-
      **[⬆ Yuqoriga qaytish](#mundarija)**
 
 139. ### What is an app shell model
@@ -2381,7 +2380,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 141. ### What is the way to find the number of parameters expected by a function
 
-     You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
+     Funksiya kutayotgan parametrlar sonini topish uchun `function.length` sintaksisidan foydalanishingiz mumkin. Raqamlar yig'indisini hisoblash uchun yig'indi funksiyasiga misol keltiraylik,
 
      ```javascript
      function sum(num1, num2, num3, num4) {
@@ -2390,17 +2389,18 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      sum.length; // 4 is the number of parameters expected.
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 142. ### What is a polyfill
 
-     A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
 
-     **[⬆ Back to Top](#mundarija)**
+    Polyfill - bu uni qo'llab-quvvatlamaydigan eski brauzerlarda zamonaviy funksiyalarni ta'minlash uchun ishlatiladigan JS code(ning) bir qismi. For example, Masalan, Silverlight plaginining polyfill dasturidan Microsoft Internet Explorer 7 da HTML Canvas elementining funksionalligini taqlid qilish uchun foydalanish mumkin.
+
+     **[⬆ Yuqoriga qaytishs](#mundarija)**
 
 143. ### What are break and continue statements
 
-     The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
+     Break iborasi tsikldan "jump out" uchun ishlatiladi. ya'ni, skilni buzadi va skildan keyin code(ni) bajarishda davom etadi.
 
      ```javascript
      for (i = 0; i < 10; i++) {
@@ -2411,7 +2411,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+     Davom etish iborasi tsikldagi bir iteratsiyadan "jump over" uchun ishlatiladi. ya'ni, agar belgilangan shart yuzaga kelsa, u bir iteratsiyani (siklda) buzadi va sikldagi keyingi iteratsiya bilan davom etadi.
 
      ```javascript
      for (i = 0; i < 10; i++) {
@@ -2422,11 +2422,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 144. ### What are js labels
 
-     The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
+     Label statement bizga JavaScript-da sikllar va bloklarni nomlash imkonini beradi. Keyin biz ushbu teglardan code(ga) keyinroq murojaat qilish uchun foydalanishimiz mumkin. Masalan, yorliqli quyidagi code raqamlar bir xil bo'lganda chop etishdan saqlaydi,
 
      ```javascript
      var i, j;
@@ -2446,32 +2446,32 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      //   "i = 2, j = 1"
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 145. ### What are the benefits of keeping declarations at the top
 
-     It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
+     Barcha deklaratsiyalarni har bir skript yoki funksiyaning yuqori qismida saqlash tavsiya etiladi. Buni amalga oshirishning afzalliklari,
 
-     1. Gives cleaner code
-     2. It provides a single place to look for local variables
-     3. Easy to avoid unwanted global variables
-     4. It reduces the possibility of unwanted re-declarations
+     1. Tozaroq code beradi
+     2. Bu local o'zgaruvchilarni qidirish uchun yagona joyni ta'minlaydi
+     3. Keraksiz global o'zgaruvchilardan qochish oson
+     4. Bu istalmagan qayta re-declaration(lar) ehtimolini kamaytiradi
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 146. ### What are the benefits of initializing variables
 
-     It is recommended to initialize variables because of the below benefits,
+     Quyidagi imtiyozlar tufayli o'zgaruvchilarni ishga tushirish tavsiya etiladi,
 
-     1. It gives cleaner code
-     2. It provides a single place to initialize variables
-     3. Avoid undefined values in the code
+     1. Bu toza code(ni) beradi
+     2. U o'zgaruvchilarni ishga tushirish uchun yagona joyni taqdim etadi
+     3. Code(da) aniqlanmagan qiymatlardan saqlaning
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 147. ### What are the recommendations to create new object
 
-     It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
+     `new Object()` yordamida yangi ob'ektlar yaratishdan qochish tavsiya etiladi. Buning o'rniga ob'ektlarni yaratish uchun uning turiga qarab qiymatlarni ishga tushirishingiz mumkin.
 
      1. Assign {} instead of new Object()
      2. Assign "" instead of new String()
@@ -2481,7 +2481,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      6. Assign /()/ instead of new RegExp()
      7. Assign function (){} instead of new Function()
 
-     You can define them as an example,
+     Siz ularni misol sifatida belgilashingiz mumkin,
 
      ```javascript
      var v1 = {};
@@ -2493,11 +2493,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      var v7 = function () {};
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 148. ### How do you define JSON arrays
 
-     JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+     JSON massivlari kvadrat qavslar ichida yoziladi va massivlar javascript ob'ektlarini o'z ichiga oladi. Masalan, foydalanuvchilarning JSON massivi quyidagi kabi bo'ladi:
 
      ```javascript
      "users":[
@@ -2507,24 +2507,24 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ]
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 149. ### How do you generate random integers
 
-     You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
+     Tasodifiy butun sonlarni qaytarish uchun Math.random() dan Math.floor() bilan foydalanishingiz mumkin. Misol uchun, agar siz 1 dan 10 gacha bo'lgan tasodifiy butun sonlarni yaratmoqchi bo'lsangiz, ko'paytirish koeffitsienti 10 bo'lishi kerak,
 
      ```javascript
      Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
      Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
      ```
 
-     **Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+     **Eslatma:** Math.random() 0 (shu jumladan) va 1 (eksklyuziv) orasidagi tasodifiy sonni qaytaradi
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 150. ### Can you write a random integers function to print integers with in a range
 
-     Yes, you can create a proper random function to return a random number between min and max (both included)
+     Ha, siz min va maksimal o'rtasidagi tasodifiy sonni qaytarish uchun tegishli tasodifiy funksiyani yaratishingiz mumkin (ikkalasi ham kiritilgan)
 
      ```javascript
      function randomInteger(min, max) {
