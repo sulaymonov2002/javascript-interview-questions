@@ -2293,7 +2293,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 135. ### How do you add a key value pair in javascript
 
-     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
+     Ob'ektga yangi xususiyatlar qo'shishning ikkita mumkin bo'lgan yechimi mavjud. Ushbu yechimlarni tushuntirish uchun oddiy ob'ektni olaylik.
 
      ```javascript
      var object = {
@@ -2302,46 +2302,46 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      };
      ```
 
-     1. **Using dot notation:** This solution is useful when you know the name of the property
+     1. **Dot notation foydalanish:** Ushbu yechim mulk nomini bilsangiz foydali bo'ladi
 
      ```javascript
      object.key3 = "value3";
      ```
 
-     1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+     1. **Square bracket notation foydalanish:** Ushbu yechim xususiyat nomi dinamik tarzda aniqlanganda foydalidir.
 
      ```javascript
      obj["key3"] = "value3";
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 136. ### Is the !-- notation represents a special operator
 
-     No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
+     Yo'q, bu maxsus operator emas. Ammo bu birin-ketin ikkita standart operatorning kombinatsiyasi,
 
      1. A logical not (!)
      2. A prefix decrement (--)
 
-     At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
+     Avvaliga value bittaga kamaydi va keyin truthy/falsy qiymatni aniqlash uchun nolga teng yoki yo'qligini tekshirish uchun sinovdan o'tkazildi.
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 137. ### How do you assign default values to variables
 
-     You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
+     Mantiqiy yoki `||` operatoridan foydalanishingiz mumkin standart qiymatni berish uchun tayinlash ifodasida. Sintaksis quyidagi kabi ko'rinadi,
 
      ```javascript
      var a = b || c;
      ```
 
-     As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
+     Yuqoridagi ifodaga ko'ra, "a" o'zgaruvchisi "b" noto'g'ri bo'lsa (agar null, noto'g'ri, aniqlanmagan, 0, bo'sh qator yoki NaN bo'lsa), aks holda "a" o'zgaruvchisi "c" qiymatini oladi. "b" qiymati.
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 138. ### How do you define multiline strings
 
-     You can define multiline string literals using the '\\' character followed by line terminator.
+     Ko'p qatorli satr harflarini "\\" belgisidan keyin qator terminatori yordamida belgilashingiz mumkin.
 
      ```javascript
      var str =
@@ -2350,19 +2350,20 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      sentence!";
      ```
 
-     But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
+     Ammo "\\" belgisidan keyin bo'sh joy bo'lsa, code aynan bir xil ko'rinadi, lekin u SyntaxError ko'taradi.
 
-     **[⬆ Back to Top](#mundarija)**
+
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 139. ### What is an app shell model
 
-     An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
+     Application shell (yoki app shell) arxitekturasi mahalliy ilovalarda ko'rganingizga o'xshash foydalanuvchilar ekraniga ishonchli va bir zumda yuklanadigan Progressive Web Ilovani yaratish usullaridan biridir. It is useful for getting some initial HTML to the screen fast without a network.
 
      **[⬆ Back to Top](#mundarija)**
 
 140. ### Can we define properties for functions
 
-     Yes, We can define properties for functions because functions are also objects.
+     Bu tarmoqsiz ekranga dastlabki HTML-ni tezda olish uchun foydalidir.
 
      ```javascript
      fn = function (x) {
@@ -2376,7 +2377,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      };
      ```
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 141. ### What is the way to find the number of parameters expected by a function
 
