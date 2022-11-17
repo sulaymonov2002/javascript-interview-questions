@@ -164,56 +164,56 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 148 | [JSON array(larini) qanday aniqlaysiz ?](#how-do-you-define-json-arrays)                                                                                         |
 | 149 | [Tasodifiy butun sonlar qanday yaratiladi ?](#how-do-you-generate-random-integers)                                                                               |
 | 150 | [Butun sonlarni diapazonda chop etish uchun tasodifiy funksiyasini yoza olasizmi ?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
-| 151 | [What is tree shaking](#what-is-tree-shaking)                                                                                                                    |
-| 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)                                                                                            |
-| 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval)                                                                                                  |
-| 154 | [What is a Regular Expression](#what-is-a-regular-expression)                                                                                                    |
-| 155 | [What are the string methods available in Regular expression](#what-are-the-string-methods-available-in-regular-expression)                                      |
-| 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression)                                                                            |
-| 157 | [What are regular expression patterns](#what-are-regular-expression-patterns)                                                                                    |
-| 158 | [What is a RegExp object](#what-is-a-regexp-object)                                                                                                              |
-| 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                            |
-| 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                        |
-| 161 | [How do you change the style of a HTML element](#how-do-you-change-the-style-of-a-html-element)                                                                  |
-| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123)                                                                                          |
-| 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                    |
-| 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-in-debugging)                                                              |
-| 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                              |
-| 166 | [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser)                                                                                        |
-| 167 | [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp)                                                          |
-| 168 | [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js)                                                        |
-| 169 | [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request)                                                                            |
-| 170 | [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request)                                                                          |
-| 171 | [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript)                                          |
-| 172 | [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window)                                                        |
-| 173 | [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript)                                                                    |
-| 174 | [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)                                                                |
-| 175 | [What are the ways to execute javascript after page load](#what-are-the-ways-to-execute-javascript-after-page-load)                                              |
-| 176 | [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype)                                                        |
-| 177 | [Give an example where do you really need semicolon](#give-an-example-where-do-you-really-need-semicolon)                                                        |
-| 178 | [What is a freeze method](#what-is-a-freeze-method)                                                                                                              |
-| 179 | [What is the purpose of freeze method](#what-is-the-purpose-of-freeze-method)                                                                                    |
-| 180 | [Why do I need to use freeze method](#why-do-i-need-to-use-freeze-method)                                                                                        |
-| 181 | [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference)                                                              |
-| 182 | [How to convert string to title case with javascript](#how-to-convert-string-to-title-case-with-javascript)                                                      |
-| 183 | [How do you detect javascript disabled in the page](#how-do-you-detect-javascript-disabled-in-the-page)                                                          |
-| 184 | [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript)                                                        |
-| 185 | [What is a rest parameter](#what-is-a-rest-parameter)                                                                                                            |
-| 186 | [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                            |
-| 187 | [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript)                                                |
-| 188 | [What is a spread operator](#what-is-a-spread-operator)                                                                                                          |
-| 189 | [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not)                                                    |
-| 190 | [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
-| 191 | [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method)                                                                  |
-| 192 | [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other)                                                      |
-| 193 | [What are the applications of assign method](#what-are-the-applications-of-assign-method)                                                                        |
-| 194 | [What is a proxy object](#what-is-a-proxy-object)                                                                                                                |
-| 195 | [What is the purpose of seal method](#what-is-the-purpose-of-seal-method)                                                                                        |
-| 196 | [What are the applications of seal method](#what-are-the-applications-of-seal-method)                                                                            |
-| 197 | [What are the differences between freeze and seal methods](#what-are-the-differences-between-freeze-and-seal-methods)                                            |
-| 198 | [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                        |
-| 199 | [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs)                                                                  |
-| 200 | [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)        |
+| 151 | [Tree shaking nima ?](#what-is-tree-shaking)                                                                                                                    |
+| 152 | [Tree shaking nimaga kerak ?](#what-is-the-need-of-tree-shaking)                                                                                            |
+| 153 | [Eval dan foydalanish tavsiya etiladimi ?](#is-it-recommended-to-use-eval)                                                                                                  |
+| 154 | [Regular Expression nima ?](#what-is-a-regular-expression)                                                                                                    |
+| 155 | [Regular expression(da) qanday qator usullari mavjud ?](#what-are-the-string-methods-available-in-regular-expression)                                      |
+| 156 | [Regular Expression(dagi) modifikatorlar nima ?](#what-are-modifiers-in-regular-expression)                                                                            |
+| 157 | [Regular Expression patterns nima ?](#what-are-regular-expression-patterns)                                                                                    |
+| 158 | [RegExp object nima ?](#what-is-a-regexp-object)                                                                                                              |
+| 159 | [pattern uchun string(ni) qanday qidirasiz ?](#how-do-you-search-a-string-for-a-pattern)                                                                            |
+| 160 | [Exec method(ning) maqsadi nima ?](#what-is-the-purpose-of-exec-method)                                                                                        |
+| 161 | [HTML elementining uslubini qanday o'zgartirish mumkin ?](#how-do-you-change-the-style-of-a-html-element)                                                                  |
+| 162 | [1+2+'3' natijasi qanday bo'ladi ?](#what-would-be-the-result-of-123)                                                                                          |
+| 163 | [Debugger statement nima ?](#what-is-a-debugger-statement)                                                                                                    |
+| 164 | [Nosozliklarni tuzatishda uzilish nuqtalarining maqsadi nima ?](#what-is-the-purpose-of-breakpoints-in-debugging)                                                              |
+| 165 | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi ?](#can-i-use-reserved-words-as-identifiers)                                                                              |
+| 166 | [Mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser)                                                                                        |
+| 167 | [Regexpsiz mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser-without-regexp)                                                          |
+| 168 | [JS yordamida tasvir kengligi va balandligini qanday olish mumkin ?](#how-do-you-get-the-image-width-and-height-using-js)                                                        |
+| 169 | [Synchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-synchronous-http-request)                                                                            |
+| 170 | [Asynchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-asynchronous-http-request)                                                                          |
+| 171 | [Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz ?](#how-do-you-convert-date-to-another-timezone-in-javascript)                                          |
+| 172 | [Window hajmini olish uchun qanday xususiyatlardan foydalaniladi ?](#what-are-the-properties-used-to-get-size-of-window)                                                        |
+| 173 | [Javascriptda shartli operator nima ?](#what-is-a-conditional-operator-in-javascript)                                                                    |
+| 174 | [Conditional operator(da) apply chaining(ni) qo'llay olasizmi ?](#Can-you-apply-chaining-on-conditional-operator)                                                                |
+| 175 | [Sahifani yuklagandan so'ng Javascriptni bajarish usullari qanday ?](#what-are-the-ways-to-execute-javascript-after-page-load)                                              |
+| 176 | [Proto and prototype o'rtasidagi farq nima ?](#what-is-the-difference-between-proto-and-prototype)                                                        |
+| 177 | [Sizga nuqta-vergul kerak bo'lgan misol keltiring ?](#give-an-example-where-do-you-really-need-semicolon)                                                        |
+| 178 | [Freeze method nima ?](#what-is-a-freeze-method)                                                                                                              |
+| 179 | [Freeze method(dan) maqsad nima ?](#what-is-the-purpose-of-freeze-method)                                                                                    |
+| 180 | [Nima uchun Freeze method foydalanishim kerak ?](#why-do-i-need-to-use-freeze-method)                                                                                        |
+| 181 | [Brauzer tilini afzal ko'rishni qanday aniqlash mumkin ?](#how-do-you-detect-a-browser-language-preference)                                                              |
+| 182 | [Qanday qilib Javascript yordamida string(ni) sarlavha holatiga aylantirish mumkin ?](#how-to-convert-string-to-title-case-with-javascript)                                                      |
+| 183 | [Sahifada o'chirilgan Javascriptni qanday aniqlash mumkin ?](#how-do-you-detect-javascript-disabled-in-the-page)                                                          |
+| 184 | [Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima ?](#what-are-various-operators-supported-by-javascript)                                                        |
+| 185 | [Rest parameter nima ?](#what-is-a-rest-parameter)                                                                                                            |
+| 186 | [Agar dam olish parametrini oxirgi argument sifatida ishlatmasangiz nima bo'ladi ?](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                            |
+| 187 | [Javascriptda qanday bitli operatorlar mavjud ?](#what-are-the-bitwise-operators-available-in-javascript)                                                |
+| 188 | [Spread operator nima ?](#what-is-a-spread-operator)                                                                                                          |
+| 189 | [Ob'ektning frozen yoki muzlatilmaganligini qanday aniqlash mumkin ?](#how-do-you-determine-whether-object-is-frozen-or-not)                                                    |
+| 190 | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin ?](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
+| 191 | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                  |
+| 192 | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin ?](#how-do-you-copy-properties-from-one-object-to-other)                                                      |
+| 193 | [Assign method qanday qo'llaniladi ?](#what-are-the-applications-of-assign-method)                                                                        |
+| 194 | [Proxy object nima ?](#what-is-a-proxy-object)                                                                                                                |
+| 195 | [Seal method(ning) maqsadi nima ?](#what-is-the-purpose-of-seal-method)                                                                                        |
+| 196 | [Seal method qanday qo'llaniladi ?](#what-are-the-applications-of-seal-method)                                                                            |
+| 197 | [Freeze va seal method(lari) o'rtasidagi farqlar qanday ?](#what-are-the-differences-between-freeze-and-seal-methods)                                            |
+| 198 | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                        |
+| 199 | [Qanday qilib sanab o'tiladigan key va value juftlarini olasiz ?](#how-do-you-get-enumerable-key-and-value-pairs)                                                                  |
+| 200 | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)        |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -3227,7 +3227,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
         both NaN
         both non-zero and both not NaN and both have the same value.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#mundarija)**
 
 191. ### What is the purpose of using object is method
 
