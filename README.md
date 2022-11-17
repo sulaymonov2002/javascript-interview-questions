@@ -2599,44 +2599,43 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 153. ### Is it recommended to use eval
 
-     No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
+     Yo'q, bu xavfsizlik muammosini keltirib chiqaradigan o'zboshimchalik code(ni) ishga tushirishga imkon beradi. Bizga ma'lumki, eval() funksiyasi matnni code sifatida ishlatish uchun ishlatiladi. Ko'pgina hollarda, uni ishlatish shart emas.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 154. ### What is a Regular Expression
 
-     A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
+     Regular expression qidiruv sxemasini tashkil etuvchi belgilar ketma-ketligidir. Matndagi ma'lumotlarni qidirish uchun ushbu qidiruv namunasidan foydalanishingiz mumkin. Bulardan matn qidirish va matnni almashtirish operatsiyalarining barcha turlarini bajarish uchun foydalanish mumkin. Keling, sintaksis formatini ko'rib chiqaylik,
 
      ```javascript
      /pattern/modifiers;
      ```
 
-     For example, the regular expression or search pattern with case-insensitive username would be,
+     Masalan, katta-kichik harfga sezgir bo'lmagan foydalanuvchi nomi bilan muntazam ifoda yoki qidiruv namunasi:
 
      ```javascript
      /John/i;
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 155. ### What are the string methods available in Regular expression
 
-     Regular Expressions has two string methods: search() and replace().
-     The search() method uses an expression to search for a match, and returns the position of the match.
+     Regular Expression ikkita string usuli mavjud: search() va replace(). Search() usuli moslikni qidirish uchun ifodadan foydalanadi va mos keladigan joyni qaytaradi.
 
      ```javascript
      var msg = "Hello John";
      var n = msg.search(/John/i); // 6
      ```
 
-     The replace() method is used to return a modified string where the pattern is replaced.
+     replace() usuli naqsh almashtirilgan o'zgartirilgan string(ni) qaytarish uchun ishlatiladi.
 
      ```javascript
      var msg = "Hello John";
      var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 156. ### What are modifiers in regular expression
 
