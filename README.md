@@ -2678,7 +2678,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 158. ### What is a RegExp object
 
-     RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
+     RegExp ob'ekti oldindan belgilangan xususiyatlar va usullarga ega muntazam ifoda ob'ektidir. Keling, RegExp ob'ektidan oddiy foydalanishni ko'rib chiqaylik,
 
      ```javascript
      var regexp = new RegExp("\\w+");
@@ -2690,14 +2690,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 159. ### How do you search a string for a pattern
 
-     You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
+     Naqsh uchun string(ni) qidirish va natijaga qarab rost yoki yolgʻonni qaytarish uchun test() muntazam ifoda usulidan foydalanishingiz mumkin.
 
      ```javascript
      var pattern = /you/;
      console.log(pattern.test("How are you?")); //true
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 160. ### What is the purpose of exec method
 
