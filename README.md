@@ -2639,13 +2639,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 156. ### What are modifiers in regular expression
 
-     Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
+     Modifikatorlar katta-kichik harflarni sezmaydigan va global qidiruvlarni amalga oshirish uchun ishlatilishi mumkin. Keling, ba'zi modifikatorlarni sanab o'tamiz,
 
      | Modifier | Description                                             |
      | -------- | ------------------------------------------------------- |
-     | i        | Perform case-insensitive matching                       |
-     | g        | Perform a global match rather than stops at first match |
-     | m        | Perform multiline matching                              |
+     | i        | Katta-kichik harflarni sezmaydigan moslikni bajaring                       |
+     | g        | Birinchi o'yinda to'xtamasdan, global o'yinni bajaring |
+     | m        | Ko'p qatorli moslikni bajaring                              |
 
      Let's take an example of global modifier,
 
@@ -2655,29 +2655,26 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      var result = text.match(pattern); // one,one
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 157. ### What are regular expression patterns
 
-     Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
+     Regular Expressions belgilarni moslashtirish uchun pattern guruhini taqdim etadi. Asosan, ular 3 turga bo'linadi,
 
-     1. **Brackets:** These are used to find a range of characters.
-        For example, below are some use cases,
-        1. [abc]: Used to find any of the characters between the brackets(a,b,c)
-        2. [0-9]: Used to find any of the digits between the brackets
-        3. (a|b): Used to find any of the alternatives separated with |
-     2. **Metacharacters:** These are characters with a special meaning
-        For example, below are some use cases,
-        1. \\d: Used to find a digit
-        2. \\s: Used to find a whitespace character
-        3. \\b: Used to find a match at the beginning or ending of a word
-     3. **Quantifiers:** These are useful to define quantities
-        For example, below are some use cases,
-        1. n+: Used to find matches for any string that contains at least one n
-        2. n\*: Used to find matches for any string that contains zero or more occurrences of n
-        3. n?: Used to find matches for any string that contains zero or one occurrences of n
+     1. **Qavslar:** TBu belgilar qatorini topish uchun ishlatiladi. Misol uchun, quyida ba'zi foydalanish holatlari,
+        1. [abc]: Qavslar (a,b,c) orasidagi har qanday belgilarni topish uchun foydalaniladi.
+        2. [0-9]: Qavslar orasidagi har qanday raqamni topish uchun ishlatiladi
+        3. (a|b): | bilan ajratilgan har qanday muqobillarni topish uchun ishlatiladi
+     2. **Meta belgilar:** Bular alohida ma'noga ega bo'lgan belgilar, Masalan, quyida ba'zi foydalanish holatlari,
+        1. \\d: Raqamni topish uchun ishlatiladi
+        2. \\s: Bo'shliq belgisini topish uchun ishlatiladi
+        3. \\b: So'z boshida yoki oxirida moslikni topish uchun ishlatiladi
+     3. **Miqdor ko'rsatkichlari:** Bu miqdorlarni aniqlash uchun foydalidir Masalan, quyida ba'zi foydalanish holatlari keltirilgan
+        1. n+: Kamida bitta n ni o'z ichiga olgan har qanday satr uchun mosliklarni topish uchun foydalaniladi
+        2. n\*: n ning nol yoki undan ortiq takrorlanishini o'z ichiga olgan har qanday string uchun mosliklarni topish uchun foydalaniladi
+        3. n?: n ning nol yoki bitta takrorlanishini o'z ichiga olgan har qanday string uchun mosliklarni topish uchun foydalaniladi
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 158. ### What is a RegExp object
 
@@ -2689,7 +2686,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      // expected output: /\w+/
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 159. ### How do you search a string for a pattern
 
