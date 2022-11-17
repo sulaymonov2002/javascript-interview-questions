@@ -2701,14 +2701,14 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 160. ### What is the purpose of exec method
 
-     The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
+     Exec usulining maqsadi test usuliga o'xshaydi, lekin u ko'rsatilgan string(da) moslikni qidirishni amalga oshiradi va true/false qaytarish o'rniga natija massivini yoki nullni qaytaradi.
 
      ```javascript
      var pattern = /you/;
      console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 161. ### How do you change the style of a HTML element
 
