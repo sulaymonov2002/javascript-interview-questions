@@ -2766,7 +2766,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 166. ### How do you detect a mobile browser
 
-     You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
+     Siz foydalanuvchining mobil qurilmani ko'rish yoki ko'rmasligiga qarab haqiqiy yoki noto'g'ri qiymatni qaytaradigan regexdan foydalanishingiz mumkin.
 
      ```javascript
      window.mobilecheck = function () {
@@ -2786,11 +2786,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      };
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 167. ### How do you detect a mobile browser without regexp
 
-     You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
+     Siz shunchaki qurilmalar ro'yxatini ko'rib chiqish va foydalanuvchi agenti biror narsaga mos kelishini tekshirish orqali mobil brauzerlarni aniqlashingiz mumkin. Bu RegExp-dan foydalanish uchun muqobil yechim,
 
      ```javascript
      function detectmob() {
@@ -2810,11 +2810,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 168. ### How do you get the image width and height using JS
 
-     You can programmatically get the image and check the dimensions(width and height) using Javascript.
+     Javascript yordamida tasvirni dasturiy ravishda olishingiz va o'lchamlarni (kenglik va balandlik) tekshirishingiz mumkin.
 
      ```javascript
      var img = new Image();
@@ -2824,11 +2824,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      img.src = "http://www.google.com/intl/en_ALL/images/logo.gif";
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 169. ### How do you make synchronous HTTP request
 
-     Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
+     Brauzerlar JavaScript-dan sinxron HTTP so'rovlarini amalga oshirish uchun ishlatilishi mumkin bo'lgan XMLHttpRequest obyektini taqdim etadi.
 
      ```javascript
      function httpGet(theUrl) {
@@ -2839,11 +2839,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 170. ### How do you make asynchronous HTTP request
 
-     Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
+     Brauzerlar XMLHttpRequest ob'ektini taqdim etadi, undan JavaScript-dan 3-parametrni rost deb o'tkazish orqali asinxron HTTP so'rovlarini amalga oshirish uchun foydalanish mumkin.
 
      ```javascript
      function httpGetAsync(theUrl, callback) {
@@ -2857,21 +2857,21 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 171. ### How do you convert date to another timezone in javascript
 
-     You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
+     Bir vaqt mintaqasidagi sanalarni boshqasiga aylantirish uchun toLocaleString() usulidan foydalanishingiz mumkin. Misol uchun, hozirgi sanani quyida keltirilgan Britaniya ingliz vaqt mintaqasiga aylantiramiz,
 
      ```javascript
      console.log(event.toLocaleString("en-GB", { timeZone: "UTC" })); //29/06/2019, 09:56:00
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 172. ### What are the properties used to get size of window
 
-     You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
+     Window hajmini topish uchun siz innerWidth, innerHeight, clientWidth, clientHeight xususiyatlaridan, hujjat elementidan va hujjat tanasi obyektlaridan foydalanishingiz mumkin. Keling, window yoki hujjat hajmini hisoblash uchun ushbu xususiyatlarning kombinatsiyasidan foydalanamiz,
 
      ```javascript
      var width =
@@ -2885,11 +2885,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
        document.body.clientHeight;
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 173. ### What is a conditional operator in javascript
 
-     The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
+     Conditional (ternary) operator uchta operandni qabul qiladigan yagona JavaScript operatori bo'lib, if operatorlari uchun yorliq vazifasini bajaradi.
 
      ```javascript
      var isAuthenticated = false;
@@ -2898,11 +2898,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ); //Sorry, you are not authenticated
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 174. ### Can you apply chaining on conditional operator
 
-     Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
+     Ha, zanjirni if ​​… else if … else if … else zanjiriga oʻxshash shartli operatorlarda qoʻllashingiz mumkin. Sintaksis quyidagi kabi bo'ladi,
 
      ```javascript
      function traceValue(someParam) {
@@ -2930,11 +2930,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 175. ### What are the ways to execute javascript after page load
 
-     You can execute javascript after page load in many different ways,
+     Sahifani yuklagandan so'ng JavaScript-ni turli yo'llar bilan bajarishingiz mumkin,
 
      1. **window.onload:**
 
@@ -2954,22 +2954,22 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      <body onload="script();">
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 176. ### What is the difference between proto and prototype
 
-     The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new
+     `__proto__` ob'ekti usullarni va boshqalarni hal qilish uchun qidirish zanjirida ishlatiladigan haqiqiy ob'ektdir. `protoytpe` esa yangi ob'ektni yaratishda `__proto__` yaratish uchun foydalaniladigan ob'ektdir.
 
      ```javascript
      new Employee().__proto__ === Employee.prototype;
      new Employee().prototype === undefined;
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 177. ### Give an example where do you really need semicolon
 
-     It is recommended to use semicolons after every statement in JavaScript. For example, in the below case it throws an error ".. is not a function" at runtime due to missing semicolon.
+     JavaScript-dagi har bir bayonotdan keyin nuqta-vergul qo'yish tavsiya etiladi. Misol uchun, quyidagi holatda nuqtali vergul yo'qligi sababli ish vaqtida ".. funksiya emas" xatosini chiqaradi.
 
      ```javascript
      // define a function
@@ -2985,7 +2985,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      )();
      ```
 
-     and it will be interpreted as
+     deb talqin qilinadi
 
      ```javascript
      var fn = (function () {
@@ -2995,13 +2995,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      })();
      ```
 
-     In this case, we are passing the second function as an argument to the first function and then trying to call the result of the first function call as a function. Hence, the second function will fail with a "... is not a function" error at runtime.
+     Bunday holda, biz ikkinchi funksiyani birinchi funksiyaga argument sifatida o'tkazamiz va keyin birinchi funksiya chaqiruvining natijasini funksiya sifatida chaqirishga harakat qilamiz. Demak, ikkinchi funksiya ish vaqtida “... funksiya emas” xatosi bilan ishlamay qoladi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 178. ### What is a freeze method
 
-     The **freeze()** method is used to freeze an object. Freezing an object does not allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
+     Ob'ektni `freeze` uchun freeze() usuli qo'llaniladi. Ob'ektni muzlatish ob'ektga yangi xususiyatlar qo'shishga imkon bermaydi, uni olib tashlashni oldini oladi va mavjud xususiyatlarning sanab o'tish, sozlanishi yoki yozilishini o'zgartirishni oldini oladi. ya'ni, u o'tgan ob'ektni qaytaradi va muzlatilgan nusxani yaratmaydi.
 
      ```javascript
      const obj = {
@@ -3014,8 +3014,8 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(obj.prop); //100
      ```
 
-     Remember freezing is only applied to the top-level properties in objects but not for nested objects.
-     For example, let's try to freeze user object which has employment details as nested object and observe that details have been changed.
+     Esda tutingki, freeze faqat ob'ektlardagi yuqori darajadagi xususiyatlarga qo'llaniladi, lekin ichki o'rnatilgan ob'ektlar uchun emas.
+     Misol uchun, ichki ob'ekt sifatida bandlik tafsilotlariga ega bo'lgan foydalanuvchi ob'ektini muzlatib qo'yishga harakat qilaylik va tafsilotlar o'zgartirilganligini kuzataylik.
 
      ```javascript
      const user = {
@@ -3029,24 +3029,24 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      user.employment.department = "HR";
      ```
 
-     **Note:** It causes a TypeError if the argument passed is not an object.
+     **Eslatma:** Agar o'tkazilgan argument ob'ekt bo'lmasa, u TypeErrorni keltirib chiqaradi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 179. ### What is the purpose of freeze method
 
-     Below are the main benefits of using freeze method,
+     Quyida freeze usulidan foydalanishning asosiy afzalliklari keltirilgan,
 
-     1. It is used for freezing objects and arrays.
-     2. It is used to make an object immutable.
+     1. U ob'ektlar va massivlarni freeze uchun ishlatiladi.
+     2. U ob'ektni o'zgarmas qilish uchun ishlatiladi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 180. ### Why do I need to use freeze method
 
-     In the Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as the `final` keyword which is used in various languages.
+     Ob'ektga yo'naltirilgan paradigmada mavjuf API mavjud kontekstdan tashqari kengaytirilishi, o'zgartirilishi yoki qayta ishlatilishi mo'ljallanmagan ayrim elementlarni o'z ichiga oladi. Shuning uchun u turli tillarda ishlatiladigan `final` keyword so'z sifatida ishlaydi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 181. ### How do you detect a browser language preference
 
