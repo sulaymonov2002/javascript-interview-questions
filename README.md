@@ -2712,33 +2712,31 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 161. ### How do you change the style of a HTML element
 
-     You can change inline style or classname of a HTML element using javascript
+     HTML elementining ichki uslubi yoki sinf nomini JavaScript yordamida o'zgartirishingiz mumkin
 
-     1. **Using style property:** You can modify inline style using style property
+     1. **Uslub xususiyatidan foydalanish:** Inline uslubini uslub xususiyatidan foydalanib o'zgartirishingiz mumkin
 
      ```javascript
      document.getElementById("title").style.fontSize = "30px";
      ```
 
-     1. **Using ClassName property:** It is easy to modify element class using className property
+     1. **ClassName xususiyatidan foydalanish:** ClassName xususiyatidan foydalanib, element sinfini o'zgartirish oson
 
      ```javascript
      document.getElementById("title").className = "custom-title";
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 162. ### What would be the result of 1+2+'3'
 
-     The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`.
+     Chiqish `33` bo'ladi. `1` va `2` raqamli qiymatlar bo'lgani uchun birinchi ikkita raqamning natijasi `3` raqamli qiymat bo'ladi. Keyingi raqam qator tipidagi qiymatdir, chunki `3` raqamli qiymat va `3` satr turi qiymati qo'shilishi shunchaki birlashtiruvchi qiymat `33` bo'ladi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 163. ### What is a debugger statement
 
-     The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
-     For example, in the below function a debugger statement has been inserted. So
-     execution is paused at the debugger statement just like a breakpoint in the script source.
+     Debugger statement bayonot to'xtash nuqtasini o'rnatish kabi har qanday mavjud disk raskadrovka funksiyasini chaqiradi. Agar nosozliklarni tuzatish funksiyasi mavjud bo'lmasa, bu bayonotning ta'siri bo'lmaydi. Masalan, quyidagi funksiyada tuzatuvchi bayonoti kiritilgan. Shunday qilib, script manbasidagi to'xtash nuqtasi kabi tuzatuvchi bayonotida bajarish to'xtatiladi.
 
      ```javascript
      function getProfile() {
@@ -2748,23 +2746,23 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 164. ### What is the purpose of breakpoints in debugging
 
-     You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
+     Nosozliklarni tuzatuvchi bayonot bajarilgandan so'ng va disk raskadrovka window ochilgandan so'ng JavaScript code(dida) to'xtash nuqtalarini o'rnatishingiz mumkin. Har bir to'xtash nuqtasida JavaScript ishlashni to'xtatadi va sizga JavaScript qiymatlarini tekshirish imkonini beradi. Qiymatlarni tekshirgandan so'ng, o'ynash tugmasi yordamida kodning bajarilishini davom ettirishingiz mumkin.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 165. ### Can I use reserved words as identifiers
 
-     No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
+     Yo'q, siz ajratilgan so'zlarni o'zgaruvchilar, teglar, ob'ektlar yoki funksiyalar nomi sifatida ishlata olmaysiz. Keling, bitta oddiy misolni ko'rib chiqaylik,
 
      ```javascript
      var else = "hello"; // Uncaught SyntaxError: Unexpected token else
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 166. ### How do you detect a mobile browser
 
