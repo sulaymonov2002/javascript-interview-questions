@@ -2,7 +2,7 @@
 
 > Agar sizga loyiha yoqsa :star: bosing. Texnik yangilanishlar uchun meni [@ssamir_20 Twitter](https://twitter.com/ssamir_20) <= || => [@ssamir_20 Instagram](https://www.instagram.com/ssamir_20/) kuzatib boring.
 
-Maxsus savollarni kodlash uchun [Kodlash mashqlariga](#coding-exercise) o'ting.
+Maxsus savollarni kodlash uchun [Coding Exercise](#coding-exercise) o'ting.
 
 ## PDF/Epub formatlarini yuklab oling
 
@@ -164,6 +164,56 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 148 | [JSON array(larini) qanday aniqlaysiz ?](#how-do-you-define-json-arrays)                                                                                         |
 | 149 | [Tasodifiy butun sonlar qanday yaratiladi ?](#how-do-you-generate-random-integers)                                                                               |
 | 150 | [Butun sonlarni diapazonda chop etish uchun tasodifiy funksiyasini yoza olasizmi ?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
+| 151 | [What is tree shaking](#what-is-tree-shaking)                                                                                                                    |
+| 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)                                                                                            |
+| 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval)                                                                                                  |
+| 154 | [What is a Regular Expression](#what-is-a-regular-expression)                                                                                                    |
+| 155 | [What are the string methods available in Regular expression](#what-are-the-string-methods-available-in-regular-expression)                                      |
+| 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression)                                                                            |
+| 157 | [What are regular expression patterns](#what-are-regular-expression-patterns)                                                                                    |
+| 158 | [What is a RegExp object](#what-is-a-regexp-object)                                                                                                              |
+| 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                            |
+| 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                        |
+| 161 | [How do you change the style of a HTML element](#how-do-you-change-the-style-of-a-html-element)                                                                  |
+| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123)                                                                                          |
+| 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                    |
+| 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-in-debugging)                                                              |
+| 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                              |
+| 166 | [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser)                                                                                        |
+| 167 | [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp)                                                          |
+| 168 | [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js)                                                        |
+| 169 | [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request)                                                                            |
+| 170 | [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request)                                                                          |
+| 171 | [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript)                                          |
+| 172 | [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window)                                                        |
+| 173 | [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript)                                                                    |
+| 174 | [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)                                                                |
+| 175 | [What are the ways to execute javascript after page load](#what-are-the-ways-to-execute-javascript-after-page-load)                                              |
+| 176 | [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype)                                                        |
+| 177 | [Give an example where do you really need semicolon](#give-an-example-where-do-you-really-need-semicolon)                                                        |
+| 178 | [What is a freeze method](#what-is-a-freeze-method)                                                                                                              |
+| 179 | [What is the purpose of freeze method](#what-is-the-purpose-of-freeze-method)                                                                                    |
+| 180 | [Why do I need to use freeze method](#why-do-i-need-to-use-freeze-method)                                                                                        |
+| 181 | [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference)                                                              |
+| 182 | [How to convert string to title case with javascript](#how-to-convert-string-to-title-case-with-javascript)                                                      |
+| 183 | [How do you detect javascript disabled in the page](#how-do-you-detect-javascript-disabled-in-the-page)                                                          |
+| 184 | [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript)                                                        |
+| 185 | [What is a rest parameter](#what-is-a-rest-parameter)                                                                                                            |
+| 186 | [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                            |
+| 187 | [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript)                                                |
+| 188 | [What is a spread operator](#what-is-a-spread-operator)                                                                                                          |
+| 189 | [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not)                                                    |
+| 190 | [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
+| 191 | [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method)                                                                  |
+| 192 | [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other)                                                      |
+| 193 | [What are the applications of assign method](#what-are-the-applications-of-assign-method)                                                                        |
+| 194 | [What is a proxy object](#what-is-a-proxy-object)                                                                                                                |
+| 195 | [What is the purpose of seal method](#what-is-the-purpose-of-seal-method)                                                                                        |
+| 196 | [What are the applications of seal method](#what-are-the-applications-of-seal-method)                                                                            |
+| 197 | [What are the differences between freeze and seal methods](#what-are-the-differences-between-freeze-and-seal-methods)                                            |
+| 198 | [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                        |
+| 199 | [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs)                                                                  |
+| 200 | [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)        |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -3343,3 +3393,40 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
+
+### Coding Exercise
+
+#### 1. Quyidagi code(dan) nima chiqadi
+
+```javascript
+var car = new Vehicle("Honda", "white", "2010", "UK");
+console.log(car);
+
+function Vehicle(model, color, year, country) {
+  this.model = model;
+  this.color = color;
+  this.year = year;
+  this.country = country;
+}
+```
+
+- 1: Undefined
+- 2: ReferenceError
+- 3: null
+- 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Javob: 4
+
+Function declarations har qanday o'zgaruvchiga o'xshash tarzda ko'tariladi. Shunday qilib, `Vehicle` function declaration joylashtirish hech qanday farq qilmaydi.
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 2. What is the output of below code
