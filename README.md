@@ -3050,7 +3050,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 181. ### How do you detect a browser language preference
 
-     You can use navigator object to detect a browser language preference as below,
+     Quyidagi kabi brauzer tilini afzal ko'rish uchun navigator ob'ektidan foydalanishingiz mumkin,
 
      ```javascript
      var language =
@@ -3061,11 +3061,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(language);
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 182. ### How to convert string to title case with javascript
 
-     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
+     Sarlavha har bir so'zning birinchi harfi bosh harf bilan yozilishini anglatadi. Quyidagi funksiyadan foydalanib, string(ni) sarlavha holatiga aylantirishingiz mumkin,
 
      ```javascript
      function toTitleCase(str) {
@@ -3076,11 +3076,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      toTitleCase("good morning john"); // Good Morning John
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 183. ### How do you detect javascript disabled in the page
 
-     You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
+     Javascript o'chirilgan yoki o'chirilganligini aniqlash uchun `<noscript>` tegidan foydalanishingiz mumkin. `<noscript>` ichidagi code bloki JavaScript o'chirilganida bajariladi va odatda sahifa JavaScript-da yaratilganda muqobil tarkibni ko'rsatish uchun ishlatiladi.
 
      ```javascript
      <script type="javascript">
@@ -3091,24 +3091,24 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      </noscript>
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 184. ### What are various operators supported by javascript
 
-     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
+     Operator ma'lum bir qiymat yoki operandni (matematik va mantiqiy hisob-kitoblar) boshqarishga qodir. Quyidagi kabi JavaScript tomonidan qo'llab-quvvatlanadigan turli operatorlar mavjud,
 
      1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), \* (Multiplication), / (Division), % (Modulus), + + (Increment) and – – (Decrement)
      2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
      3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
      4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
      5. **Ternary Operators:** It includes conditional(: ?) Operator
-     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
+     6. **typeof Operator:** O'zgaruvchining turini topish uchun ishlatiladi. Sintaksis turi `typeof variable`(ga) o'xshaydi
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 185. ### What is a rest parameter
 
-     Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
+     Rest parametri funksiya parametrlarini boshqarishning takomillashtirilgan usuli bo‘lib, u bizga cheksiz miqdordagi argumentlarni massiv sifatida ko‘rsatishga imkon beradi. Sintaksis quyidagi kabi bo'ladi,
 
      ```javascript
      function f(a, b, ...theArgs) {
@@ -3116,7 +3116,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     For example, let's take a sum example to calculate on dynamic number of parameters,
+     Masalan, parametrlarning dinamik soni bo'yicha hisoblash uchun yig'indi misolini olaylik,
 
      ```javascript
      function total(…args){
@@ -3132,13 +3132,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(fun(1,2,3,4,5)); //15
      ```
 
-     **Note:** Rest parameter is added in ES2015 or ES6
+     **Eslatma:** Rest parameter ES2015 yoki ES6 da qo'shilgan
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 186. ### What happens if you do not use rest parameter as a last argument
 
-     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
+     Rest parameter oxirgi argument bo'lishi kerak, chunki uning vazifasi qolgan barcha argumentlarni massivga yig'ishdir. Misol uchun, agar siz quyidagi kabi funksiyani aniqlasangiz, bu hech qanday ma'noga ega emas va error(ga) yo'l qo'yadi.
 
      ```javascript
      function someFunc(a,…b,c){
@@ -3147,11 +3147,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 187. ### What are the bitwise operators available in javascript
 
-     Below are the list of bitwise logical operators used in JavaScript
+     Quyida JavaScript-da ishlatiladigan bitwise logical operatorlar ro'yxati keltirilgan
 
      1. Bitwise AND ( & )
      2. Bitwise OR ( | )
@@ -3161,11 +3161,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      6. Sign Propagating Right Shift ( >> )
      7. Zero fill Right Shift ( >>> )
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 188. ### What is a spread operator
 
-     Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
+     Spread operatori takrorlanuvchilarni (arrays / objects / strings) bitta arguments / elements kengaytirilishiga imkon beradi. Keling, bu xatti-harakatni ko'rish uchun misol keltiraylik,
 
      ```javascript
      function calculateSum(x, y, z) {
@@ -3177,16 +3177,15 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(calculateSum(...numbers)); // 6
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 189. ### How do you determine whether object is frozen or not
 
-     Object.isFrozen() method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
+     Object.isFrozen() usuli ob'ektning frozen yoki muzlatilmaganligini aniqlash uchun ishlatiladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muzlatilgan hisoblanadi,
 
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If all its data properties are non-writable.
-        The usage is going to be as follows,
+     1. Agar u kengaytirilmasa.
+     2. Agar uning barcha xususiyatlari konfiguratsiya qilinmasa.
+     3. Agar uning barcha ma'lumotlar xususiyatlari yozilmaydigan bo'lsa. Foydalanish quyidagicha bo'ladi,
 
      ```javascript
      const object = {
@@ -3196,11 +3195,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(Object.isFrozen(object));
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 190. ### How do you determine two values same or not using object
 
-     The Object.is() method determines whether two values are the same value. For example, the usage with different types of values would be,
+     Object.is() usuli ikkita qiymat bir xil qiymat ekanligini aniqlaydi. Masalan, har xil turdagi qiymatlar bilan foydalanish,
 
      ```javascript
      Object.is("hello", "hello"); // true
@@ -3208,20 +3207,16 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      Object.is([], []); // false
      ```
 
-     Two values are the same if one of the following holds:
+     Quyidagilardan biri bajarilsa, ikkita qiymat bir xil bo'ladi:
 
      1. both undefined
      2. both null
      3. both true or both false
-     4. both strings of the same length with the same characters in the same order
-     5. both the same object (means both object have same reference)
-     6. both numbers and
-        both +0
-        both -0
-        both NaN
-        both non-zero and both not NaN and both have the same value.
+     4. bir xil uzunlikdagi ikkala satr bir xil tartibda bir xil belgilar bilan
+     5. ikkalasi ham bir xil ob'ekt (ikkala ob'ekt ham bir xil havolaga ega degan ma'noni anglatadi)
+     6. ikkala raqam ham +0 ham -0 ham NaN ham nolga teng, ham NaN emas va ikkalasi ham bir xil qiymatga ega.
 
-     **[⬆ Back to Top](#mundarija)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 191. ### What is the purpose of using object is method
 
@@ -3232,17 +3227,17 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      3. It is used for comparing the polarity of two numbers.
      4. It is used for comparison of two objects.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 192. ### How do you copy properties from one object to other
 
-     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the target object. The syntax would be as below,
+     Bir yoki bir nechta manba ob'ektlaridan maqsadli ob'ektga qiymatlar va xususiyatlarni nusxalash uchun ishlatiladigan Object.assign() usulidan foydalanishingiz mumkin. U maqsadli ob'ektdan ko'chirilgan xususiyatlar va qiymatlarga ega bo'lgan maqsadli ob'ektni qaytaradi. Sintaksis quyidagi kabi bo'ladi,
 
      ```javascript
      Object.assign(target, ...sources);
      ```
 
-     Let's take example with one source and one target object,
+     Keling, bitta manba va bitta maqsadli ob'ekt bilan misol qilaylik,
 
      ```javascript
      const target = { a: 1, b: 2 };
@@ -3255,28 +3250,28 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
      ```
 
-     As observed in the above code, there is a common property(`b`) from source to target so it's value has been overwritten.
+     Yuqoridagi code(da) ko'rsatilganidek, manbadan maqsadgacha umumiy xususiyat (`b`) mavjud, shuning uchun uning qiymati qayta yozildi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 193. ### What are the applications of assign method
 
-     Below are the some of main applications of Object.assign() method,
+     Quyida Object.assign() usulining asosiy ilovalari keltirilgan.
 
-     1. It is used for cloning an object.
-     2. It is used to merge objects with the same properties.
+     1. U ob'ektni klonlash uchun ishlatiladi.
+     2. U bir xil xususiyatlarga ega ob'ektlarni birlashtirish uchun ishlatiladi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 194. ### What is a proxy object
 
-     The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
+     Proksi-server ob'ekti mulkni qidirish, tayinlash, ro'yxatga olish, funksiyani chaqirish va boshqalar kabi asosiy operatsiyalar uchun maxsus xatti-harakatni aniqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
 
      ```javascript
      var p = new Proxy(target, handler);
      ```
 
-     Let's take an example of proxy object,
+     Keling, proxy obyektiga misol keltiraylik,
 
      ```javascript
      var handler = {
@@ -3293,13 +3288,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log("c" in p, p.c); // false, 100
      ```
 
-     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
+     Yuqoridagi code(da) proksi-serverda operatsiya bajarilganda uning harakatini belgilaydigan `get` ishlov beruvchisidan foydalanadi
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 195. ### What is the purpose of seal method
 
-     The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
+     **Object.seal()** usuli ob'ektga yangi xususiyatlar qo'shilishining oldini olish va barcha mavjud xususiyatlarni sozlanmaydigan qilib belgilash orqali ob'ektni muhrlash uchun ishlatiladi. Ammo mavjud xususiyatlarning qiymatlari yozilishi mumkin ekan, o'zgartirilishi mumkin. Seal() usuli haqida ko'proq tushunish uchun quyidagi misolni ko'rib chiqaylik
 
      ```javascript
      const object = {
@@ -3312,31 +3307,30 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(object.property); //Welcome to object world
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 196. ### What are the applications of seal method
 
-     Below are the main applications of Object.seal() method,
+     Quyida Object.seal() usulining asosiy ilovalari keltirilgan,
 
-     1. It is used for sealing objects and arrays.
-     2. It is used to make an object immutable.
+     1. U ob'ektlar va arrays muhrlash uchun ishlatiladi.
+     2. U ob'ektni o'zgarmas qilish uchun ishlatiladi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 197. ### What are the differences between freeze and seal methods
 
-     If an object is frozen using the Object.freeze() method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() method then the changes can be made in the existing properties of the object.
+     Agar ob'ekt Object.freeze() usuli yordamida frozen bo'lsa, uning xususiyatlari o'zgarmas bo'ladi va ularda hech qanday o'zgartirishlar kiritilmaydi, ob'ekt Object.seal() usuli yordamida muhrlangan bo'lsa keyin ob'ektning mavjud xususiyatlariga o'zgartirishlar kiritilishi mumkin.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 198. ### How do you determine if an object is sealed or not
 
-     The Object.isSealed() method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
+     Ob'ekt muhrlangan yoki yopilmaganligini aniqlash uchun Object.isSealed() usuli qo'llaniladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muhrlangan hisoblanadi
 
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If it is not removable (but not necessarily non-writable).
-        Let's see it in the action
+     1. Agar u kengaytirilmasa.
+     2. Agar uning barcha xususiyatlari konfiguratsiya qilinmasa.
+     3. Agar u olinadigan bo'lmasa (lekin yozilmasligi shart emas). Keling, buni amalda ko'rib chiqaylik
 
      ```javascript
      const object = {
@@ -3348,11 +3342,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      console.log(Object.isSealed(object)); // checking whether the object is sealed or not
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 199. ### How do you get enumerable key and value pairs
 
-     The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. Let's see the functionality of object.entries() method in an example,
+     Object.entries() usuli ma'lum bir ob'ektning o'z sanab bo'ladigan string keyed [key, value] juftlik massivini for...in siklida taqdim etilgan tartibda qaytarish uchun ishlatiladi. Misolda object.entries() usulining funksionalligini ko'rib chiqamiz,
 
      ```javascript
      const object = {
@@ -3366,13 +3360,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **Note:** The order is not guaranteed as object defined.
+     **Eslatma:** Buyurtma aniqlangan ob'ekt sifatida kafolatlanmaydi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 200. ### What is the main difference between Object.values and Object.entries method
 
-     The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.
+     Object.values() usulining xatti-harakati Object.entries() usuliga o'xshaydi, lekin u [key, value] juftlari o'rniga qiymatlar qatorini qaytaradi.
 
      ```javascript
      const object = {
@@ -3386,7 +3380,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Yuqoriga qaytish](#mundarija)**
 
 ### Coding Exercise
 
