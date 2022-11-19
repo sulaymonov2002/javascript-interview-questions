@@ -164,56 +164,56 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 | 148 | [JSON array(larini) qanday aniqlaysiz ?](#how-do-you-define-json-arrays)                                                                                         |
 | 149 | [Tasodifiy butun sonlar qanday yaratiladi ?](#how-do-you-generate-random-integers)                                                                               |
 | 150 | [Butun sonlarni diapazonda chop etish uchun tasodifiy funksiyasini yoza olasizmi ?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
-| 151 | [Tree shaking nima ?](#what-is-tree-shaking)                                                                                                                    |
-| 152 | [Tree shaking nimaga kerak ?](#what-is-the-need-of-tree-shaking)                                                                                            |
-| 153 | [Eval dan foydalanish tavsiya etiladimi ?](#is-it-recommended-to-use-eval)                                                                                                  |
-| 154 | [Regular Expression nima ?](#what-is-a-regular-expression)                                                                                                    |
-| 155 | [Regular expression(da) qanday qator usullari mavjud ?](#what-are-the-string-methods-available-in-regular-expression)                                      |
-| 156 | [Regular Expression(dagi) modifikatorlar nima ?](#what-are-modifiers-in-regular-expression)                                                                            |
-| 157 | [Regular Expression patterns nima ?](#what-are-regular-expression-patterns)                                                                                    |
-| 158 | [RegExp object nima ?](#what-is-a-regexp-object)                                                                                                              |
-| 159 | [pattern uchun string(ni) qanday qidirasiz ?](#how-do-you-search-a-string-for-a-pattern)                                                                            |
-| 160 | [Exec method(ning) maqsadi nima ?](#what-is-the-purpose-of-exec-method)                                                                                        |
-| 161 | [HTML elementining uslubini qanday o'zgartirish mumkin ?](#how-do-you-change-the-style-of-a-html-element)                                                                  |
-| 162 | [1+2+'3' natijasi qanday bo'ladi ?](#what-would-be-the-result-of-123)                                                                                          |
-| 163 | [Debugger statement nima ?](#what-is-a-debugger-statement)                                                                                                    |
-| 164 | [Nosozliklarni tuzatishda uzilish nuqtalarining maqsadi nima ?](#what-is-the-purpose-of-breakpoints-in-debugging)                                                              |
-| 165 | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi ?](#can-i-use-reserved-words-as-identifiers)                                                                              |
-| 166 | [Mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser)                                                                                        |
-| 167 | [Regexpsiz mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser-without-regexp)                                                          |
-| 168 | [JS yordamida tasvir kengligi va balandligini qanday olish mumkin ?](#how-do-you-get-the-image-width-and-height-using-js)                                                        |
-| 169 | [Synchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-synchronous-http-request)                                                                            |
-| 170 | [Asynchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-asynchronous-http-request)                                                                          |
-| 171 | [Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz ?](#how-do-you-convert-date-to-another-timezone-in-javascript)                                          |
-| 172 | [Window hajmini olish uchun qanday xususiyatlardan foydalaniladi ?](#what-are-the-properties-used-to-get-size-of-window)                                                        |
-| 173 | [Javascriptda shartli operator nima ?](#what-is-a-conditional-operator-in-javascript)                                                                    |
-| 174 | [Conditional operator(da) apply chaining(ni) qo'llay olasizmi ?](#Can-you-apply-chaining-on-conditional-operator)                                                                |
-| 175 | [Sahifani yuklagandan so'ng Javascriptni bajarish usullari qanday ?](#what-are-the-ways-to-execute-javascript-after-page-load)                                              |
-| 176 | [Proto and prototype o'rtasidagi farq nima ?](#what-is-the-difference-between-proto-and-prototype)                                                        |
+| 151 | [Tree shaking nima ?](#what-is-tree-shaking)                                                                                                                     |
+| 152 | [Tree shaking nimaga kerak ?](#what-is-the-need-of-tree-shaking)                                                                                                 |
+| 153 | [Eval dan foydalanish tavsiya etiladimi ?](#is-it-recommended-to-use-eval)                                                                                       |
+| 154 | [Regular Expression nima ?](#what-is-a-regular-expression)                                                                                                       |
+| 155 | [Regular expression(da) qanday qator usullari mavjud ?](#what-are-the-string-methods-available-in-regular-expression)                                            |
+| 156 | [Regular Expression(dagi) modifikatorlar nima ?](#what-are-modifiers-in-regular-expression)                                                                      |
+| 157 | [Regular Expression patterns nima ?](#what-are-regular-expression-patterns)                                                                                      |
+| 158 | [RegExp object nima ?](#what-is-a-regexp-object)                                                                                                                 |
+| 159 | [pattern uchun string(ni) qanday qidirasiz ?](#how-do-you-search-a-string-for-a-pattern)                                                                         |
+| 160 | [Exec method(ning) maqsadi nima ?](#what-is-the-purpose-of-exec-method)                                                                                          |
+| 161 | [HTML elementining uslubini qanday o'zgartirish mumkin ?](#how-do-you-change-the-style-of-a-html-element)                                                        |
+| 162 | [1+2+'3' natijasi qanday bo'ladi ?](#what-would-be-the-result-of-123)                                                                                            |
+| 163 | [Debugger statement nima ?](#what-is-a-debugger-statement)                                                                                                       |
+| 164 | [Nosozliklarni tuzatishda uzilish nuqtalarining maqsadi nima ?](#what-is-the-purpose-of-breakpoints-in-debugging)                                                |
+| 165 | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi ?](#can-i-use-reserved-words-as-identifiers)                                                 |
+| 166 | [Mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser)                                                                                  |
+| 167 | [Regexpsiz mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser-without-regexp)                                                         |
+| 168 | [JS yordamida tasvir kengligi va balandligini qanday olish mumkin ?](#how-do-you-get-the-image-width-and-height-using-js)                                        |
+| 169 | [Synchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-synchronous-http-request)                                                                       |
+| 170 | [Asynchronous HTTP request(ni) qanday qilasiz ?](#how-do-you-make-asynchronous-http-request)                                                                     |
+| 171 | [Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz ?](#how-do-you-convert-date-to-another-timezone-in-javascript)                                 |
+| 172 | [Window hajmini olish uchun qanday xususiyatlardan foydalaniladi ?](#what-are-the-properties-used-to-get-size-of-window)                                         |
+| 173 | [Javascriptda shartli operator nima ?](#what-is-a-conditional-operator-in-javascript)                                                                            |
+| 174 | [Conditional operator(da) apply chaining(ni) qo'llay olasizmi ?](#Can-you-apply-chaining-on-conditional-operator)                                                |
+| 175 | [Sahifani yuklagandan so'ng Javascriptni bajarish usullari qanday ?](#what-are-the-ways-to-execute-javascript-after-page-load)                                   |
+| 176 | [Proto and prototype o'rtasidagi farq nima ?](#what-is-the-difference-between-proto-and-prototype)                                                               |
 | 177 | [Sizga nuqta-vergul kerak bo'lgan misol keltiring ?](#give-an-example-where-do-you-really-need-semicolon)                                                        |
-| 178 | [Freeze method nima ?](#what-is-a-freeze-method)                                                                                                              |
-| 179 | [Freeze method(dan) maqsad nima ?](#what-is-the-purpose-of-freeze-method)                                                                                    |
-| 180 | [Nima uchun Freeze method foydalanishim kerak ?](#why-do-i-need-to-use-freeze-method)                                                                                        |
-| 181 | [Brauzer tilini afzal ko'rishni qanday aniqlash mumkin ?](#how-do-you-detect-a-browser-language-preference)                                                              |
-| 182 | [Qanday qilib Javascript yordamida string(ni) sarlavha holatiga aylantirish mumkin ?](#how-to-convert-string-to-title-case-with-javascript)                                                      |
-| 183 | [Sahifada o'chirilgan Javascriptni qanday aniqlash mumkin ?](#how-do-you-detect-javascript-disabled-in-the-page)                                                          |
-| 184 | [Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima ?](#what-are-various-operators-supported-by-javascript)                                                        |
-| 185 | [Rest parameter nima ?](#what-is-a-rest-parameter)                                                                                                            |
-| 186 | [Agar dam olish parametrini oxirgi argument sifatida ishlatmasangiz nima bo'ladi ?](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                            |
-| 187 | [Javascriptda qanday bitli operatorlar mavjud ?](#what-are-the-bitwise-operators-available-in-javascript)                                                |
-| 188 | [Spread operator nima ?](#what-is-a-spread-operator)                                                                                                          |
-| 189 | [Ob'ektning frozen yoki muzlatilmaganligini qanday aniqlash mumkin ?](#how-do-you-determine-whether-object-is-frozen-or-not)                                                    |
-| 190 | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin ?](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
-| 191 | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                  |
-| 192 | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin ?](#how-do-you-copy-properties-from-one-object-to-other)                                                      |
-| 193 | [Assign method qanday qo'llaniladi ?](#what-are-the-applications-of-assign-method)                                                                        |
-| 194 | [Proxy object nima ?](#what-is-a-proxy-object)                                                                                                                |
-| 195 | [Seal method(ning) maqsadi nima ?](#what-is-the-purpose-of-seal-method)                                                                                        |
-| 196 | [Seal method qanday qo'llaniladi ?](#what-are-the-applications-of-seal-method)                                                                            |
+| 178 | [Freeze method nima ?](#what-is-a-freeze-method)                                                                                                                 |
+| 179 | [Freeze method(dan) maqsad nima ?](#what-is-the-purpose-of-freeze-method)                                                                                        |
+| 180 | [Nima uchun Freeze method foydalanishim kerak ?](#why-do-i-need-to-use-freeze-method)                                                                            |
+| 181 | [Brauzer tilini afzal ko'rishni qanday aniqlash mumkin ?](#how-do-you-detect-a-browser-language-preference)                                                      |
+| 182 | [Qanday qilib Javascript yordamida string(ni) sarlavha holatiga aylantirish mumkin ?](#how-to-convert-string-to-title-case-with-javascript)                      |
+| 183 | [Sahifada o'chirilgan Javascriptni qanday aniqlash mumkin ?](#how-do-you-detect-javascript-disabled-in-the-page)                                                 |
+| 184 | [Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima ?](#what-are-various-operators-supported-by-javascript)                                     |
+| 185 | [Rest parameter nima ?](#what-is-a-rest-parameter)                                                                                                               |
+| 186 | [Agar dam olish parametrini oxirgi argument sifatida ishlatmasangiz nima bo'ladi ?](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)           |
+| 187 | [Javascriptda qanday bitli operatorlar mavjud ?](#what-are-the-bitwise-operators-available-in-javascript)                                                        |
+| 188 | [Spread operator nima ?](#what-is-a-spread-operator)                                                                                                             |
+| 189 | [Ob'ektning frozen yoki muzlatilmaganligini qanday aniqlash mumkin ?](#how-do-you-determine-whether-object-is-frozen-or-not)                                     |
+| 190 | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin ?](#how-do-you-determine-two-values-same-or-not-using-object)                    |
+| 191 | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                         |
+| 192 | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin ?](#how-do-you-copy-properties-from-one-object-to-other)                                      |
+| 193 | [Assign method qanday qo'llaniladi ?](#what-are-the-applications-of-assign-method)                                                                               |
+| 194 | [Proxy object nima ?](#what-is-a-proxy-object)                                                                                                                   |
+| 195 | [Seal method(ning) maqsadi nima ?](#what-is-the-purpose-of-seal-method)                                                                                          |
+| 196 | [Seal method qanday qo'llaniladi ?](#what-are-the-applications-of-seal-method)                                                                                   |
 | 197 | [Freeze va seal method(lari) o'rtasidagi farqlar qanday ?](#what-are-the-differences-between-freeze-and-seal-methods)                                            |
-| 198 | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                        |
-| 199 | [Qanday qilib sanab o'tiladigan key va value juftlarini olasiz ?](#how-do-you-get-enumerable-key-and-value-pairs)                                                                  |
-| 200 | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)        |
+| 198 | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin ?](#how-do-you-determine-if-an-object-is-sealed-or-not)                                            |
+| 199 | [Qanday qilib sanab o'tiladigan key va value juftlarini olasiz ?](#how-do-you-get-enumerable-key-and-value-pairs)                                                |
+| 200 | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima ?](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)             |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -264,7 +264,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    5. **Function constructor with prototype:**
 
-      Bu funktsiya konstruktoriga o'xshaydi, lekin u xususiyatlari va usullari uchun prototipdan foydalanadi,
+      Bu funksiya konstruktoriga o'xshaydi, lekin u xususiyatlari va usullari uchun prototipdan foydalanadi,
 
       ```javascript
       function Person() {}
@@ -272,7 +272,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
       var object = new Person();
       ```
 
-      Bu funksiya prototipi bilan ob'ekt yaratish usuli bilan yaratilgan misolga teng va keyin ushbu funktsiyani misol va parametrlar bilan argument sifatida chaqirish.
+      Bu funksiya prototipi bilan ob'ekt yaratish usuli bilan yaratilgan misolga teng va keyin ushbu funksiyani misol va parametrlar bilan argument sifatida chaqirish.
 
       ```javascript
       function func() {}
@@ -333,7 +333,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    Call qilish, Apply va Bind o'rtasidagi farqni quyidagi misollar bilan tushuntirish mumkin,
 
-   **Call:** Call() usuli berilgan qiymatga ega funktsiyani va birma-bir taqdim etilgan argumentlarni chaqiradi.
+   **Call:** Call() usuli berilgan qiymatga ega funksiyani va birma-bir taqdim etilgan argumentlarni chaqiradi.
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -349,7 +349,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
    ```
 
-   **Apply:** Berilgan qiymat bilan funktsiyani chaqiradi va argumentlarni massiv sifatida o'tkazishga imkon beradi.
+   **Apply:** Berilgan qiymat bilan funksiyani chaqiradi va argumentlarni massiv sifatida o'tkazishga imkon beradi.
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -365,7 +365,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
    invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
    ```
 
-   **bind:** har qanday miqdordagi argumentlarni o'tkazish imkonini beruvchi yangi funktsiyani qaytaradi
+   **bind:** har qanday miqdordagi argumentlarni o'tkazish imkonini beruvchi yangi funksiyani qaytaradi
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -393,13 +393,13 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    **JSON** bu `Douglas Crockford` tomonidan ommalashtirilgan JavaScript ob'ekt sintaksisiga asoslangan matnga asoslangan ma'lumotlar formatidir.
 
-   **Parsing:** Satrni mahalliy ob'ektga aylantirish
+   **Parsing:** Satrni local ob'ektga aylantirish
 
    ```javascript
    JSON.parse(text);
    ```
 
-   **Stringification:** mahalliy ob'ektni tarmoq bo'ylab uzatilishi uchun satrga aylantirish
+   **Stringification:** local ob'ektni tarmoq bo'ylab uzatilishi uchun satrga aylantirish
 
    ```javascript
    JSON.stringify(object);
@@ -460,8 +460,8 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
    **Ob'ektlar** **Map(ga)** o'xshaydi, chunki ikkalasi ham key(larni) qiymatlarga o'rnatish, ushbu qiymatlarni olish, key(larni) o'chirish va key(da) biror narsa saqlanganligini aniqlash imkonini beradi. Shu sababli, ob'ektlar tarixan Map(lar) sifatida ishlatilgan. Lekin muhim farqlar borki, ular ma'lum holatlarda Map(dan) foydalanishni afzal ko'radi.
 
-   1. Ob'ektning key(lari) Strings va Symbols bo'lib, ular Map uchun har qanday qiymat, jumladan funktsiyalar, ob'ekt(lar) va har qanday primitive bo'lishi mumkin.
-   2. Map(dagi) key(lar) tartiblangan, Ob'ektga qo'shilgan key(lar) esa yo'q. Shunday qilib, uni takrorlashda Map ob'ekti kalitlarni kiritish tartibida qaytaradi.
+   1. Ob'ektning key(lari) Strings va Symbols bo'lib, ular Map uchun har qanday qiymat, jumladan funksiyalar, ob'ekt(lar) va har qanday primitive bo'lishi mumkin.
+   2. Map(dagi) key(lar) tartiblangan, Ob'ektga qo'shilgan key(lar) esa yo'q. Shunday qilib, uni takrorlashda Map ob'ekti key(larini) kiritish tartibida qaytaradi.
    3. Siz Map hajmini siz o'lcham xususiyati bilan osongina olishingiz mumkin, shu bilan birga Ob'ektdagi xususiyatlar soni qo'lda aniqlanishi kerak.
    4. Map takrorlanadigan va shuning uchun to'g'ridan-to'g'ri takrorlanishi mumkin, holbuki Ob'ektni takrorlash uchun uning key(larini) qandaydir tarzda olish va ularni takrorlash kerak.
    5. Ob'ektning prototipi bor, shuning uchun map(da) ehtiyot bo'lmasangiz, key(laringiz) bilan to'qnashishi mumkin bo'lgan standart key(lar) mavjud. ES5 dan boshlab map = Object.create(null) yordamida buni chetlab o'tish mumkin, lekin bu kamdan-kam hollarda amalga oshiriladi.
@@ -471,7 +471,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 9. ### What is the difference between == and === operators
 
-   JavaScript qat'iy (===, !==) va turga aylantiruvchi (==, !=) tenglikni taqqoslashni ta'minlaydi. Qattiq operatorlar o'zgaruvchining turini hisobga oladi, qat'iy bo'lmagan operatorlar esa o'zgaruvchilar qiymatlari asosida turni to'g'irlash/konvertatsiya qilishni amalga oshiradilar. Qattiq operatorlar har xil turlar uchun quyidagi shartlarga amal qiladilar,
+   JavaScript qat'iy (===, !==) va turga aylantiruvchi (==, !=) tenglikni taqqoslashni ta'minlaydi. Qat'iy operatorlar o'zgaruvchining turini hisobga oladi, qat'iy bo'lmagan operatorlar esa o'zgaruvchilar qiymatlari asosida turni to'g'irlash/konvertatsiya qilishni amalga oshiradilar. Qat'iy operatorlar har xil turlar uchun quyidagi shartlarga amal qiladilar,
 
    1. Ikki satr bir xil belgilar ketma-ketligi, bir xil uzunlik va tegishli pozitsiyalarda bir xil belgilarga ega bo'lsa, qat'iy tengdir.
    2. Ikki raqam son jihatdan teng bo'lsa, ular qat'iy tengdir. ya'ni bir xil raqam qiymatiga ega. Bunda ikkita alohida holat mavjud,
@@ -2641,11 +2641,11 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
      Modifikatorlar katta-kichik harflarni sezmaydigan va global qidiruvlarni amalga oshirish uchun ishlatilishi mumkin. Keling, ba'zi modifikatorlarni sanab o'tamiz,
 
-     | Modifier | Description                                             |
-     | -------- | ------------------------------------------------------- |
-     | i        | Katta-kichik harflarni sezmaydigan moslikni bajaring                       |
+     | Modifier | Description                                            |
+     | -------- | ------------------------------------------------------ |
+     | i        | Katta-kichik harflarni sezmaydigan moslikni bajaring   |
      | g        | Birinchi o'yinda to'xtamasdan, global o'yinni bajaring |
-     | m        | Ko'p qatorli moslikni bajaring                              |
+     | m        | Ko'p qatorli moslikni bajaring                         |
 
      Let's take an example of global modifier,
 
@@ -3366,7 +3366,7 @@ Siz ushbu reponing PDF va Epub versiyasini [amallar yorlig'idagi](https://github
 
 200. ### What is the main difference between Object.values and Object.entries method
 
-     Object.values() usulining xatti-harakati Object.entries() usuliga o'xshaydi, lekin u [key, value] juftlari o'rniga qiymatlar qatorini qaytaradi.
+     Object.values() usulining xatti-harakati Object.entries() usuliga o'xshaydi, lekin u [key, valuedf] juftlari o'rniga qiymatlar qatorini qaytaradi.
 
      ```javascript
      const object = {
@@ -3403,7 +3403,7 @@ function Vehicle(model, color, year, country) {
 - 3: null
 - 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Javob</b></summary>
 <p>
 
 ##### Javob: 4
@@ -3417,4 +3417,83 @@ Function declarations har qanday o'zgaruvchiga o'xshash tarzda ko'tariladi. Shun
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 2. What is the output of below code
+#### 2. Quyidagi code(ning) javobi nima
+
+```javascript
+function foo() {
+  let x = (y = 0);
+  x++;
+  y++;
+  return x;
+}
+
+console.log(foo(), typeof x, typeof y);
+```
+
+- 1: 1, undefined va undefined
+- 2: ReferenceError: X is not defined
+- 3: 1, undefined and number
+- 4: 1, number and number
+
+<details><summary><b>Javob</b></summary>
+<p>
+
+##### Javob: 3
+
+Albatta, o'sish operatori tufayli `foo()` ning qaytish qiymati 1 ga teng. Lekin `let x = y = 0` iborasi x lokal o'zgaruvchini e'lon qiladi. Holbuki y tasodifan global o'zgaruvchi sifatida e'lon qilingan. Bu bayonot tengdir,
+
+```javascript
+let x;
+window.y = 0;
+x = window.y;
+```
+
+Blok doirasidagi x o'zgaruvchisi funksiyadan tashqarida aniqlanmaganligi sababli, tur ham aniqlanmagan bo'ladi. Global o'zgaruvchi `y` funksiyadan tashqarida mavjud bo'lsa, qiymat 0 va turi raqam.
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 3. Quyidagi code(ning) javobi nima
+
+```javascript
+function main() {
+  console.log("A");
+  setTimeout(function print() {
+    console.log("B");
+  }, 0);
+  console.log("C");
+}
+main();
+```
+
+- 1: A, B va C
+- 2: B, A va C
+- 3: A va C
+- 4: A, C va B
+
+<details><summary><b>Javob</b></summary>
+<p>
+
+##### Javob: 4
+
+Statement(lar) tartibi event loop mexanizmiga asoslanadi. Statement tartibi quyidagi tartibda bo'ladi,
+
+1. Dastlab, asosiy funksiya stack(ga) suriladi.
+2. Keyin brauzer asosiy funksiyaning birinchi state (ya'ni, A ning console.log) stack(ga) surib, darhol ishga tushadi va chiqadi.
+3. Ammo `setTimeout` statement callback qilish uchun kechikishni qo'llash uchun Brauzer API-ga o'tkazildi.
+4. Ayni paytda, C ning console.log stack(ga) qo'shildi, bajarildi va chiqdi.
+5. `setTimeout`(ning) callback(lari) Brauzer API-dan message queue ko'chirildi.
+6. `Main` funksiya stack(dan) chiqib ketdi, chunki bajariladigan statement(lar) yo'q
+7. Callback xabarlar navbatdan stack(ga) ko'chirildi, chunki stack bo'sh.
+8. B uchun console.log stack(Ga) qo'shiladi va console(da) ko'rsatiladi.
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
