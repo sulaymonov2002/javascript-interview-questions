@@ -3497,3 +3497,70 @@ Statement(lar) tartibi event loop mexanizmiga asoslanadi. Statement tartibi quyi
 ---
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 4. Quyidagi tenglikni tekshirish natijasi qanday bo'ladi
+
+```javascript
+console.log(0.1 + 0.2 === 0.3);
+```
+
+- 1: false
+- 2: true
+
+<details><summary><b>Javob</b></summary>
+<p>
+
+##### Javob: 1
+
+Bu float nuqta matematik muammosiga bog'liq. Floating nuqta raqamlari ikkilik formatda code(langanligi) sababli, ulardagi qo'shish operatsiyalari yaxlitlash xatolariga olib keladi. Demak, float nuqtalarni taqqoslash kutilgan natijani bermaydi. Tushuntirish haqida batafsil ma'lumotni bu yerda topishingiz mumkin [0.30000000000000004.com/](https://0.30000000000000004.com/)
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga chiqish](#mundarija)**
+
+#### 5. Quyidagi code(ning) chiqishi nima
+
+```javascript
+var y = 1;
+if (function f() {}) {
+  y += typeof f;
+}
+console.log(y);
+```
+
+- 1: 1function
+- 2: 1object
+- 3: ReferenceError
+- 4: 1undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+Yuqoridagi code parchalaridagi asosiy fikrlar quyidagilardir:
+
+1. If iborasi ichida function expression o'rniga function declaration ko'rishingiz mumkin. Shunday qilib, u har doim true qaytadi.
+2. U hech qanday joyda e'lon qilinmagan (yoki tayinlanmagan) uchun f aniqlanmagan va f turi ham aniqlanmagan.
+
+Boshqacha aytganda, xuddi shunday
+
+```javascript
+var y = 1;
+if ("foo") {
+  y += typeof f;
+}
+console.log(y);
+```
+
+**Eslatma:** MS Edge brauzeri uchun 1 ob'ektni qaytaradi
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
