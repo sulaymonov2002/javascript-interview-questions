@@ -3564,3 +3564,45 @@ console.log(y);
 ---
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 6. Quyidagi code(ning) chiqishi nima
+
+```javascript
+function foo() {
+  return;
+  {
+    message: "Hello World ";
+  }
+}
+console.log(foo());
+```
+
+- 1: Hello World
+- 2: Object {message: "Hello World"}
+- 3: Undefined
+- 4: SyntaxError
+
+<details><summary><b>Javob</b></summary>
+<p>
+
+##### Javob: 3
+
+Bu nuqta-vergul muammosi. Odatda JavaScript-da nuqta-vergul ixtiyoriy. Shunday qilib, agar biron bir ibora mavjud bo'lsa (bu holda, qaytish) nuqtali vergul yo'q bo'lsa, u darhol avtomatik ravishda kiritiladi. Shunday qilib, funksiya undefined sifatida qaytarildi.
+
+Agar ochiladigan jingalak qavs return keyword so'zi bilan birga bo'lsa, funksiya kutilganidek qaytariladi.
+
+```javascript
+function foo() {
+  return {
+    message: "Hello World",
+  };
+}
+console.log(foo());
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
