@@ -3403,10 +3403,10 @@ function Vehicle(model, color, year, country) {
 - 3: null
 - 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
 
-<details><summary><b>Javob</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-##### Javob: 4
+##### Answer: 4
 
 Function declarations har qanday o'zgaruvchiga o'xshash tarzda ko'tariladi. Shunday qilib, `Vehicle` function declaration joylashtirish hech qanday farq qilmaydi.
 
@@ -3435,10 +3435,10 @@ console.log(foo(), typeof x, typeof y);
 - 3: 1, undefined and number
 - 4: 1, number and number
 
-<details><summary><b>Javob</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-##### Javob: 3
+##### Answer: 3
 
 Albatta, o'sish operatori tufayli `foo()` ning qaytish qiymati 1 ga teng. Lekin `let x = y = 0` iborasi x lokal o'zgaruvchini e'lon qiladi. Holbuki y tasodifan global o'zgaruvchi sifatida e'lon qilingan. Bu bayonot tengdir,
 
@@ -3475,10 +3475,10 @@ main();
 - 3: A va C
 - 4: A, C va B
 
-<details><summary><b>Javob</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-##### Javob: 4
+##### Answer: 4
 
 Statement(lar) tartibi event loop mexanizmiga asoslanadi. Statement tartibi quyidagi tartibda bo'ladi,
 
@@ -3507,10 +3507,10 @@ console.log(0.1 + 0.2 === 0.3);
 - 1: false
 - 2: true
 
-<details><summary><b>Javob</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-##### Javob: 1
+##### Answer: 1
 
 Bu float nuqta matematik muammosiga bog'liq. Floating nuqta raqamlari ikkilik formatda code(langanligi) sababli, ulardagi qo'shish operatsiyalari yaxlitlash xatolariga olib keladi. Demak, float nuqtalarni taqqoslash kutilgan natijani bermaydi. Tushuntirish haqida batafsil ma'lumotni bu yerda topishingiz mumkin [0.30000000000000004.com/](https://0.30000000000000004.com/)
 
@@ -3582,10 +3582,10 @@ console.log(foo());
 - 3: Undefined
 - 4: SyntaxError
 
-<details><summary><b>Javob</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
-##### Javob: 3
+##### Answer: 3
 
 Bu nuqta-vergul muammosi. Odatda JavaScript-da nuqta-vergul ixtiyoriy. Shunday qilib, agar biron bir ibora mavjud bo'lsa (bu holda, qaytish) nuqtali vergul yo'q bo'lsa, u darhol avtomatik ravishda kiritiladi. Shunday qilib, funksiya undefined sifatida qaytarildi.
 
@@ -3606,3 +3606,1099 @@ console.log(foo());
 ---
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 7. Quyidagi code(ning) chiqishi nima
+
+```javascript 
+var myChars = ['a', 'b', 'c', 'd'];
+delete myChars[0]
+console.log(myChars);
+console.log(myChars[0]);
+console.log(myChars.length)
+```
+
+- 1: [empty, 'b', 'c', 'd'], empty, 3
+- 2: [null, 'b', 'c', 'd'], empty, 3
+- 3: [empty, 'b', 'c', 'd'], undefined, 4
+- 4: [null, 'b', 'c', 'd'], undefined, 4
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+`delete` operatori ob'ekt xususiyatini o'chiradi, lekin u massivni qayta indekslamaydi yoki uning uzunligini o'zgartirmaydi. Shunday qilib, massivning soni yoki elementlari yoki uzunligi o'zgarmaydi.
+Agar siz myChars-ni chop qilmoqchi bo'lsangiz, u aniqlanmagan qiymatni o'rnatmasligini kuzatishingiz mumkin, aksincha xususiyat massivdan o'chiriladi. Chrome-ning yangi versiyalarida farqni biroz aniqroq qilish uchun `undefined` o'rniga `empty` ishlatiladi.
+
+</p>
+</details>
+
+---
+
+**[⬆ Yuqoriga qaytish](#mundarija)**
+
+#### 8. What is the output of below code in latest Chrome
+
+```javascript
+var array1 = new Array(3);
+console.log(array1);
+
+var array2 = [];
+array2[2] = 100;
+console.log(array2);
+
+var array3 = [, , ,];
+console.log(array3);
+```
+
+- 1: [undefined × 3], [undefined × 2, 100], [undefined × 3]
+- 2: [empty × 3], [empty × 2, 100], [empty × 3]
+- 3: [null × 3], [null × 2, 100], [null × 3]
+- 4: [], [100], []
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+The latest chrome versions display `sparse array`(they are filled with holes) using this empty x n notation. Whereas the older versions have undefined x n notation.
+**Note:** The latest version of FF displays `n empty slots` notation.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 9. What is the output of below code
+
+```javascript
+const obj = {
+  prop1: function () {
+    return 0;
+  },
+  prop2() {
+    return 1;
+  },
+  ["prop" + 3]() {
+    return 2;
+  },
+};
+
+console.log(obj.prop1());
+console.log(obj.prop2());
+console.log(obj.prop3());
+```
+
+- 1: 0, 1, 2
+- 2: 0, { return 1 }, 2
+- 3: 0, { return 1 }, { return 2 }
+- 4: 0, 1, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+ES6 provides method definitions and property shorthands for objects. So both prop2 and prop3 are treated as regular function values.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 10. What is the output of below code
+
+```javascript
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+```
+
+- 1: true, true
+- 2: true, false
+- 3: SyntaxError, SyntaxError,
+- 4: false, false
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+The important point is that if the statement contains the same operators(e.g, < or >) then it can be evaluated from left to right.
+The first statement follows the below order,
+
+1. console.log(1 < 2 < 3);
+2. console.log(true < 3);
+3. console.log(1 < 3); // True converted as `1` during comparison
+4. True
+
+Whereas the second statement follows the below order,
+
+1. console.log(3 > 2 > 1);
+2. console.log(true > 1);
+3. console.log(1 > 1); // False converted as `0` during comparison
+4. False
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 11. What is the output of below code in non-strict mode
+
+```javascript
+function printNumbers(first, second, first) {
+  console.log(first, second, first);
+}
+printNumbers(1, 2, 3);
+```
+
+- 1: 1, 2, 3
+- 2: 3, 2, 3
+- 3: SyntaxError: Duplicate parameter name not allowed in this context
+- 4: 1, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters.
+The value of the first parameter is mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter.
+
+**Note:** In strict mode, duplicate parameters will throw a Syntax Error.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 12. What is the output of below code
+
+```javascript
+const printNumbersArrow = (first, second, first) => {
+  console.log(first, second, first);
+};
+printNumbersArrow(1, 2, 3);
+```
+
+- 1: 1, 2, 3
+- 2: 3, 2, 3
+- 3: SyntaxError: Duplicate parameter name not allowed in this context
+- 4: 1, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see `SyntaxError` in the console.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 13. What is the output of below code
+
+```javascript
+const arrowFunc = () => arguments.length;
+console.log(arrowFunc(1, 2, 3));
+```
+
+- 1: ReferenceError: arguments is not defined
+- 2: 3
+- 3: undefined
+- 4: null
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive a reference error.
+
+Where as the normal function provides the number of arguments passed to the function
+
+```javascript
+const func = function () {
+  return arguments.length;
+};
+console.log(func(1, 2, 3));
+```
+
+But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
+
+```javascript
+const arrowFunc = (...args) => args.length;
+console.log(arrowFunc(1, 2, 3));
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 14. What is the output of below code
+
+```javascript
+console.log(String.prototype.trimLeft.name === "trimLeft");
+console.log(String.prototype.trimLeft.name === "trimStart");
+```
+
+- 1: True, False
+- 2: False, True
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+In order to be consistent with functions like `String.prototype.padStart`, the standard method name for trimming the whitespaces is considered as `trimStart`. Due to web web compatibility reasons, the old method name 'trimLeft' still acts as an alias for 'trimStart'. Hence, the prototype for 'trimLeft' is always 'trimStart'
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 15. What is the output of below code
+
+```javascript
+console.log(Math.max());
+```
+
+- 1: undefined
+- 2: Infinity
+- 3: 0
+- 4: -Infinity
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+-Infinity is the initial comparant because almost every other value is bigger. So when no arguments are provided, -Infinity is going to be returned.
+**Note:** Zero number of arguments is a valid case.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 16. What is the output of below code
+
+```javascript
+console.log(10 == [10]);
+console.log(10 == [[[[[[[10]]]]]]]);
+```
+
+- 1: True, True
+- 2: True, False
+- 3: False, False
+- 4: False, True
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
+
+```javascript
+10 === Number([10].valueOf().toString()); // 10
+```
+
+So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 17. What is the output of below code
+
+```javascript
+console.log(10 + "10");
+console.log(10 - "10");
+```
+
+- 1: 20, 0
+- 2: 1010, 0
+- 3: 1010, 10-10
+- 4: NaN, NaN
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+The concatenation operator(+) is applicable for both number and string types. So if any operand is string type then both operands concatenated as strings. Whereas subtract(-) operator tries to convert the operands as number type.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 18. What is the output of below code
+
+```javascript
+console.log([0] == false);
+if ([0]) {
+  console.log("I'm True");
+} else {
+  console.log("I'm False");
+}
+```
+
+- 1: True, I'm True
+- 2: True, I'm False
+- 3: False, I'm True
+- 4: False, I'm False
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+In comparison operators, the expression `[0]` converted to Number([0].valueOf().toString()) which is resolved to false. Whereas `[0]` just becomes a truthy value without any conversion because there is no comparison operator.
+
+</p>
+</details>
+
+#### 19. What is the output of below code
+
+```javascript
+console.log([1, 2] + [3, 4]);
+```
+
+- 1: [1,2,3,4]
+- 2: [1,2][3,4]
+- 3: SyntaxError
+- 4: 1,23,4
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The + operator is not meant or defined for arrays. So it converts arrays into strings and concatenates them.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 20. What is the output of below code
+
+```javascript
+const numbers = new Set([1, 1, 2, 3, 4]);
+console.log(numbers);
+
+const browser = new Set("Firefox");
+console.log(browser);
+```
+
+- 1: {1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
+- 2: {1, 2, 3, 4}, {"F", "i", "r", "e", "o", "x"}
+- 3: [1, 2, 3, 4], ["F", "i", "r", "e", "o", "x"]
+- 4: {1, 1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Since `Set` object is a collection of unique values, it won't allow duplicate values in the collection. At the same time, it is case sensitive data structure.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 21. What is the output of below code
+
+```javascript
+console.log(NaN === NaN);
+```
+
+- 1: True
+- 2: False
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equal for floating-point numbers.
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 22. What is the output of below code
+
+```javascript
+let numbers = [1, 2, 3, 4, NaN];
+console.log(numbers.indexOf(NaN));
+```
+
+- 1: 4
+- 2: NaN
+- 3: SyntaxError
+- 4: -1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The `indexOf` uses strict equality operator(===) internally and `NaN === NaN` evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always.
+But you can use `Array.prototype.findIndex` method to find out the index of NaN in an array or You can use `Array.prototype.includes` to check if NaN is present in an array or not.
+
+```javascript
+let numbers = [1, 2, 3, 4, NaN];
+console.log(numbers.findIndex(Number.isNaN)); // 4
+
+console.log(numbers.includes(NaN)); // true
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 23. What is the output of below code
+
+```javascript
+let [a, ...b,] = [1, 2, 3, 4, 5];
+console.log(a, b);
+```
+
+- 1: 1, [2, 3, 4, 5]
+- 2: 1, {2, 3, 4, 5}
+- 3: SyntaxError
+- 4: 1, [2, 3, 4]
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
+If you remove the trailing comma then it displays 1st answer
+
+```javascript
+let [a, ...b] = [1, 2, 3, 4, 5];
+console.log(a, b); // 1, [2, 3, 4, 5]
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 25. What is the output of below code
+
+```javascript
+async function func() {
+  return 10;
+}
+console.log(func());
+```
+
+- 1: Promise {\<fulfilled\>: 10}
+- 2: 10
+- 3: SyntaxError
+- 4: Promise {\<rejected\>: 10}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
+
+```javascript
+function func() {
+  return Promise.resolve(10);
+}
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 26. What is the output of below code
+
+```javascript
+async function func() {
+  await 10;
+}
+console.log(func());
+```
+
+- 1: Promise {\<fulfilled\>: 10}
+- 2: 10
+- 3: SyntaxError
+- 4: Promise {\<resolved\>: undefined}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise. The above async function is equivalent to below expression,
+
+```javascript
+function func() {
+  return Promise.resolve(10).then(() => undefined);
+}
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 27. What is the output of below code
+
+```javascript
+function delay() {
+  return new Promise(resolve => setTimeout(resolve, 2000));
+}
+
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
+
+async function processArray(array) {
+  array.forEach(item => {
+    await delayedLog(item);
+  })
+}
+
+processArray([1, 2, 3, 4]);
+```
+
+- 1: SyntaxError
+- 2: 1, 2, 3, 4
+- 3: 4, 4, 4, 4
+- 4: 4, 3, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Even though “processArray” is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside a synchronous function then it throws a syntax error.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 28. What is the output of below code
+
+```javascript
+function delay() {
+  return new Promise((resolve) => setTimeout(resolve, 2000));
+}
+
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
+
+async function process(array) {
+  array.forEach(async (item) => {
+    await delayedLog(item);
+  });
+  console.log("Process completed!");
+}
+process([1, 2, 3, 5]);
+```
+
+- 1: 1 2 3 5 and Process completed!
+- 2: 5 5 5 5 and Process completed!
+- 3: Process completed! and 5 5 5 5
+- 4: Process completed! and 1 2 3 5
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The forEach method will not wait until all items are finished but it just runs the tasks and goes next. Hence, the last statement is displayed first followed by a sequence of promise resolutions.
+
+But you control the array sequence using for..of loop,
+
+```javascript
+async function processArray(array) {
+  for (const item of array) {
+    await delayedLog(item);
+  }
+  console.log("Process completed!");
+}
+```
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 29. What is the output of below code
+
+```javascript
+var set = new Set();
+set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);
+console.log(set);
+```
+
+- 1: Set(4) {"+0", "-0", NaN, undefined}
+- 2: Set(3) {"+0", NaN, undefined}
+- 3: Set(5) {"+0", "-0", NaN, undefined, NaN}
+- 4: Set(4) {"+0", NaN, undefined, NaN}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Set has few exceptions from equality check,
+
+1. All NaN values are equal
+2. Both +0 and -0 considered as different values
+
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 30. What is the output of below code
+
+```javascript
+const sym1 = Symbol("one");
+const sym2 = Symbol("one");
+
+const sym3 = Symbol.for("two");
+const sym4 = Symbol.for("two");
+
+console.log(sym1 === sym2, sym3 === sym4);
+```
+
+- 1: true, true
+- 2: true, false
+- 3: false, true
+- 4: false, false
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+Symbol follows below conventions,
+
+1. Every symbol value returned from Symbol() is unique irrespective of the optional string.
+2. `Symbol.for()` function creates a symbol in a global symbol registry list. But it doesn't necessarily create a new symbol on every call, it checks first if a symbol with the given key is already present in the registry and returns the symbol if it is found. Otherwise a new symbol created in the registry.
+
+**Note:** The symbol description is just useful for debugging purposes.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 31. What is the output of below code
+
+```javascript
+const sym1 = new Symbol("one");
+console.log(sym1);
+```
+
+- 1: SyntaxError
+- 2: one
+- 3: Symbol('one')
+- 4: Symbol
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+`Symbol` is a just a standard function and not an object constructor(unlike other primitives new Boolean, new String and new Number). So if you try to call it with the new operator will result in a TypeError
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 32. What is the output of below code
+
+```javascript
+let myNumber = 100;
+let myString = "100";
+
+if (!typeof myNumber === "string") {
+  console.log("It is not a string!");
+} else {
+  console.log("It is a string!");
+}
+
+if (!typeof myString === "number") {
+  console.log("It is not a number!");
+} else {
+  console.log("It is a number!");
+}
+```
+
+- 1: SyntaxError
+- 2: It is not a string!, It is not a number!
+- 3: It is not a string!, It is a number!
+- 4: It is a string!, It is a number!
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 33. What is the output of below code
+
+```javascript
+console.log(
+  JSON.stringify({ myArray: ["one", undefined, function () {}, Symbol("")] })
+);
+console.log(
+  JSON.stringify({ [Symbol.for("one")]: "one" }, [Symbol.for("one")])
+);
+```
+
+- 1: {"myArray":['one', undefined, {}, Symbol]}, {}
+- 2: {"myArray":['one', null,null,null]}, {}
+- 3: {"myArray":['one', null,null,null]}, "{ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]"
+- 4: {"myArray":['one', undefined, function(){}, Symbol('')]}, {}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+The symbols has below constraints,
+
+1. The undefined, Functions, and Symbols are not valid JSON values. So those values are either omitted (in an object) or changed to null (in an array). Hence, it returns null values for the value array.
+2. All Symbol-keyed properties will be completely ignored. Hence it returns an empty object({}).
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 34. What is the output of below code
+
+```javascript
+class A {
+  constructor() {
+    console.log(new.target.name);
+  }
+}
+
+class B extends A {
+  constructor() {
+    super();
+  }
+}
+
+new A();
+new B();
+```
+
+- 1: A, A
+- 2: A, B
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+Using constructors, `new.target` refers to the constructor (points to the class definition of class which is initialized) that was directly invoked by new. This also applies to the case if the constructor is in a parent class and was delegated from a child constructor.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 35. What is the output of below code
+
+```javascript
+const [x, ...y, z] = [1, 2, 3, 4];
+console.log(x, y, z);
+```
+  
+- 1: 1, [2, 3], 4
+- 2: 1, [2, 3, 4], undefined
+- 3: 1, [2], 3
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+It throws a syntax error because the rest element should not have a trailing comma. You should always consider using a rest operator as the last element.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 36. What is the output of below code
+
+```javascript
+const { a: x = 10, b: y = 20 } = { a: 30 };
+
+console.log(x);
+console.log(y);
+```
+
+- 1: 30, 20
+- 2: 10, 20
+- 3: 10, undefined
+- 4: 30, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+The object property follows below rules,
+
+1. The object properties can be retrieved and assigned to a variable with a different name
+2. The property assigned a default value when the retrieved value is `undefined`
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 37. What is the output of below code
+
+```javascript
+function area({ length = 10, width = 20 }) {
+  console.log(length * width);
+}
+
+area();
+```
+
+- 1: 200
+- 2: Error
+- 3: undefined
+- 4: 0
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+If you leave out the right-hand side assignment for the destructuring object, the function will look for at least one argument to be supplied when invoked. Otherwise you will receive an error `Error: Cannot read property 'length' of undefined` as mentioned above.
+
+You can avoid the error with either of the below changes,
+
+1. **Pass at least an empty object:**
+
+```javascript
+function area({ length = 10, width = 20 }) {
+  console.log(length * width);
+}
+
+area({});
+```
+
+2. **Assign default empty object:**
+
+```javascript
+function area({ length = 10, width = 20 } = {}) {
+  console.log(length * width);
+}
+
+area();
+```
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 38. What is the output of below code
+
+```javascript
+const props = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Jack" },
+  { id: 3, name: "Tom" },
+];
+
+const [, , { name }] = props;
+console.log(name);
+```
+
+- 1: Tom
+- 2: Error
+- 3: undefined
+- 4: John
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+It is possible to combine Array and Object destructuring. In this case, the third element in the array props accessed first followed by name property in the object.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 39. What is the output of below code
+
+```javascript
+function checkType(num = 1) {
+  console.log(typeof num);
+}
+
+checkType();
+checkType(undefined);
+checkType("");
+checkType(null);
+```
+
+- 1: number, undefined, string, object
+- 2: undefined, undefined, string, object
+- 3: number, number, string, object
+- 4: number, number, number, number
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+If the function argument is set implicitly(not passing argument) or explicitly to undefined, the value of the argument is the default parameter. Whereas for other falsy values('' or null), the value of the argument is passed as a parameter.
+
+Hence, the result of function calls categorized as below,
+
+1. The first two function calls logs number type since the type of default value is number
+2. The type of '' and null values are string and object type respectively.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 40. What is the output of below code
+
+```javascript
+function add(item, items = []) {
+  items.push(item);
+  return items;
+}
+
+console.log(add("Orange"));
+console.log(add("Apple"));
+```
+
+- 1: ['Orange'], ['Orange', 'Apple']
+- 2: ['Orange'], ['Apple']
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+Since the default argument is evaluated at call time, a new object is created each time the function is called. So in this case, the new array is created and an element pushed to the default empty array.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
