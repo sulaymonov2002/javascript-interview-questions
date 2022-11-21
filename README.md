@@ -3637,7 +3637,7 @@ Agar siz myChars-ni chop qilmoqchi bo'lsangiz, u aniqlanmagan qiymatni o'rnatmas
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 8. What is the output of below code in latest Chrome
+#### 8. Eng so'nggi Chrome brauzerida quyidagi code(ning) chiqishi nima 
 
 ```javascript
 var array1 = new Array(3);
@@ -3661,15 +3661,15 @@ console.log(array3);
 
 ##### Answer: 2
 
-The latest chrome versions display `sparse array`(they are filled with holes) using this empty x n notation. Whereas the older versions have undefined x n notation.
-**Note:** The latest version of FF displays `n empty slots` notation.
+Eng so'nggi Chrome versiyalari ushbu bo'sh x n yozuvidan foydalangan holda `sparse array`(ular teshiklar bilan to'ldirilgan) ko'rsatadi.
+**Eslatma:** FF ning so'nggi versiyasida `n emty slots` mavjud.
 
 </p>
 </details>
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 9. What is the output of below code
 
@@ -3701,14 +3701,14 @@ console.log(obj.prop3());
 
 ##### Answer: 1
 
-ES6 provides method definitions and property shorthands for objects. So both prop2 and prop3 are treated as regular function values.
+ES6 ob'ektlar uchun usul ta'riflari va xususiyat qisqartmalarini taqdim etadi. Shunday qilib, prop2 va prop3 ham oddiy funksiya qiymatlari sifatida qaraladi.
 
 </p>
 </details>
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 10. What is the output of below code
 
@@ -3727,19 +3727,18 @@ console.log(3 > 2 > 1);
 
 ##### Answer: 2
 
-The important point is that if the statement contains the same operators(e.g, < or >) then it can be evaluated from left to right.
-The first statement follows the below order,
+Muhim nuqta shundaki, agar bayonot bir xil operatorlarni o'z ichiga olsa (masalan, < yoki >), uni chapdan o'ngga qarab baholash mumkin. Birinchi bayonot quyidagi tartibda bo'ladi,
 
 1. console.log(1 < 2 < 3);
 2. console.log(true < 3);
-3. console.log(1 < 3); // True converted as `1` during comparison
+3. console.log(1 < 3); // Taqqoslash paytida true `1` ga aylantirildi
 4. True
 
-Whereas the second statement follows the below order,
+Ikkinchi bayonot quyidagi tartibda bo'lsa,
 
 1. console.log(3 > 2 > 1);
 2. console.log(true > 1);
-3. console.log(1 > 1); // False converted as `0` during comparison
+3. console.log(1 > 1); // Taqqoslash paytida false `0` ga aylantirildi
 4. False
 
 </p>
@@ -3747,7 +3746,7 @@ Whereas the second statement follows the below order,
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 11. What is the output of below code in non-strict mode
 
