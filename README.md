@@ -3671,7 +3671,7 @@ Eng so'nggi Chrome versiyalari ushbu bo'sh x n yozuvidan foydalangan holda `spar
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 9. What is the output of below code
+#### 9. Quyidagi code(ning) chiqishi nima
 
 ```javascript
 const obj = {
@@ -3710,7 +3710,7 @@ ES6 ob'ektlar uchun usul ta'riflari va xususiyat qisqartmalarini taqdim etadi. S
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 10. What is the output of below code
+#### 10. Quyidagi code(ning) chiqishi nima
 
 ```javascript
 console.log(1 < 2 < 3);
@@ -3779,7 +3779,7 @@ Birinchi parametrning qiymati funksiyaga uzatiladigan uchinchi argumentga moslas
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 12. What is the output of below code
+#### 12. Quyidagi code(ning) chiqishi nima
 
 ```javascript
 const printNumbersArrow = (first, second, first) => {
@@ -3798,14 +3798,14 @@ printNumbersArrow(1, 2, 3);
 
 ##### Answer: 3
 
-Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see `SyntaxError` in the console.
+Oddiy funksiyalardan farqli o'laroq, o'q funksiyalari qat'iy yoki qat'iy bo'lmagan rejimda takroriy parametrlarga ruxsat bermaydi. Shunday qilib, konsolda `SyntaxError`-ni ko'rishingiz mumkin.
 
 </p>
 </details>
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 13. What is the output of below code
 
