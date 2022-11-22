@@ -3824,9 +3824,9 @@ console.log(arrowFunc(1, 2, 3));
 
 ##### Answer: 1
 
-Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive a reference error.
+Ok funksiyalarida `arguments`, `super`, `this` `yoki` `new.target` bindigs mavjud emas. Shunday qilib, `arguments` o'zgaruvchisiga har qanday havola leksik jihatdan yopiq muhitda bog'lanishni hal qilishga harakat qiladi. Bunday holda, argumentlar o'zgaruvchisi o'q funksiyasidan tashqarida aniqlanmaydi. Shunday qilib, siz mos yozuvlar xatosini olasiz.
 
-Where as the normal function provides the number of arguments passed to the function
+Oddiy funksiya funksiyaga uzatiladigan argumentlar sonini ta'minlaydi
 
 ```javascript
 const func = function () {
@@ -3835,7 +3835,7 @@ const func = function () {
 console.log(func(1, 2, 3));
 ```
 
-But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
+Ammo agar siz hali ham o'q funksiyasidan foydalanmoqchi bo'lsangiz, argumentlar bo'yicha rest operatori kutilgan argumentlarni taqdim etadi
 
 ```javascript
 const arrowFunc = (...args) => args.length;
@@ -3847,7 +3847,7 @@ console.log(arrowFunc(1, 2, 3));
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 14. What is the output of below code
 
