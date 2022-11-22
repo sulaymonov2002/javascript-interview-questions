@@ -3748,7 +3748,7 @@ Ikkinchi bayonot quyidagi tartibda bo'lsa,
 
 **[⬆ Yuqoriga qaytish](#mundarija)**
 
-#### 11. What is the output of below code in non-strict mode
+#### 11. Quyidagi code(ning) qat'iy bo'lmagan rejimda chiqishi nima
 
 ```javascript
 function printNumbers(first, second, first) {
@@ -3767,17 +3767,17 @@ printNumbers(1, 2, 3);
 
 ##### Answer: 2
 
-In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters.
-The value of the first parameter is mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter.
+Qattiq bo'lmagan rejimda odatiy JavaScript funksiyalari nomli parametrlarni takrorlash imkonini beradi. Yuqoridagi code parchasi 1 va 3 parametrlarda takroriy parametrlarga ega.
+Birinchi parametrning qiymati funksiyaga uzatiladigan uchinchi argumentga moslashtiriladi. Demak, 3-argument birinchi parametrni bekor qiladi.
 
-**Note:** In strict mode, duplicate parameters will throw a Syntax Error.
+**Eslatma:** Qattiq rejimda takroriy parametrlar Sintaksis xatosini keltirib chiqaradi.
 
 </p>
 </details>
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+**[⬆ Yuqoriga qaytish](#mundarija)**
 
 #### 12. What is the output of below code
 
